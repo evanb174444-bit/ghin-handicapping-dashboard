@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.usga.org/schemas/mock_metrics.schema.json",
+  "title": "Handicapping and GHIN processed metrics",
+  "type": "object",
+  "required": ["meta", "records"],
+  "properties": {
+    "meta": {"type": "object", "required": ["mockData", "grain", "dimensions"]},
+    "records": {"type": "array", "items": {"$ref": "#/$defs/record"}}
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "required": ["reportPeriod", "year", "month", "associationId", "membershipType", "clubType", "accessType", "gender", "activeGolfers", "ghinActiveGolfers", "scoresAga", "scoresGhin"],
+      "properties": {
+        "reportPeriod": {"type": "string", "pattern": "^20[0-9]{2}-(0[1-9]|1[0-2])$"},
+        "year": {"type": "integer"}, "month": {"type": "integer", "minimum": 1, "maximum": 12},
+        "associationId": {"type": "string"}, "membershipType": {"type": "string"}, "clubType": {"type": "string"}, "accessType": {"type": "string"}, "gender": {"type": "string"},
+        "activeGolfers": {"type": "integer", "minimum": 0}, "ghinActiveGolfers": {"type": "integer", "minimum": 0}, "scoresAga": {"type": "integer", "minimum": 0}, "scoresGhin": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": true
+    }
+  }
+}

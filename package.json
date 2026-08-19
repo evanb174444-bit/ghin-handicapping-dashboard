@@ -1,0 +1,9 @@
+{
+  "name": "handicapping-ghin-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate_mock_data.js",
+    "test": "node scripts/qa.js"
+  }
+}

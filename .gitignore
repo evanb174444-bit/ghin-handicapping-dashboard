@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+node_modules/
+data/raw/
+data/backups/
+*.zip
+CODEX_HANDOFF_*.md
+USGA_DESIGN_SYSTEM_REFERENCE.html
