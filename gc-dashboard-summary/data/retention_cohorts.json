@@ -1,0 +1,269 @@
+{
+  "summary": [
+    {
+      "label": "Golfers Analyzed",
+      "valueDisplay": "807,943",
+      "subDisplay": "September 1, 2026"
+    },
+    {
+      "label": "Active Today",
+      "valueDisplay": "537,730",
+      "subDisplay": "September 1, 2026"
+    },
+    {
+      "label": "Inactive Today",
+      "valueDisplay": "270,213",
+      "subDisplay": "September 1, 2026"
+    },
+    {
+      "label": "Active Beyond 13 Months",
+      "valueDisplay": "69.4%",
+      "subDisplay": "2022–2024 eligible cohorts"
+    },
+    {
+      "label": "Active Beyond 25 Months",
+      "valueDisplay": "59.6%",
+      "subDisplay": "2022–2023 eligible cohorts"
+    },
+    {
+      "label": "Active Beyond 37 Months",
+      "valueDisplay": "40.7%",
+      "subDisplay": "2022 eligible cohort"
+    }
+  ],
+  "creationYearStatus": [
+    {
+      "yearDisplay": "2026",
+      "activeDisplay": "98.8%",
+      "inactiveDisplay": "1.2%",
+      "totalDisplay": "151K"
+    },
+    {
+      "yearDisplay": "2025",
+      "activeDisplay": "78.8%",
+      "inactiveDisplay": "21.2%",
+      "totalDisplay": "185K"
+    },
+    {
+      "yearDisplay": "2024",
+      "activeDisplay": "56.7%",
+      "inactiveDisplay": "43.3%",
+      "totalDisplay": "171K"
+    },
+    {
+      "yearDisplay": "2023",
+      "activeDisplay": "55.9%",
+      "inactiveDisplay": "44.1%",
+      "totalDisplay": "197K"
+    },
+    {
+      "yearDisplay": "2022",
+      "activeDisplay": "34.3%",
+      "inactiveDisplay": "65.7%",
+      "totalDisplay": "104K"
+    }
+  ],
+  "cohorts": [
+    {
+      "yearDisplay": "2022",
+      "createdDisplay": "103,860",
+      "activeTodayDisplay": "35,589",
+      "activeRateDisplay": "34.3%",
+      "comparisonHeader": "vs Prior",
+      "color": "#14395f",
+      "milestones": [
+        {
+          "label": "Created",
+          "golfersDisplay": "103,860",
+          "percentDisplay": "100.0%",
+          "deltaDisplay": "—",
+          "deltaClass": "neutral"
+        },
+        {
+          "label": "Active Beyond 13 Months",
+          "golfersDisplay": "59,261",
+          "percentDisplay": "57.1%",
+          "deltaDisplay": "—",
+          "deltaClass": "neutral"
+        },
+        {
+          "label": "Active Beyond 25 Months",
+          "golfersDisplay": "50,884",
+          "percentDisplay": "49.0%",
+          "deltaDisplay": "—",
+          "deltaClass": "neutral"
+        },
+        {
+          "label": "Active Beyond 37 Months",
+          "golfersDisplay": "42,272",
+          "percentDisplay": "40.7%",
+          "deltaDisplay": "—",
+          "deltaClass": "neutral"
+        }
+      ],
+      "survivalCurve": {
+        "points": "70,30 366.7,161.7 663.3,186.4 960,211.9",
+        "dots": [
+          {
+            "cx": "70",
+            "cy": "30"
+          },
+          {
+            "cx": "366.7",
+            "cy": "161.7"
+          },
+          {
+            "cx": "663.3",
+            "cy": "186.4"
+          },
+          {
+            "cx": "960",
+            "cy": "211.9"
+          }
+        ],
+        "valueLabels": [
+          {
+            "x": "366.7",
+            "y": "147.7",
+            "milestoneIndex": 1
+          },
+          {
+            "x": "663.3",
+            "y": "172.4",
+            "milestoneIndex": 2
+          },
+          {
+            "x": "960",
+            "y": "197.9",
+            "milestoneIndex": 3
+          }
+        ]
+      }
+    },
+    {
+      "yearDisplay": "2023",
+      "createdDisplay": "197,392",
+      "activeTodayDisplay": "110,326",
+      "activeRateDisplay": "55.9%",
+      "comparisonHeader": "vs 2022",
+      "color": "#d85a32",
+      "milestones": [
+        {
+          "label": "Created",
+          "golfersDisplay": "197,392",
+          "percentDisplay": "100.0%",
+          "deltaDisplay": "—",
+          "deltaClass": "neutral"
+        },
+        {
+          "label": "Active Beyond 13 Months",
+          "golfersDisplay": "151,641",
+          "percentDisplay": "76.8%",
+          "deltaDisplay": "+19.8 pts",
+          "deltaClass": "positive"
+        },
+        {
+          "label": "Active Beyond 25 Months",
+          "golfersDisplay": "128,736",
+          "percentDisplay": "65.2%",
+          "deltaDisplay": "+16.2 pts",
+          "deltaClass": "positive"
+        },
+        {
+          "label": "Active Beyond 37 Months",
+          "golfersDisplay": "TBD",
+          "percentDisplay": "TBD",
+          "deltaDisplay": "TBD",
+          "deltaClass": "neutral"
+        }
+      ],
+      "survivalCurve": {
+        "points": "70,30 366.7,101.1 663.3,136.7",
+        "dots": [
+          {
+            "cx": "70",
+            "cy": "30"
+          },
+          {
+            "cx": "366.7",
+            "cy": "101.1"
+          },
+          {
+            "cx": "663.3",
+            "cy": "136.7"
+          }
+        ],
+        "valueLabels": [
+          {
+            "x": "366.7",
+            "y": "87.1",
+            "milestoneIndex": 1
+          },
+          {
+            "x": "663.3",
+            "y": "122.7",
+            "milestoneIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "yearDisplay": "2024",
+      "createdDisplay": "170,850",
+      "activeTodayDisplay": "96,793",
+      "activeRateDisplay": "56.7%",
+      "comparisonHeader": "vs 2023",
+      "color": "#188552",
+      "milestones": [
+        {
+          "label": "Created",
+          "golfersDisplay": "170,850",
+          "percentDisplay": "100.0%",
+          "deltaDisplay": "—",
+          "deltaClass": "neutral"
+        },
+        {
+          "label": "Active Beyond 13 Months",
+          "golfersDisplay": "116,655",
+          "percentDisplay": "68.3%",
+          "deltaDisplay": "-8.5 pts",
+          "deltaClass": "negative"
+        },
+        {
+          "label": "Active Beyond 25 Months",
+          "golfersDisplay": "TBD",
+          "percentDisplay": "TBD",
+          "deltaDisplay": "TBD",
+          "deltaClass": "neutral"
+        },
+        {
+          "label": "Active Beyond 37 Months",
+          "golfersDisplay": "TBD",
+          "percentDisplay": "TBD",
+          "deltaDisplay": "TBD",
+          "deltaClass": "neutral"
+        }
+      ],
+      "survivalCurve": {
+        "points": "70,30 366.7,127.3",
+        "dots": [
+          {
+            "cx": "70",
+            "cy": "30"
+          },
+          {
+            "cx": "366.7",
+            "cy": "127.3"
+          }
+        ],
+        "valueLabels": [
+          {
+            "x": "366.7",
+            "y": "113.3",
+            "milestoneIndex": 1
+          }
+        ]
+      }
+    }
+  ]
+}

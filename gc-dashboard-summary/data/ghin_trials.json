@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "status": "draft",
+    "source": "Tableau aggregate CSV exports"
+  },
+  "overview": {
+    "signups": 134542,
+    "activeTrials": 58622,
+    "conversions": 68581,
+    "conversionRate": 0.5097,
+    "campaigns": [
+      {
+        "label": "Spring Trial Push",
+        "value": 3120,
+        "sub": "34.8% conversion"
+      },
+      {
+        "label": "App Onboarding",
+        "value": 2085,
+        "sub": "27.4% conversion"
+      },
+      {
+        "label": "Partner Trial Offer",
+        "value": 1740,
+        "sub": "22.1% conversion"
+      },
+      {
+        "label": "Organic Trial Starts",
+        "value": 1305,
+        "sub": "18.6% conversion"
+      }
+    ],
+    "funnel": [
+      {
+        "label": "Trial signups",
+        "value": 8250
+      },
+      {
+        "label": "Activated trials",
+        "value": 6125
+      },
+      {
+        "label": "Engaged trials",
+        "value": 3860
+      },
+      {
+        "label": "Converted golfers",
+        "value": 2145
+      }
+    ]
+  },
+  "summary": {
+    "totalTrialsCreated": 134542,
+    "trialConversions": 68581,
+    "conversionRate": 0.5097,
+    "activeTrialGolfers": 58622,
+    "inactiveTrialGolfers": 27453
+  },
+  "gcSummary": {
+    "trialConversions": 48732
+  },
+  "gcMonthly": [
+    {
+      "label": "Jan",
+      "conversions": 2445
+    },
+    {
+      "label": "Feb",
+      "conversions": 2707
+    },
+    {
+      "label": "Mar",
+      "conversions": 4791
+    },
+    {
+      "label": "Apr",
+      "conversions": 9694
+    },
+    {
+      "label": "May",
+      "conversions": 10199
+    },
+    {
+      "label": "Jun",
+      "conversions": 9716
+    },
+    {
+      "label": "Jul",
+      "conversions": 9180
+    }
+  ],
+  "yearlyTotals": [
+    {
+      "year": 2024,
+      "totalTrialsCreated": 112107,
+      "trialConversions": 36816,
+      "conversionRate": 0.3284,
+      "activeTrialGolfers": 34287,
+      "inactiveTrialGolfers": 24029
+    },
+    {
+      "year": 2025,
+      "totalTrialsCreated": 186318,
+      "trialConversions": 78786,
+      "conversionRate": 0.4229,
+      "activeTrialGolfers": 61113,
+      "inactiveTrialGolfers": 42946
+    },
+    {
+      "year": 2026,
+      "totalTrialsCreated": 134542,
+      "trialConversions": 68581,
+      "conversionRate": 0.5097,
+      "activeTrialGolfers": 58622,
+      "inactiveTrialGolfers": 27453
+    }
+  ],
+  "monthly": [
+    {
+      "label": "Jan",
+      "trials": 7029,
+      "conversions": 3361
+    },
+    {
+      "label": "Feb",
+      "trials": 7341,
+      "conversions": 3540
+    },
+    {
+      "label": "Mar",
+      "trials": 14102,
+      "conversions": 6602
+    },
+    {
+      "label": "Apr",
+      "trials": 22013,
+      "conversions": 11949
+    },
+    {
+      "label": "May",
+      "trials": 22881,
+      "conversions": 12633
+    },
+    {
+      "label": "Jun",
+      "trials": 23572,
+      "conversions": 12032
+    },
+    {
+      "label": "Jul",
+      "trials": 20264,
+      "conversions": 10984
+    },
+    {
+      "label": "Aug",
+      "trials": 17731,
+      "conversions": 9410
+    }
+  ],
+  "conversionBuckets": [
+    {
+      "label": "First day",
+      "count": 59183,
+      "pct": 0.3105
+    },
+    {
+      "label": "Next day",
+      "count": 9605,
+      "pct": 0.0504
+    },
+    {
+      "label": "First week",
+      "count": 18298,
+      "pct": 0.096
+    },
+    {
+      "label": "First month",
+      "count": 30105,
+      "pct": 0.158
+    },
+    {
+      "label": "Beyond 1 month",
+      "count": 73384,
+      "pct": 0.3851
+    }
+  ],
+  "agaConversions": [
+    {
+      "name": "Texas Golf Association",
+      "count": 14445
+    },
+    {
+      "name": "Florida State Golf Association",
+      "count": 12643
+    },
+    {
+      "name": "Carolinas Golf Association",
+      "count": 11692
+    },
+    {
+      "name": "Metropolitan Golf Association",
+      "count": 8131
+    },
+    {
+      "name": "Southern California Golf Association",
+      "count": 7098
+    },
+    {
+      "name": "Mass Golf",
+      "count": 6859
+    },
+    {
+      "name": "GAP",
+      "count": 6356
+    },
+    {
+      "name": "Georgia State Golf Association",
+      "count": 6159
+    },
+    {
+      "name": "Golf Association of Michigan",
+      "count": 5783
+    },
+    {
+      "name": "Colorado Golf Association",
+      "count": 4577
+    },
+    {
+      "name": "Northern California Golf Association",
+      "count": 3954
+    },
+    {
+      "name": "Arizona Golf Association",
+      "count": 3811
+    },
+    {
+      "name": "Virginia State Golf Association",
+      "count": 3793
+    },
+    {
+      "name": "Washington Golf",
+      "count": 3545
+    },
+    {
+      "name": "Tennessee Golf Association",
+      "count": 3378
+    },
+    {
+      "name": "Minnesota Golf Association",
+      "count": 3207
+    },
+    {
+      "name": "Maryland State Golf Association",
+      "count": 3106
+    },
+    {
+      "name": "Chicago District Golf Association",
+      "count": 3051
+    },
+    {
+      "name": "New Jersey Golf",
+      "count": 2917
+    },
+    {
+      "name": "Utah Golf Association",
+      "count": 2482
+    },
+    {
+      "name": "Alabama Golf Association",
+      "count": 2427
+    },
+    {
+      "name": "Northern Ohio Golf Association",
+      "count": 2426
+    },
+    {
+      "name": "Western Pennsylvania Golf Association",
+      "count": 2413
+    },
+    {
+      "name": "New York State Golf Association",
+      "count": 2323
+    },
+    {
+      "name": "Oregon Golf Association",
+      "count": 2215
+    },
+    {
+      "name": "Wisconsin State Golf Association",
+      "count": 2134
+    },
+    {
+      "name": "Central Links Golf",
+      "count": 2123
+    },
+    {
+      "name": "Metropolitan Amateur Golf Association",
+      "count": 1994
+    },
+    {
+      "name": "Indiana Golf Association",
+      "count": 1834
+    },
+    {
+      "name": "Iowa Golf Association",
+      "count": 1747
+    },
+    {
+      "name": "Ohio Golf Association",
+      "count": 1727
+    },
+    {
+      "name": "Kentucky Golf Association",
+      "count": 1672
+    },
+    {
+      "name": "Connecticut State Golf Association",
+      "count": 1655
+    },
+    {
+      "name": "Louisiana Golf Association",
+      "count": 1642
+    },
+    {
+      "name": "Oklahoma Golf Association",
+      "count": 1534
+    },
+    {
+      "name": "Nebraska Golf Association",
+      "count": 1434
+    },
+    {
+      "name": "Greater Cincinnati Golf Association",
+      "count": 1333
+    },
+    {
+      "name": "Nevada Golf",
+      "count": 1266
+    },
+    {
+      "name": "Idaho Golf Association",
+      "count": 1262
+    },
+    {
+      "name": "New Hampshire Golf",
+      "count": 1177
+    },
+    {
+      "name": "Montana State Golf Association",
+      "count": 1059
+    },
+    {
+      "name": "Arkansas State Golf Association",
+      "count": 1028
+    },
+    {
+      "name": "Maine Golf",
+      "count": 797
+    },
+    {
+      "name": "Mississippi Golf Association",
+      "count": 736
+    },
+    {
+      "name": "Missouri Golf Association",
+      "count": 724
+    },
+    {
+      "name": "South Dakota Golf Association",
+      "count": 685
+    },
+    {
+      "name": "Rhode Island Golf Association",
+      "count": 656
+    },
+    {
+      "name": "Sun Country Amateur Golf Association",
+      "count": 631
+    },
+    {
+      "name": "Rochester District Golf Association",
+      "count": 605
+    },
+    {
+      "name": "Hawaii State Golf Association",
+      "count": 588
+    },
+    {
+      "name": "North Dakota Golf Association",
+      "count": 563
+    },
+    {
+      "name": "Wyoming State / Colorado GA",
+      "count": 449
+    },
+    {
+      "name": "Miami Valley Golf",
+      "count": 440
+    },
+    {
+      "name": "Vermont Golf Association",
+      "count": 390
+    },
+    {
+      "name": "West Virginia Golf Association",
+      "count": 375
+    },
+    {
+      "name": "Alaska / WA Golf GA",
+      "count": 145
+    }
+  ]
+}
