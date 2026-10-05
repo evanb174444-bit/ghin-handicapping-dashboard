@@ -1,0 +1,1114 @@
+[
+  {
+    "association_id": "97",
+    "association_name": "A R Golf Association",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "96",
+    "association_name": "Association 96",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "63",
+    "association_name": "Northern California Golf Assoc 2",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "43",
+    "association_name": "Pga Of America",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "237",
+    "association_name": "Trial Association",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "39",
+    "association_name": "Z Inactive Aga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "64",
+    "association_name": "Z Inactive Awga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "80",
+    "association_name": "Z Inactive Azwga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "68",
+    "association_name": "Z Inactive Cdga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "26",
+    "association_name": "Z Inactive Kpga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "38",
+    "association_name": "Z Inactive Kwga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "47",
+    "association_name": "Z Inactive Nc Pennsylvania Ga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "13",
+    "association_name": "Z Inactive Nhwga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "46",
+    "association_name": "Z Inactive Nnwga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "28",
+    "association_name": "Z Inactive Pwga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "72",
+    "association_name": "Z Inactive Sdcwga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "31",
+    "association_name": "Z Inactive Wganc",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "74",
+    "association_name": "Z Inactive Wplgasc",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "75",
+    "association_name": "Z Inactive Wscga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "42",
+    "association_name": "Z Inactive Wsga",
+    "parent_federation": "",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "162",
+    "association_name": "ANAGOLF",
+    "parent_federation": "ANAGOLF",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "89",
+    "association_name": "Asociacion de Golf de Panama",
+    "parent_federation": "Asociacion de Golf de Panama",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "120",
+    "association_name": "Asociaci\u00f3n Deportiva Nacional de Golf de Guatemala",
+    "parent_federation": "Asociaci\u00f3n Deportiva Nacional de Golf de Guatemala",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "69",
+    "association_name": "Bahamas Golf Federation",
+    "parent_federation": "Bahamas Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "119",
+    "association_name": "Barbados Golf Association",
+    "parent_federation": "Barbados Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "274",
+    "association_name": "Belize Golf Federation",
+    "parent_federation": "Belize Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "61",
+    "association_name": "Bermuda Golf Association",
+    "parent_federation": "Bermuda Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "121",
+    "association_name": "Brunei Darussalam Golf Association",
+    "parent_federation": "Brunei Darussalam Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "87",
+    "association_name": "China Golf Association",
+    "parent_federation": "China Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "384",
+    "association_name": "Chinese Taipei Golf Association",
+    "parent_federation": "Chinese Taipei Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "29",
+    "association_name": "Dominican Golf Federation",
+    "parent_federation": "Dominican Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "236",
+    "association_name": "Emirates Golf Federation",
+    "parent_federation": "Emirates Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "86",
+    "association_name": "Federacion Mexicana de Golf",
+    "parent_federation": "Federacion Mexicana De Golf",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "118",
+    "association_name": "Federacion Salvadore\u00f1a de Golf",
+    "parent_federation": "Federacion Salvadore\u00f1a de Golf",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "377",
+    "association_name": "GG Test Association",
+    "parent_federation": "GHIN Fed - Test",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "376",
+    "association_name": "South GHIN Association",
+    "parent_federation": "GHIN Fed - Test",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "378",
+    "association_name": "GHIN Single Association",
+    "parent_federation": "GHIN Fed - Test (Single)",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "381",
+    "association_name": "Golf Association of Hong Kong, China",
+    "parent_federation": "Golf Association of Hong Kong, China Ltd",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "85",
+    "association_name": "Golf Association of Hong Kong, China Ltd",
+    "parent_federation": "Golf Association of Hong Kong, China Ltd",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "196",
+    "association_name": "Golf Saint Lucia Inc",
+    "parent_federation": "Golf Saint Lucia Inc",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "76",
+    "association_name": "Guam National Golf Federation",
+    "parent_federation": "Guam National Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "77",
+    "association_name": "Indian Golf Union",
+    "parent_federation": "Indian Golf Union",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "54",
+    "association_name": "Korea Golf Association",
+    "parent_federation": "Korea Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "383",
+    "association_name": "Mauritius Golf Federation",
+    "parent_federation": "Mauritius Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "382",
+    "association_name": "Mongolian Golf Association",
+    "parent_federation": "Mongolian Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "116",
+    "association_name": "Nicaraguan Golf Federation",
+    "parent_federation": "Nicaraguan Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "117",
+    "association_name": "Oman Golf Association",
+    "parent_federation": "Oman Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "375",
+    "association_name": "Saint Kitts and Nevis Golf Association",
+    "parent_federation": "Saint Kitts and Nevis Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "163",
+    "association_name": "Saudi Golf Federation",
+    "parent_federation": "Saudi Golf Federation",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "88",
+    "association_name": "Sri Lanka Golf Union",
+    "parent_federation": "Sri Lanka Golf Union",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "272",
+    "association_name": "A+ Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "154",
+    "association_name": "Ainsley's Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "111",
+    "association_name": "Ainsleys Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "19",
+    "association_name": "Alabama Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "49",
+    "association_name": "Alaska / WA Golf GA",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "115",
+    "association_name": "Alex, Flavia & the Dev Team",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "79",
+    "association_name": "Arizona Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "50",
+    "association_name": "Arkansas State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "81",
+    "association_name": "Carolinas Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "22",
+    "association_name": "Central Links Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "106",
+    "association_name": "Chicago District Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "271",
+    "association_name": "Club Billing Report Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "3",
+    "association_name": "Colorado Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "30",
+    "association_name": "Connecticut State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "379",
+    "association_name": "Control Gap 1 Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "380",
+    "association_name": "Control Gap 2 Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "160",
+    "association_name": "Dana's Testing Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "102",
+    "association_name": "Delaware State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "6",
+    "association_name": "Florida State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "56",
+    "association_name": "GAP",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "231",
+    "association_name": "GHIN Mobile Test Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "98",
+    "association_name": "GHIN Test Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "10",
+    "association_name": "Georgia State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "15",
+    "association_name": "Golf Association of Michigan",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "59",
+    "association_name": "Golf PR",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "11",
+    "association_name": "Greater Cincinnati Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "25",
+    "association_name": "Hawaii State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "58",
+    "association_name": "Idaho Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "103",
+    "association_name": "Indiana Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "16",
+    "association_name": "Iowa Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "109",
+    "association_name": "JG Test QA 1577903082",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "112",
+    "association_name": "JG Test QA 1577906170",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "active"
+  },
+  {
+    "association_id": "114",
+    "association_name": "JG Test QA 1577908330",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "232",
+    "association_name": "JNC - OJR Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "233",
+    "association_name": "JNC - OJR Federation",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "273",
+    "association_name": "Japan Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "33",
+    "association_name": "Kentucky Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "84",
+    "association_name": "Louisiana Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "197",
+    "association_name": "MP Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "44",
+    "association_name": "Maine Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "104",
+    "association_name": "Maryland State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "8",
+    "association_name": "Mass Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "60",
+    "association_name": "Metropolitan Amateur Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "1",
+    "association_name": "Metropolitan Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "66",
+    "association_name": "Miami Valley Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "45",
+    "association_name": "Minnesota Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "24",
+    "association_name": "Mississippi Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "41",
+    "association_name": "Missouri Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "105",
+    "association_name": "Montana State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "4",
+    "association_name": "Nebraska Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "32",
+    "association_name": "Nevada Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "230",
+    "association_name": "Neville Test",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "36",
+    "association_name": "New Hampshire Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "2",
+    "association_name": "New Jersey Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "65",
+    "association_name": "New York State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "62",
+    "association_name": "North Dakota Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "53",
+    "association_name": "Northern California Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "34",
+    "association_name": "Northern Nevada Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Archived"
+  },
+  {
+    "association_id": "18",
+    "association_name": "Northern Ohio Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "48",
+    "association_name": "Northern Ohio Golf Association (Toledo District)",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "No",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "67",
+    "association_name": "Ohio Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "12",
+    "association_name": "Oklahoma Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "23",
+    "association_name": "Oregon Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "270",
+    "association_name": "Parq",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Inactive"
+  },
+  {
+    "association_id": "156",
+    "association_name": "QA Prod Test Newsletter Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "235",
+    "association_name": "QA Test Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "155",
+    "association_name": "QA Test Newsletter Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "108",
+    "association_name": "Regional Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "40",
+    "association_name": "Rhode Island Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "52",
+    "association_name": "Rochester District Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "51",
+    "association_name": "South Dakota Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "73",
+    "association_name": "Southern California Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "35",
+    "association_name": "Sun Country Amateur Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "107",
+    "association_name": "TEST Association ",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "27",
+    "association_name": "Tennessee Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "159",
+    "association_name": "Test Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "234",
+    "association_name": "Test Association Alin",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "No",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "161",
+    "association_name": "Test Lisa October 6",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "157",
+    "association_name": "Testing 10/05/2021",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "158",
+    "association_name": "Testing 10/05/2021 - Take 2",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "Yes",
+    "status": "Active"
+  },
+  {
+    "association_id": "57",
+    "association_name": "Texas Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "78",
+    "association_name": "Utah Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "14",
+    "association_name": "Vermont Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "5",
+    "association_name": "Virginia State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "20",
+    "association_name": "Washington Golf",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "37",
+    "association_name": "West Virginia Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "55",
+    "association_name": "Western Pennsylvania Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "101",
+    "association_name": "Wisconsin State Golf Association",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  },
+  {
+    "association_id": "17",
+    "association_name": "Wyoming State / Colorado GA",
+    "parent_federation": "United States Golf Association",
+    "is_aga": "Yes",
+    "is_test": "No",
+    "status": "Active"
+  }
+]

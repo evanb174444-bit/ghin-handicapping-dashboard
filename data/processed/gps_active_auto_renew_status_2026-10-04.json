@@ -1,0 +1,14 @@
+{
+  "source": "data/raw/ghin/gps_active_auto_renew_status_2026-10-04.csv",
+  "retrieved_at": "2026-10-04 17:07:43.983 -0400",
+  "active_flagged_golfers": 100225,
+  "explicitly_on_without_off_label": 111,
+  "explicitly_off_without_on_label": 6235,
+  "conflicting_on_and_off_labels": 0,
+  "no_explicit_on_off_label": 93879,
+  "golfers_with_any_explicit_on_label": 111,
+  "explicitly_on_with_current_dates": 111,
+  "golfers_with_multiple_active_records": 15,
+  "active_subscription_records": 100242,
+  "active_records_missing_golfer_id": 0
+}

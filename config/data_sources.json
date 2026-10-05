@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "modules": {
+    "membership": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/membership.json",
+      "status": "awaiting source"
+    },
+    "acquisition": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/acquisition.json",
+      "status": "awaiting source"
+    },
+    "retention": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/retention.json",
+      "status": "awaiting source"
+    },
+    "recovery": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/recovery.json",
+      "status": "awaiting source"
+    },
+    "scores": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/scores.json",
+      "status": "awaiting source"
+    },
+    "associations": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/associations.json",
+      "status": "awaiting source"
+    },
+    "ghin_trials": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/ghin_trials.json",
+      "status": "awaiting source"
+    },
+    "advanced_gps": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/advanced_gps.json",
+      "status": "awaiting source"
+    },
+    "ghin_challenges": {
+      "sourceOwner": null,
+      "sourcePath": null,
+      "outputPath": "data/processed/ghin_challenges.json",
+      "status": "awaiting source"
+    },
+    "ghin_app": {
+      "sourceOwner": "GA4 and GHIN operational data",
+      "sourcePath": "Manual GA4 exports and certified GHIN operational totals",
+      "outputPath": "data/processed/ghin_app.json",
+      "status": "authoritative data loaded"
+    },
+    "membership_composition": {
+      "sourceOwner": "Production GHIN membership exports",
+      "sourcePath": "Three local Active membership exports, September 21\u201322, 2026",
+      "outputPath": "data/processed/membership_composition.json",
+      "status": "reviewed current composition loaded locally; historical trends unavailable"
+    }
+  }
+}

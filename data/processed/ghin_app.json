@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "module": "ghin_app",
+  "property": {
+    "name": "GHIN Mobile App",
+    "id": "190687937"
+  },
+  "reportingPeriod": {
+    "current": "Q2 2026",
+    "comparison": "Q2 2025"
+  },
+  "quarterly": {
+    "Q2 2025": {
+      "activeUsers": 4548066,
+      "totalSessions": 56873210,
+      "scoresPosted": 20588106,
+      "bannerAdImpressions": 17572313,
+      "scoresByChannel": {
+        "app": 18706860,
+        "web": 1881246
+      },
+      "topPostingAgas": [
+        { "rank": 1, "name": "Florida State GA", "scoresPosted": 3759987 },
+        { "rank": 2, "name": "Carolinas GA", "scoresPosted": 2210371 },
+        { "rank": 3, "name": "Southern California GA", "scoresPosted": 1899767 }
+      ]
+    },
+    "Q2 2026": {
+      "activeUsers": 4619003,
+      "totalSessions": 60618234,
+      "scoresPosted": 21465233,
+      "bannerAdImpressions": 12994785,
+      "scoresByChannel": {
+        "app": 19728256,
+        "web": 1736977
+      },
+      "topPostingAgas": [
+        { "rank": 1, "name": "Florida State GA", "scoresPosted": 3777502 },
+        { "rank": 2, "name": "Carolinas GA", "scoresPosted": 2330065 },
+        { "rank": 3, "name": "Southern California GA", "scoresPosted": 1866704 }
+      ]
+    }
+  },
+  "monthly": [
+    { "month": "2025-04", "activeUsers": 2470084, "totalSessions": 15919519, "bannerAdImpressions": 4495391 },
+    { "month": "2025-05", "activeUsers": 2685504, "totalSessions": 19796047, "bannerAdImpressions": 6414432 },
+    { "month": "2025-06", "activeUsers": 2742106, "totalSessions": 21157644, "bannerAdImpressions": 6662490 },
+    { "month": "2025-07", "activeUsers": 2728153, "totalSessions": 22519649, "bannerAdImpressions": 5950643 },
+    { "month": "2025-08", "activeUsers": 2679507, "totalSessions": 20995250, "bannerAdImpressions": 4668262 },
+    { "month": "2025-09", "activeUsers": 2203370, "totalSessions": 15574502, "bannerAdImpressions": 3159000 },
+    { "month": "2025-10", "activeUsers": 2057795, "totalSessions": 13119185, "bannerAdImpressions": 2468401 },
+    { "month": "2025-11", "activeUsers": 1712050, "totalSessions": 9765708, "bannerAdImpressions": 1830935 },
+    { "month": "2025-12", "activeUsers": 2146126, "totalSessions": 9282942, "bannerAdImpressions": 1871839 },
+    { "month": "2026-01", "activeUsers": 1678384, "totalSessions": 9321379, "bannerAdImpressions": 1918841 },
+    { "month": "2026-02", "activeUsers": 1696207, "totalSessions": 9140915, "bannerAdImpressions": 1698500 },
+    { "month": "2026-03", "activeUsers": 2144333, "totalSessions": 13173811, "bannerAdImpressions": 2766717 },
+    { "month": "2026-04", "activeUsers": 2578360, "totalSessions": 17417488, "bannerAdImpressions": 3851849 },
+    { "month": "2026-05", "activeUsers": 2799058, "totalSessions": 21308872, "bannerAdImpressions": 4555824 },
+    { "month": "2026-06", "activeUsers": 2817445, "totalSessions": 21891874, "bannerAdImpressions": 4587112 }
+  ],
+  "sources": {
+    "activeUsers": "GA4 monthly instant answer export",
+    "totalSessions": "GA4 session_start Event count monthly instant answer export",
+    "bannerAdImpressions": "GA4 Permanent_Sentry_Display Event count monthly Advisor result",
+    "scoresPosted": "GHIN operational data",
+    "topPostingAgas": "GHIN operational data"
+  }
+}

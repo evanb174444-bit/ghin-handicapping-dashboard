@@ -5032,7 +5032,7 @@ main{max-width:none!important;margin:0!important;padding:0!important}
   <div class="header-inner">
     <div>
       <h1>USGA/GC Membership Dashboard</h1>
-      <div class="subtitle">Report Date: September 2, 2026</div>
+      <div class="subtitle">Report Date: October 1, 2026</div>
     </div>
   </div>
 </header>
@@ -5509,7 +5509,7 @@ async function loadGhinTrialsData() {
 }
 
 async function loadRetentionCohortData() {
-  const response = await fetch("./data/retention_cohorts.json");
+  const response = await fetch("./data/retention_cohorts.json?v=20261002");
   if(!response.ok) {
     throw new Error(`Unable to load retention cohort data: ${response.status} ${response.statusText}`);
   }
@@ -5528,7 +5528,7 @@ async function loadRetentionCohortData() {
 }
 
 async function loadRetentionClubRankingsData() {
-  const response = await fetch("./data/retention_club_rankings.json");
+  const response = await fetch("./data/retention_club_rankings.json?v=20261002");
   if(!response.ok) {
     throw new Error(`Unable to load retention club ranking data: ${response.status} ${response.statusText}`);
   }
@@ -5542,7 +5542,7 @@ async function loadRetentionClubRankingsData() {
 }
 
 async function loadRecoveryAnalysisData() {
-  const response = await fetch("./data/recovery_analysis.json");
+  const response = await fetch("./data/recovery_analysis.json?v=20261002");
   if(!response.ok) {
     throw new Error(`Unable to load Recovery Analysis data: ${response.status} ${response.statusText}`);
   }
@@ -5555,7 +5555,7 @@ async function loadRecoveryAnalysisData() {
 }
 
 async function loadSegmentationStatusData() {
-  const response = await fetch("./data/segmentation_status.json");
+  const response = await fetch("./data/segmentation_status.json?v=20261002");
   if(!response.ok) {
     throw new Error(`Unable to load segmentation status data: ${response.status} ${response.statusText}`);
   }
@@ -5569,7 +5569,7 @@ async function loadSegmentationStatusData() {
 }
 
 async function loadSegmentationBreakdownData() {
-  const response = await fetch("./data/segmentation_breakdown.json");
+  const response = await fetch("./data/segmentation_breakdown.json?v=20261002");
   if(!response.ok) {
     throw new Error(`Unable to load segmentation breakdown data: ${response.status} ${response.statusText}`);
   }
@@ -5599,7 +5599,7 @@ const WIDGET_REFS = {};
 let YOY_REF = null;
 
 async function loadMembershipData() {
-  const response = await fetch("./data/membership_monthly.json");
+  const response = await fetch("./data/membership_monthly.json?v=20261002");
   if(!response.ok) {
     throw new Error(`Unable to load membership data: ${response.status} ${response.statusText}`);
   }

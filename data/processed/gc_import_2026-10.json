@@ -1,0 +1,13 @@
+{
+  "source": "/Users/EvanBelfi/Documents/Projects/USGA-GC-Dashboard",
+  "snapshot": "2026-10-01",
+  "activityMonth": "2026-09",
+  "files": {
+    "membership_monthly.json": "14da6af60aced367fe2b9a287fccfae327f8b525081c304f77c227d8b02b6b8d",
+    "retention_cohorts.json": "176750e3efaccd7b61e370b7fde7c2798c4e7c32a8ad6db0ff008e1d91137261",
+    "recovery_analysis.json": "f6e7c9e1525f3fd407fe1bcbe9ae556fb9c3ccd34ae6b620bc061ec0839c78b6",
+    "retention_club_rankings.json": "fec4c5b79f8e30ebf33296126516de2d7d092f041199453ca435d6c0782da4a5",
+    "segmentation_breakdown.json": "ecd756aea49da75dfe20a54820143c02bca45a5b49801215db8d2b92298a742c",
+    "segmentation_status.json": "a7452af379e9d5e392a32d22746708f495a44fac2307305ff5cc21efb79854b0"
+  }
+}

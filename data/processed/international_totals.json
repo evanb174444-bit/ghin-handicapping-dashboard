@@ -1,0 +1,99 @@
+{
+  "sources": [
+    "01_active_standard_2026-09-21.csv.csv",
+    "02_active_junior_2026-09-22.csv.csv",
+    "03_active_unclassified_2026-09-22.csv",
+    "01_active_international_full_2026-09-25.csv.csv"
+  ],
+  "dates": {
+    "aga": "September 21\u201322, 2026",
+    "international": "September 25, 2026",
+    "all": "September 21\u201325, 2026"
+  },
+  "scopes": {
+    "aga": {
+      "all": {
+        "memberships": 3840678,
+        "uniqueGolfers": 3544477,
+        "multiMembershipGolfers": 259820,
+        "additionalMemberships": 296201
+      },
+      "regular": {
+        "memberships": 3427469,
+        "uniqueGolfers": 3152507,
+        "multiMembershipGolfers": 240384,
+        "additionalMemberships": 274962
+      },
+      "junior": {
+        "memberships": 396381,
+        "uniqueGolfers": 382706,
+        "multiMembershipGolfers": 12761,
+        "additionalMemberships": 13675
+      },
+      "unclassified": {
+        "memberships": 16828,
+        "uniqueGolfers": 16742,
+        "multiMembershipGolfers": 84,
+        "additionalMemberships": 86
+      }
+    },
+    "international": {
+      "all": {
+        "memberships": 96261,
+        "uniqueGolfers": 94297,
+        "multiMembershipGolfers": 1873,
+        "additionalMemberships": 1964
+      },
+      "regular": {
+        "memberships": 92873,
+        "uniqueGolfers": 91032,
+        "multiMembershipGolfers": 1761,
+        "additionalMemberships": 1841
+      },
+      "junior": {
+        "memberships": 3109,
+        "uniqueGolfers": 3034,
+        "multiMembershipGolfers": 69,
+        "additionalMemberships": 75
+      },
+      "unclassified": {
+        "memberships": 279,
+        "uniqueGolfers": 279,
+        "multiMembershipGolfers": 0,
+        "additionalMemberships": 0
+      }
+    },
+    "all": {
+      "all": {
+        "memberships": 3936939,
+        "uniqueGolfers": 3637459,
+        "multiMembershipGolfers": 262654,
+        "additionalMemberships": 299480
+      },
+      "regular": {
+        "memberships": 3520342,
+        "uniqueGolfers": 3242303,
+        "multiMembershipGolfers": 243043,
+        "additionalMemberships": 278039
+      },
+      "junior": {
+        "memberships": 399490,
+        "uniqueGolfers": 385718,
+        "multiMembershipGolfers": 12850,
+        "additionalMemberships": 13772
+      },
+      "unclassified": {
+        "memberships": 17107,
+        "uniqueGolfers": 17021,
+        "multiMembershipGolfers": 84,
+        "additionalMemberships": 86
+      }
+    }
+  },
+  "overlap": {
+    "all": 1315,
+    "regular": 1236,
+    "junior": 22,
+    "unclassified": 0
+  }
+}

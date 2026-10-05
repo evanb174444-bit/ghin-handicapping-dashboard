@@ -2,32 +2,32 @@
   "summary": [
     {
       "label": "Golfers Analyzed",
-      "valueDisplay": "807,943",
-      "subDisplay": "September 1, 2026"
+      "valueDisplay": "818,895",
+      "subDisplay": "October 1, 2026"
     },
     {
       "label": "Active Today",
-      "valueDisplay": "537,730",
-      "subDisplay": "September 1, 2026"
+      "valueDisplay": "545,018",
+      "subDisplay": "October 1, 2026"
     },
     {
       "label": "Inactive Today",
-      "valueDisplay": "270,213",
-      "subDisplay": "September 1, 2026"
+      "valueDisplay": "273,877",
+      "subDisplay": "October 1, 2026"
     },
     {
       "label": "Active Beyond 13 Months",
-      "valueDisplay": "69.4%",
+      "valueDisplay": "69.5%",
       "subDisplay": "2022–2024 eligible cohorts"
     },
     {
       "label": "Active Beyond 25 Months",
-      "valueDisplay": "59.6%",
+      "valueDisplay": "59.8%",
       "subDisplay": "2022–2023 eligible cohorts"
     },
     {
       "label": "Active Beyond 37 Months",
-      "valueDisplay": "40.7%",
+      "valueDisplay": "40.9%",
       "subDisplay": "2022 eligible cohort"
     }
   ],
@@ -36,73 +36,73 @@
       "yearDisplay": "2026",
       "activeDisplay": "98.8%",
       "inactiveDisplay": "1.2%",
-      "totalDisplay": "151K"
+      "totalDisplay": "162K"
     },
     {
       "yearDisplay": "2025",
-      "activeDisplay": "78.8%",
-      "inactiveDisplay": "21.2%",
+      "activeDisplay": "77.5%",
+      "inactiveDisplay": "22.5%",
       "totalDisplay": "185K"
     },
     {
       "yearDisplay": "2024",
-      "activeDisplay": "56.7%",
-      "inactiveDisplay": "43.3%",
+      "activeDisplay": "56.2%",
+      "inactiveDisplay": "43.8%",
       "totalDisplay": "171K"
     },
     {
       "yearDisplay": "2023",
-      "activeDisplay": "55.9%",
-      "inactiveDisplay": "44.1%",
+      "activeDisplay": "55.7%",
+      "inactiveDisplay": "44.3%",
       "totalDisplay": "197K"
     },
     {
       "yearDisplay": "2022",
-      "activeDisplay": "34.3%",
-      "inactiveDisplay": "65.7%",
+      "activeDisplay": "34.2%",
+      "inactiveDisplay": "65.8%",
       "totalDisplay": "104K"
     }
   ],
   "cohorts": [
     {
       "yearDisplay": "2022",
-      "createdDisplay": "103,860",
-      "activeTodayDisplay": "35,589",
-      "activeRateDisplay": "34.3%",
+      "createdDisplay": "103,855",
+      "activeTodayDisplay": "35,527",
+      "activeRateDisplay": "34.2%",
       "comparisonHeader": "vs Prior",
       "color": "#14395f",
       "milestones": [
         {
           "label": "Created",
-          "golfersDisplay": "103,860",
+          "golfersDisplay": "103,855",
           "percentDisplay": "100.0%",
           "deltaDisplay": "—",
           "deltaClass": "neutral"
         },
         {
           "label": "Active Beyond 13 Months",
-          "golfersDisplay": "59,261",
-          "percentDisplay": "57.1%",
+          "golfersDisplay": "59,387",
+          "percentDisplay": "57.2%",
           "deltaDisplay": "—",
           "deltaClass": "neutral"
         },
         {
           "label": "Active Beyond 25 Months",
-          "golfersDisplay": "50,884",
-          "percentDisplay": "49.0%",
+          "golfersDisplay": "51,032",
+          "percentDisplay": "49.1%",
           "deltaDisplay": "—",
           "deltaClass": "neutral"
         },
         {
           "label": "Active Beyond 37 Months",
-          "golfersDisplay": "42,272",
-          "percentDisplay": "40.7%",
+          "golfersDisplay": "42,476",
+          "percentDisplay": "40.9%",
           "deltaDisplay": "—",
           "deltaClass": "neutral"
         }
       ],
       "survivalCurve": {
-        "points": "70,30 366.7,161.7 663.3,186.4 960,211.9",
+        "points": "70,30 366.7,161.3 663.3,186 960,211.2",
         "dots": [
           {
             "cx": "70",
@@ -110,31 +110,31 @@
           },
           {
             "cx": "366.7",
-            "cy": "161.7"
+            "cy": "161.3"
           },
           {
             "cx": "663.3",
-            "cy": "186.4"
+            "cy": "186"
           },
           {
             "cx": "960",
-            "cy": "211.9"
+            "cy": "211.2"
           }
         ],
         "valueLabels": [
           {
             "x": "366.7",
-            "y": "147.7",
+            "y": "147.3",
             "milestoneIndex": 1
           },
           {
             "x": "663.3",
-            "y": "172.4",
+            "y": "172",
             "milestoneIndex": 2
           },
           {
             "x": "960",
-            "y": "197.9",
+            "y": "197.2",
             "milestoneIndex": 3
           }
         ]
@@ -142,30 +142,30 @@
     },
     {
       "yearDisplay": "2023",
-      "createdDisplay": "197,392",
-      "activeTodayDisplay": "110,326",
-      "activeRateDisplay": "55.9%",
+      "createdDisplay": "197,387",
+      "activeTodayDisplay": "109,996",
+      "activeRateDisplay": "55.7%",
       "comparisonHeader": "vs 2022",
       "color": "#d85a32",
       "milestones": [
         {
           "label": "Created",
-          "golfersDisplay": "197,392",
+          "golfersDisplay": "197,387",
           "percentDisplay": "100.0%",
           "deltaDisplay": "—",
           "deltaClass": "neutral"
         },
         {
           "label": "Active Beyond 13 Months",
-          "golfersDisplay": "151,641",
-          "percentDisplay": "76.8%",
-          "deltaDisplay": "+19.8 pts",
+          "golfersDisplay": "151,783",
+          "percentDisplay": "76.9%",
+          "deltaDisplay": "+19.7 pts",
           "deltaClass": "positive"
         },
         {
           "label": "Active Beyond 25 Months",
-          "golfersDisplay": "128,736",
-          "percentDisplay": "65.2%",
+          "golfersDisplay": "129,009",
+          "percentDisplay": "65.4%",
           "deltaDisplay": "+16.2 pts",
           "deltaClass": "positive"
         },
@@ -178,7 +178,7 @@
         }
       ],
       "survivalCurve": {
-        "points": "70,30 366.7,101.1 663.3,136.7",
+        "points": "70,30 366.7,100.9 663.3,136.2",
         "dots": [
           {
             "cx": "70",
@@ -186,22 +186,22 @@
           },
           {
             "cx": "366.7",
-            "cy": "101.1"
+            "cy": "100.9"
           },
           {
             "cx": "663.3",
-            "cy": "136.7"
+            "cy": "136.2"
           }
         ],
         "valueLabels": [
           {
             "x": "366.7",
-            "y": "87.1",
+            "y": "86.9",
             "milestoneIndex": 1
           },
           {
             "x": "663.3",
-            "y": "122.7",
+            "y": "122.2",
             "milestoneIndex": 2
           }
         ]
@@ -209,23 +209,23 @@
     },
     {
       "yearDisplay": "2024",
-      "createdDisplay": "170,850",
-      "activeTodayDisplay": "96,793",
-      "activeRateDisplay": "56.7%",
+      "createdDisplay": "170,842",
+      "activeTodayDisplay": "96,091",
+      "activeRateDisplay": "56.2%",
       "comparisonHeader": "vs 2023",
       "color": "#188552",
       "milestones": [
         {
           "label": "Created",
-          "golfersDisplay": "170,850",
+          "golfersDisplay": "170,842",
           "percentDisplay": "100.0%",
           "deltaDisplay": "—",
           "deltaClass": "neutral"
         },
         {
           "label": "Active Beyond 13 Months",
-          "golfersDisplay": "116,655",
-          "percentDisplay": "68.3%",
+          "golfersDisplay": "116,932",
+          "percentDisplay": "68.4%",
           "deltaDisplay": "-8.5 pts",
           "deltaClass": "negative"
         },
@@ -245,7 +245,7 @@
         }
       ],
       "survivalCurve": {
-        "points": "70,30 366.7,127.3",
+        "points": "70,30 366.7,126.8",
         "dots": [
           {
             "cx": "70",
@@ -253,13 +253,13 @@
           },
           {
             "cx": "366.7",
-            "cy": "127.3"
+            "cy": "126.8"
           }
         ],
         "valueLabels": [
           {
             "x": "366.7",
-            "y": "113.3",
+            "y": "112.8",
             "milestoneIndex": 1
           }
         ]
