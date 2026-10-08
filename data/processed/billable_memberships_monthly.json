@@ -1,0 +1,78 @@
+{
+  "source": "Matthew Cogliandro \u00b7 Golfer Subscription Tracker \u00b7 user-provided screenshot October 5, 2026",
+  "definition": "Each active golfer counted once per association; memberships in different associations count separately.",
+  "scope": "All Associations / All Members",
+  "dateNote": "Months as labeled in source; exact snapshot day not confirmed.",
+  "monthly": {
+    "2022": [
+      3027944,
+      3027944,
+      2976029,
+      2996462,
+      3018442,
+      3134090,
+      3088747,
+      3128325,
+      3159137,
+      3176348,
+      3157955,
+      3167398
+    ],
+    "2023": [
+      3200184,
+      3200184,
+      3159518,
+      3175024,
+      3193342,
+      3183039,
+      3157484,
+      3197217,
+      3225618,
+      3242598,
+      3256333,
+      3265906
+    ],
+    "2024": [
+      3265906,
+      3265906,
+      3221550,
+      3234527,
+      3259109,
+      3371564,
+      3354748,
+      3392330,
+      3421438,
+      3441763,
+      3456460,
+      3463963
+    ],
+    "2025": [
+      3463963,
+      3463963,
+      3428231,
+      3441695,
+      3473809,
+      3610722,
+      3607784,
+      3645945,
+      3682190,
+      3705870,
+      3721295,
+      3730304
+    ],
+    "2026": [
+      3730304,
+      3730304,
+      3706308,
+      3719765,
+      3721780,
+      3771576,
+      3759241,
+      3791721,
+      3814564,
+      null,
+      null,
+      null
+    ]
+  }
+}

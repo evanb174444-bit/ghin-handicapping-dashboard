@@ -1,0 +1,484 @@
+{
+  "snapshots": [
+    {
+      "date": "2024-10-01",
+      "sourceDate": "2024-09-16",
+      "comparisonDateAuthorizedByUser": true,
+      "source": "USGA GC Members 09162024.xlsx",
+      "totalActive": 345458,
+      "associations": [
+        {
+          "name": "Alabama Golf Association",
+          "active": 3929
+        },
+        {
+          "name": "Alaska Golf Association",
+          "active": 359
+        },
+        {
+          "name": "Arizona Golf Association",
+          "active": 8862
+        },
+        {
+          "name": "Arkansas State Golf Association",
+          "active": 1161
+        },
+        {
+          "name": "Carolinas Golf Association",
+          "active": 20552
+        },
+        {
+          "name": "Central Links Golf",
+          "active": 3216
+        },
+        {
+          "name": "Chicago District Golf Association",
+          "active": 12198
+        },
+        {
+          "name": "Colorado Golf Association",
+          "active": 10741
+        },
+        {
+          "name": "Connecticut State Golf Association",
+          "active": 2889
+        },
+        {
+          "name": "Florida State Golf Association",
+          "active": 25640
+        },
+        {
+          "name": "GAP",
+          "active": 18561
+        },
+        {
+          "name": "Georgia State Golf Association",
+          "active": 20812
+        },
+        {
+          "name": "Golf Association of Michigan",
+          "active": 10895
+        },
+        {
+          "name": "Golf PR",
+          "active": 206
+        },
+        {
+          "name": "Greater Cincinnati Golf Association",
+          "active": 3049
+        },
+        {
+          "name": "Hawaii State Golf Association",
+          "active": 1204
+        },
+        {
+          "name": "Idaho Golf Association",
+          "active": 2585
+        },
+        {
+          "name": "Indiana Golf Association",
+          "active": 4246
+        },
+        {
+          "name": "Iowa Golf Association",
+          "active": 2588
+        },
+        {
+          "name": "Kentucky Golf Association",
+          "active": 2860
+        },
+        {
+          "name": "Louisiana Golf Association",
+          "active": 2726
+        },
+        {
+          "name": "Maine Golf",
+          "active": 2076
+        },
+        {
+          "name": "Maryland State Golf Association",
+          "active": 8133
+        },
+        {
+          "name": "Mass Golf",
+          "active": 15189
+        },
+        {
+          "name": "Metropolitan Amateur Golf Association",
+          "active": 4359
+        },
+        {
+          "name": "Metropolitan Golf Association",
+          "active": 18404
+        },
+        {
+          "name": "Miami Valley Golf",
+          "active": 607
+        },
+        {
+          "name": "Minnesota Golf Association",
+          "active": 7190
+        },
+        {
+          "name": "Mississippi Golf Association",
+          "active": 991
+        },
+        {
+          "name": "Missouri Golf Association",
+          "active": 1097
+        },
+        {
+          "name": "Montana State Golf Association",
+          "active": 1725
+        },
+        {
+          "name": "Nebraska Golf Association",
+          "active": 2821
+        },
+        {
+          "name": "New Hampshire Golf Association",
+          "active": 2540
+        },
+        {
+          "name": "New Jersey State Golf Association",
+          "active": 5675
+        },
+        {
+          "name": "New York State Golf Association",
+          "active": 3493
+        },
+        {
+          "name": "North Dakota Golf Association",
+          "active": 1944
+        },
+        {
+          "name": "Northern California Golf Association",
+          "active": 6881
+        },
+        {
+          "name": "Northern Nevada Golf Association",
+          "active": 747
+        },
+        {
+          "name": "Northern Ohio Golf Association",
+          "active": 4903
+        },
+        {
+          "name": "Ohio Golf Association",
+          "active": 4011
+        },
+        {
+          "name": "Oklahoma Golf Association",
+          "active": 1943
+        },
+        {
+          "name": "Oregon Golf Association",
+          "active": 4064
+        },
+        {
+          "name": "Rhode Island Golf Association",
+          "active": 1520
+        },
+        {
+          "name": "Rochester District Golf Association",
+          "active": 1201
+        },
+        {
+          "name": "South Dakota Golf Association",
+          "active": 869
+        },
+        {
+          "name": "Southern California Golf Association",
+          "active": 12061
+        },
+        {
+          "name": "Southern Nevada Golf Association",
+          "active": 1677
+        },
+        {
+          "name": "Sun Country Amateur Golf Association",
+          "active": 1371
+        },
+        {
+          "name": "Tennessee Golf Association",
+          "active": 6872
+        },
+        {
+          "name": "Texas Golf Association",
+          "active": 24905
+        },
+        {
+          "name": "Utah Golf Association",
+          "active": 4992
+        },
+        {
+          "name": "Vermont Golf Association",
+          "active": 466
+        },
+        {
+          "name": "Virginia State Golf Association",
+          "active": 11819
+        },
+        {
+          "name": "Washington Golf",
+          "active": 8168
+        },
+        {
+          "name": "West Virginia Golf Association",
+          "active": 619
+        },
+        {
+          "name": "Western Pennsylvania Golf Association",
+          "active": 5446
+        },
+        {
+          "name": "Wisconsin State Golf Association",
+          "active": 4739
+        },
+        {
+          "name": "Wyoming State / Colorado GA",
+          "active": 661
+        }
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "source": "GC Golfer Clubs 10012025.xlsx",
+      "totalActive": 434817,
+      "associations": [
+        {
+          "name": "Alabama Golf Association",
+          "active": 5027
+        },
+        {
+          "name": "Alaska Golf Association",
+          "active": 491
+        },
+        {
+          "name": "Arizona Golf Association",
+          "active": 11374
+        },
+        {
+          "name": "Arkansas State Golf Association",
+          "active": 1486
+        },
+        {
+          "name": "Carolinas Golf Association",
+          "active": 25389
+        },
+        {
+          "name": "Central Links Golf",
+          "active": 4091
+        },
+        {
+          "name": "Chicago District Golf Association",
+          "active": 14928
+        },
+        {
+          "name": "Colorado Golf Association",
+          "active": 13168
+        },
+        {
+          "name": "Connecticut State Golf Association",
+          "active": 3662
+        },
+        {
+          "name": "Florida State Golf Association",
+          "active": 33161
+        },
+        {
+          "name": "GAP",
+          "active": 23138
+        },
+        {
+          "name": "Georgia State Golf Association",
+          "active": 24577
+        },
+        {
+          "name": "Golf Association of Michigan",
+          "active": 13298
+        },
+        {
+          "name": "Golf PR",
+          "active": 251
+        },
+        {
+          "name": "Greater Cincinnati Golf Association",
+          "active": 3596
+        },
+        {
+          "name": "Hawaii State Golf Association",
+          "active": 1488
+        },
+        {
+          "name": "Idaho Golf Association",
+          "active": 3131
+        },
+        {
+          "name": "Indiana Golf Association",
+          "active": 5320
+        },
+        {
+          "name": "Iowa Golf Association",
+          "active": 3291
+        },
+        {
+          "name": "Kentucky Golf Association",
+          "active": 3470
+        },
+        {
+          "name": "Louisiana Golf Association",
+          "active": 3590
+        },
+        {
+          "name": "Maine Golf",
+          "active": 2501
+        },
+        {
+          "name": "Maryland State Golf Association",
+          "active": 9706
+        },
+        {
+          "name": "Mass Golf",
+          "active": 18562
+        },
+        {
+          "name": "Metropolitan Amateur Golf Association",
+          "active": 5023
+        },
+        {
+          "name": "Metropolitan Golf Association",
+          "active": 21408
+        },
+        {
+          "name": "Miami Valley Golf",
+          "active": 747
+        },
+        {
+          "name": "Minnesota Golf Association",
+          "active": 8405
+        },
+        {
+          "name": "Mississippi Golf Association",
+          "active": 1298
+        },
+        {
+          "name": "Missouri Golf Association",
+          "active": 1398
+        },
+        {
+          "name": "Montana State Golf Association",
+          "active": 2134
+        },
+        {
+          "name": "Nebraska Golf Association",
+          "active": 3302
+        },
+        {
+          "name": "New Hampshire Golf",
+          "active": 3215
+        },
+        {
+          "name": "New Jersey Golf",
+          "active": 6822
+        },
+        {
+          "name": "New York State Golf Association",
+          "active": 4323
+        },
+        {
+          "name": "North Dakota Golf Association",
+          "active": 2385
+        },
+        {
+          "name": "Northern California Golf Association",
+          "active": 8762
+        },
+        {
+          "name": "Northern Nevada Golf Association",
+          "active": 1090
+        },
+        {
+          "name": "Northern Ohio Golf Association",
+          "active": 7421
+        },
+        {
+          "name": "Ohio Golf Association",
+          "active": 4809
+        },
+        {
+          "name": "Oklahoma Golf Association",
+          "active": 2445
+        },
+        {
+          "name": "Oregon Golf Association",
+          "active": 4756
+        },
+        {
+          "name": "Rhode Island Golf Association",
+          "active": 1980
+        },
+        {
+          "name": "Rochester District Golf Association",
+          "active": 1303
+        },
+        {
+          "name": "South Dakota Golf Association",
+          "active": 1090
+        },
+        {
+          "name": "Southern California Golf Association",
+          "active": 15645
+        },
+        {
+          "name": "Southern Nevada Golf Association",
+          "active": 2207
+        },
+        {
+          "name": "Sun Country Amateur Golf Association",
+          "active": 1759
+        },
+        {
+          "name": "Tennessee Golf Association",
+          "active": 8836
+        },
+        {
+          "name": "Texas Golf Association",
+          "active": 35546
+        },
+        {
+          "name": "Utah Golf Association",
+          "active": 6323
+        },
+        {
+          "name": "Vermont Golf Association",
+          "active": 500
+        },
+        {
+          "name": "Virginia State Golf Association",
+          "active": 15514
+        },
+        {
+          "name": "Washington Golf",
+          "active": 10162
+        },
+        {
+          "name": "West Virginia Golf Association",
+          "active": 777
+        },
+        {
+          "name": "Western Pennsylvania Golf Association",
+          "active": 7540
+        },
+        {
+          "name": "Wisconsin State Golf Association",
+          "active": 6317
+        },
+        {
+          "name": "Wyoming State / Colorado GA",
+          "active": 879
+        }
+      ]
+    }
+  ]
+}
