@@ -1,5 +1,7 @@
 # Handicapping and GHIN Dashboard — Real Data Intake
 
+Start with the [project knowledge base](docs/KNOWLEDGE_BASE.md) for the October 13 definitions, acquisition-query correction, source status, and database handoff. The unfiltered 508,625 result is diagnostic only, not a validated acquisition headline.
+
 ## Reporting rules
 
 ### Approved membership counting rules

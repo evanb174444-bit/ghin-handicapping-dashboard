@@ -1,5 +1,7 @@
 # Dashboard Data Architecture
 
+Read the [project knowledge base](KNOWLEDGE_BASE.md) and [approved reporting rules](../REAL_DATA_INTAKE.md) before preparing or refreshing a module.
+
 ## Separation of responsibilities
 
 ### Raw source data

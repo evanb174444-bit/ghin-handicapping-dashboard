@@ -1,0 +1,371 @@
+{
+  "source": "membership_refresh_2026-10-13.csv.csv",
+  "extractDate": "2026-10-13",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "latestYear": 2026,
+  "latestMonth": 8,
+  "history": {
+    "2022": [
+      {
+        "total": 4,
+        "newGHIN": 2,
+        "existingGHIN": 2,
+        "unknown": 0
+      },
+      {
+        "total": 2387,
+        "newGHIN": 1977,
+        "existingGHIN": 410,
+        "unknown": 0
+      },
+      {
+        "total": 7842,
+        "newGHIN": 6523,
+        "existingGHIN": 1319,
+        "unknown": 0
+      },
+      {
+        "total": 13364,
+        "newGHIN": 11224,
+        "existingGHIN": 2140,
+        "unknown": 0
+      },
+      {
+        "total": 15181,
+        "newGHIN": 13156,
+        "existingGHIN": 2025,
+        "unknown": 0
+      },
+      {
+        "total": 19305,
+        "newGHIN": 17064,
+        "existingGHIN": 2241,
+        "unknown": 0
+      },
+      {
+        "total": 15118,
+        "newGHIN": 13469,
+        "existingGHIN": 1649,
+        "unknown": 0
+      },
+      {
+        "total": 12048,
+        "newGHIN": 10797,
+        "existingGHIN": 1251,
+        "unknown": 0
+      },
+      {
+        "total": 6986,
+        "newGHIN": 6226,
+        "existingGHIN": 760,
+        "unknown": 0
+      },
+      {
+        "total": 4967,
+        "newGHIN": 4373,
+        "existingGHIN": 594,
+        "unknown": 0
+      },
+      {
+        "total": 3083,
+        "newGHIN": 2677,
+        "existingGHIN": 406,
+        "unknown": 0
+      },
+      {
+        "total": 3563,
+        "newGHIN": 2411,
+        "existingGHIN": 1152,
+        "unknown": 0
+      }
+    ],
+    "2023": [
+      {
+        "total": 19400,
+        "newGHIN": 4698,
+        "existingGHIN": 14702,
+        "unknown": 0
+      },
+      {
+        "total": 15171,
+        "newGHIN": 6245,
+        "existingGHIN": 8926,
+        "unknown": 0
+      },
+      {
+        "total": 19981,
+        "newGHIN": 10297,
+        "existingGHIN": 9684,
+        "unknown": 0
+      },
+      {
+        "total": 29973,
+        "newGHIN": 17477,
+        "existingGHIN": 12496,
+        "unknown": 0
+      },
+      {
+        "total": 25584,
+        "newGHIN": 18311,
+        "existingGHIN": 7273,
+        "unknown": 0
+      },
+      {
+        "total": 25975,
+        "newGHIN": 20144,
+        "existingGHIN": 5831,
+        "unknown": 0
+      },
+      {
+        "total": 21738,
+        "newGHIN": 17796,
+        "existingGHIN": 3942,
+        "unknown": 0
+      },
+      {
+        "total": 15695,
+        "newGHIN": 12918,
+        "existingGHIN": 2777,
+        "unknown": 0
+      },
+      {
+        "total": 9303,
+        "newGHIN": 7708,
+        "existingGHIN": 1595,
+        "unknown": 0
+      },
+      {
+        "total": 6669,
+        "newGHIN": 5275,
+        "existingGHIN": 1394,
+        "unknown": 0
+      },
+      {
+        "total": 4270,
+        "newGHIN": 3599,
+        "existingGHIN": 671,
+        "unknown": 0
+      },
+      {
+        "total": 3577,
+        "newGHIN": 2815,
+        "existingGHIN": 762,
+        "unknown": 0
+      }
+    ],
+    "2024": [
+      {
+        "total": 6909,
+        "newGHIN": 4853,
+        "existingGHIN": 2056,
+        "unknown": 0
+      },
+      {
+        "total": 9567,
+        "newGHIN": 7330,
+        "existingGHIN": 2237,
+        "unknown": 0
+      },
+      {
+        "total": 14587,
+        "newGHIN": 11446,
+        "existingGHIN": 3141,
+        "unknown": 0
+      },
+      {
+        "total": 22134,
+        "newGHIN": 16823,
+        "existingGHIN": 5311,
+        "unknown": 0
+      },
+      {
+        "total": 22276,
+        "newGHIN": 17275,
+        "existingGHIN": 5001,
+        "unknown": 0
+      },
+      {
+        "total": 26442,
+        "newGHIN": 21446,
+        "existingGHIN": 4996,
+        "unknown": 0
+      },
+      {
+        "total": 22374,
+        "newGHIN": 18912,
+        "existingGHIN": 3462,
+        "unknown": 0
+      },
+      {
+        "total": 17558,
+        "newGHIN": 15074,
+        "existingGHIN": 2484,
+        "unknown": 0
+      },
+      {
+        "total": 12331,
+        "newGHIN": 10611,
+        "existingGHIN": 1720,
+        "unknown": 0
+      },
+      {
+        "total": 7540,
+        "newGHIN": 6471,
+        "existingGHIN": 1069,
+        "unknown": 0
+      },
+      {
+        "total": 4702,
+        "newGHIN": 3897,
+        "existingGHIN": 805,
+        "unknown": 0
+      },
+      {
+        "total": 4390,
+        "newGHIN": 3471,
+        "existingGHIN": 919,
+        "unknown": 0
+      }
+    ],
+    "2025": [
+      {
+        "total": 6847,
+        "newGHIN": 4604,
+        "existingGHIN": 2243,
+        "unknown": 0
+      },
+      {
+        "total": 7829,
+        "newGHIN": 5638,
+        "existingGHIN": 2191,
+        "unknown": 0
+      },
+      {
+        "total": 15810,
+        "newGHIN": 11559,
+        "existingGHIN": 4251,
+        "unknown": 0
+      },
+      {
+        "total": 20913,
+        "newGHIN": 16574,
+        "existingGHIN": 4339,
+        "unknown": 0
+      },
+      {
+        "total": 25501,
+        "newGHIN": 20320,
+        "existingGHIN": 5181,
+        "unknown": 0
+      },
+      {
+        "total": 30710,
+        "newGHIN": 25577,
+        "existingGHIN": 5133,
+        "unknown": 0
+      },
+      {
+        "total": 25041,
+        "newGHIN": 21210,
+        "existingGHIN": 3831,
+        "unknown": 0
+      },
+      {
+        "total": 19972,
+        "newGHIN": 17041,
+        "existingGHIN": 2931,
+        "unknown": 0
+      },
+      {
+        "total": 12536,
+        "newGHIN": 10657,
+        "existingGHIN": 1879,
+        "unknown": 0
+      },
+      {
+        "total": 8284,
+        "newGHIN": 7101,
+        "existingGHIN": 1183,
+        "unknown": 0
+      },
+      {
+        "total": 5861,
+        "newGHIN": 4868,
+        "existingGHIN": 993,
+        "unknown": 0
+      },
+      {
+        "total": 5177,
+        "newGHIN": 4063,
+        "existingGHIN": 1114,
+        "unknown": 0
+      }
+    ],
+    "2026": [
+      {
+        "total": 8434,
+        "newGHIN": 5785,
+        "existingGHIN": 2649,
+        "unknown": 0
+      },
+      {
+        "total": 8477,
+        "newGHIN": 6154,
+        "existingGHIN": 2323,
+        "unknown": 0
+      },
+      {
+        "total": 15043,
+        "newGHIN": 11761,
+        "existingGHIN": 3282,
+        "unknown": 0
+      },
+      {
+        "total": 25540,
+        "newGHIN": 19771,
+        "existingGHIN": 5769,
+        "unknown": 0
+      },
+      {
+        "total": 26077,
+        "newGHIN": 21169,
+        "existingGHIN": 4908,
+        "unknown": 0
+      },
+      {
+        "total": 26244,
+        "newGHIN": 21678,
+        "existingGHIN": 4566,
+        "unknown": 0
+      },
+      {
+        "total": 21810,
+        "newGHIN": 18383,
+        "existingGHIN": 3427,
+        "unknown": 0
+      },
+      {
+        "total": 18898,
+        "newGHIN": 16188,
+        "existingGHIN": 2710,
+        "unknown": 0
+      },
+      {
+        "total": 11578,
+        "newGHIN": 9814,
+        "existingGHIN": 1763,
+        "unknown": 1
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  "methodology": "Distinct GC joiners by GC membership creation calendar date, all statuses. Earliest qualifying GC membership date per golfer within year. New to GHIN: golfer creation on same date. Existing GHIN: golfer creation before membership date. Later, missing or conflicting dates are Unknown. Current October 13 extract and established GC club list; reconstructed history can differ from original monthly snapshots."
+}

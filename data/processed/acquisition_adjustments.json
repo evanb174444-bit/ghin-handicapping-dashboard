@@ -1,0 +1,14 @@
+[
+  {
+    "year": 2020,
+    "month": 0,
+    "subtract": 196332,
+    "scopes": [
+      "aga",
+      "all"
+    ],
+    "population": "all",
+    "source": "Evan-approved reconciliation to Steve\u2019s 2020 annual total of 481,969",
+    "method": "Subtract annual discrepancy from January 2020. Manual aggregate correction; no individual records reclassified."
+  }
+]

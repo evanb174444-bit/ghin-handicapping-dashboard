@@ -1,0 +1,12 @@
+{
+  "aga": {
+    "all": {
+      "2020": {
+        "value": 481969,
+        "source": "Steve\u2019s annual count, selected by Evan",
+        "confirmedDate": "2026-10-13",
+        "reason": "January 2020 database creation spike likely reflects bulk administrative imports. Monthly allocation unavailable."
+      }
+    }
+  }
+}
