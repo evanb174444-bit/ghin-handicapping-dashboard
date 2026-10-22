@@ -23,6 +23,7 @@ css='''\n/* SCORE EXPLORER CONTROLS */
 '''
 if '/* SCORE EXPLORER CONTROLS */' not in h:h=h.replace('</style>',css+'\n</style>',1)
 sort_css='''/* SCORE EXPLORER SORT */
+.score-participation-explorer .nh-table thead th{font-size:inherit;}
 .score-participation-explorer [data-se-sort]{border:0;background:transparent;color:inherit;font:inherit;font-weight:700;padding:6px 0;cursor:pointer;text-align:inherit;}
 .score-participation-explorer [data-se-sort] span{margin-left:4px;color:#537fa6;}
 .score-participation-explorer [data-se-sort]:hover{color:#123b66;text-decoration:underline;}
