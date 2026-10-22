@@ -355,3 +355,17 @@
 @media(max-width:600px){#membershipPopulationMount:has(.membership-scope-control){flex-wrap:wrap;justify-content:center;border-radius:18px;row-gap:6px;max-width:100%}#membershipPopulationMount .membership-scope-control{border-right:0;margin:0;padding:0 5px}}
 
 .membership-charts-nav{display:flex;flex-wrap:wrap;gap:6px;width:fit-content;padding:6px;margin:0 0 20px;background:white;border:1px solid #cddbeb;border-radius:14px}.membership-charts-nav button{border:0;border-radius:9px;background:#f4f7fa;color:#34445a;padding:12px 20px;font-size:13px;font-weight:700;cursor:pointer}.membership-charts-nav button.active{background:#193f66;color:white}.membership-charts-nav button:focus-visible{outline:2px solid #428bca;outline-offset:2px}
+
+/* Membership Explorer measure selector */
+.membership-explorer .nh-results-toolbar{align-items:flex-start;gap:20px;}
+.membership-explorer .nh-results-toolbar>label{min-height:44px;}
+.membership-explorer .me-count-controls{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+.membership-explorer .me-count-control-row{display:flex;align-items:center;gap:12px;}
+.membership-explorer .me-count-label{font-size:13px;font-weight:700;color:#52677e;white-space:nowrap;}
+.membership-explorer .me-measure-toggle{display:inline-flex;gap:3px;padding:4px;border:1px solid #d8e2ee;border-radius:24px;background:#edf2f8;}
+.membership-explorer .me-measure-toggle button{border:0;border-radius:19px;padding:9px 17px;background:transparent;color:#52677e;font:inherit;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s;}
+.membership-explorer .me-measure-toggle button[aria-pressed="true"]{background:#173d66;color:#fff;box-shadow:0 2px 5px #173d6626;}
+.membership-explorer .me-measure-toggle button[aria-pressed="false"]:hover{background:#e1e9f3;color:#173d66;}
+.membership-explorer .me-measure-toggle button:focus-visible{outline:2px solid #337ab7;outline-offset:2px;}
+.membership-explorer .me-result-caption{font-size:12px;color:#63758b;}
+@media(max-width:650px){.membership-explorer .me-count-controls{margin-left:0;align-items:flex-start;}.membership-explorer .me-count-control-row{gap:9px;}.membership-explorer .me-measure-toggle button{padding:9px 12px;}}

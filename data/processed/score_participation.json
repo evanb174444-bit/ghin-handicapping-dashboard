@@ -1,0 +1,89 @@
+{
+  "extractedAt": "2026-10-21 18:18:26.947 -0400",
+  "periodStart": "2026-01-01",
+  "periodEnd": "2026-10-21 18:18:26.947 -0400",
+  "scope": "all",
+  "source": "score_posting_counts_by_type_2026.csv",
+  "populations": {
+    "all": {
+      "totalGolfers": 3658374,
+      "buckets": [
+        {
+          "label": "0 scores",
+          "count": 823985,
+          "percentage": 22.52
+        },
+        {
+          "label": "1\u20137 scores",
+          "count": 616857,
+          "percentage": 16.86
+        },
+        {
+          "label": "8+ scores",
+          "count": 2217532,
+          "percentage": 60.62
+        }
+      ]
+    },
+    "regular": {
+      "totalGolfers": 3253608,
+      "buckets": [
+        {
+          "label": "0 scores",
+          "count": 517035,
+          "percentage": 15.89
+        },
+        {
+          "label": "1\u20137 scores",
+          "count": 579291,
+          "percentage": 17.8
+        },
+        {
+          "label": "8+ scores",
+          "count": 2157282,
+          "percentage": 66.3
+        }
+      ]
+    },
+    "junior": {
+      "totalGolfers": 395655,
+      "buckets": [
+        {
+          "label": "0 scores",
+          "count": 304846,
+          "percentage": 77.05
+        },
+        {
+          "label": "1\u20137 scores",
+          "count": 36262,
+          "percentage": 9.17
+        },
+        {
+          "label": "8+ scores",
+          "count": 54547,
+          "percentage": 13.79
+        }
+      ]
+    },
+    "unclassified": {
+      "totalGolfers": 16712,
+      "buckets": [
+        {
+          "label": "0 scores",
+          "count": 2912,
+          "percentage": 17.42
+        },
+        {
+          "label": "1\u20137 scores",
+          "count": 2315,
+          "percentage": 13.85
+        },
+        {
+          "label": "8+ scores",
+          "count": 11485,
+          "percentage": 68.72
+        }
+      ]
+    }
+  }
+}

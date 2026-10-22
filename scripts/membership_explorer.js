@@ -1,4 +1,4 @@
-let membershipExplorerFilters={},membershipExplorerGroup='membershipType';
+let membershipExplorerFilters={},membershipExplorerGroup='membershipType',membershipExplorerMeasure='memberships';
 function membershipFilterValues(key){const value=membershipExplorerFilters[key];return value==null?[]:Array.isArray(value)?value:[value];}
 const membershipExplorerDimensions={membershipType:'Membership Type',association:'Association',access:'Public / Private',clubGroup:'Club Group',clubType:'Club Type',gender:'Gender',age:'Age',handicap:'Handicap Index',club:'Club'};
 function membershipExplorerLabel(key,value){
@@ -21,7 +21,7 @@ function membershipExplorerOptions(){
  return membershipExplorerOptionsCache=Object.fromEntries(Object.entries(sets).map(([key,set])=>[key,[...set].map(value=>({value,label:key==='association'?associationNames.get(value):membershipExplorerLabel(key,value)})).sort((a,b)=>a.label.localeCompare(b.label))]));
 }
 function membershipExplorerResult(){
- const data=MEMBERSHIP_INTERSECTIONS,groups=new Map(),matched=new Uint8Array(data.cells.length);
+ const data=MEMBERSHIP_INTERSECTIONS,groups=new Map(),matched=new Uint8Array(data.cells.length),cellGroups=new Array(data.cells.length),nhCells=new Uint8Array(data.cells.length);
  const population=membershipPopulation==='all'?null:membershipPopulation==='regular'?'Regular':'Junior';
  let total=0,nh=0;
  const filters=Object.keys(membershipExplorerFilters).map(key=>[key,membershipFilterValues(key)]);
@@ -31,21 +31,29 @@ function membershipExplorerResult(){
   if(filters.some(([key,choices])=>!choices.some(value=>key==='age'&&value==='Known age'?values.age!=='Unknown / invalid':values[key]===value)))return;
   matched[i]=1;const n=row[5],noIndex=values.handicap==='No Index'?n:0;
   total+=n;nh+=noIndex;
-  const key=values[membershipExplorerGroup],group=groups.get(key)||{key,total:0,nh:0};group.total+=n;group.nh+=noIndex;groups.set(key,group);
+  const key=values[membershipExplorerGroup],group=groups.get(key)||{key,total:0,nh:0,unique:0,nhUnique:0};group.total+=n;group.nh+=noIndex;groups.set(key,group);cellGroups[i]=key;nhCells[i]=noIndex>0?1:0;
  });
- const unique=data.golferPatterns.reduce((n,[cells,count])=>n+(cells.some(i=>matched[i])?count:0),0);
- return {total,nh,unique,additional:total-unique,groups:[...groups.values()].sort((a,b)=>b.total-a.total)};
+ let unique=0,nhUnique=0;
+ for(const [cells,count] of data.golferPatterns){
+  const seen=new Set(),seenNH=new Set();
+  for(const i of cells){if(!matched[i])continue;seen.add(cellGroups[i]);if(nhCells[i])seenNH.add(cellGroups[i]);}
+  if(seen.size)unique+=count;if(seenNH.size)nhUnique+=count;
+  for(const key of seen)groups.get(key).unique+=count;
+  for(const key of seenNH)groups.get(key).nhUnique+=count;
+ }
+ const metric=membershipExplorerMeasure==='golfers'?'unique':'total';
+ return {total,nh,unique,nhUnique,additional:total-unique,groups:[...groups.values()].sort((a,b)=>b[metric]-a[metric]||String(a.key).localeCompare(String(b.key)))};
 }
 function membershipExplorer(){
- const result=membershipExplorerResult();
+ const result=membershipExplorerResult(),isUnique=membershipExplorerMeasure==='golfers',metric=isUnique?'unique':'total',nhMetric=isUnique?'nhUnique':'nh',unit=isUnique?'unique golfers':'memberships';
  const keys=Object.keys(membershipExplorerDimensions);
  queueMicrotask(populateMembershipExplorerValues);
  return `<article class="composition-card membership-explorer"><div class="nh-workspace"><div class="me-filter-panel"><div class="nh-filter-add me-compact-toolbar"><label for="meFilterDimension" class="me-filter-by">Select filters</label><select id="meFilterDimension"><option value="" disabled selected>Select a Filter</option>${keys.map(key=>`<option value="${key}">${membershipExplorerDimensions[key]}</option>`).join('')}</select><select id="meFilterValue" aria-label="Filter value" disabled><option value="" disabled selected>Select a Value</option></select><button type="button" data-me-add disabled>+ Add</button></div>
  ${Object.keys(membershipExplorerFilters).length?`<div class="nh-filter-chips">${Object.keys(membershipExplorerFilters).map(key=>`<div class="me-filter-group" role="group" aria-label="${esc(membershipExplorerDimensions[key])}: match any selected value"><span class="me-filter-group-label">${esc(membershipExplorerDimensions[key])}:</span>${membershipFilterValues(key).map(value=>`<button type="button" data-me-remove="${key}" data-me-value="${esc(value)}" aria-label="Remove ${esc(membershipExplorerDimensions[key])}: ${esc(membershipExplorerLabel(key,value))}"><strong>${esc(membershipExplorerLabel(key,value))}</strong> ×</button>`).join('<span class="me-filter-operator">OR</span>')}</div>`).join('<span class="me-filter-operator me-filter-and">AND</span>')}<button type="button" class="me-clear-inline" data-me-clear>Clear all</button></div>`:''}
- ${membershipPopulation==='all'&&membershipFilterValues('handicap').length===1&&membershipFilterValues('handicap')[0]==='30.1+'&&Object.keys(membershipExplorerFilters).length===1?`<p class="me-finding">Women represent <strong>${pct(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleShareAbove30)}</strong> of unique golfers in this selection (${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleGolfersAbove30)} of ${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.golfersAbove30)}). The table below counts memberships, which may include more than one per golfer.</p>`:''}</div>
- <div class="nh-filter-results" aria-live="polite"><div><span>Total Memberships</span><strong>${fmt(result.total)}</strong></div><div><span>Unique golfers</span><strong>${fmt(result.unique)}</strong></div><div><span>Memberships beyond the first</span><strong>${fmt(result.additional)}</strong></div><div><span>No Handicap rate</span><strong>${pct(result.total?result.nh/result.total:0)}</strong><small>${fmt(result.nh)} NH memberships</small></div></div>
- <div class="nh-results-toolbar"><label>Group results by<select id="meGroupBy">${Object.entries(membershipExplorerDimensions).map(([key,label])=>`<option value="${key}" ${key===membershipExplorerGroup?'selected':''}>${label}</option>`).join('')}</select></label><span>${fmt(result.groups.length)} results · Ranked by memberships</span></div>
- <div class="nh-club-scroll"><table class="nh-table"><thead><tr><th scope="col">${esc(membershipExplorerDimensions[membershipExplorerGroup])}</th><th scope="col">Memberships</th><th scope="col">Share</th><th scope="col">NH memberships</th><th scope="col">NH rate</th></tr></thead><tbody>${result.groups.map(row=>`<tr><th scope="row">${esc(membershipExplorerLabel(membershipExplorerGroup,row.key))}</th><td>${fmt(row.total)}</td><td>${pct(result.total?row.total/result.total:0)}</td><td>${fmt(row.nh)}</td><td>${pct(row.total?row.nh/row.total:0)}</td></tr>`).join('')}</tbody></table></div>${result.total?'':'<p class="public-empty">No memberships match these filters.</p>'}</div></article>`;
+ ${membershipPopulation==='all'&&membershipFilterValues('handicap').length===1&&membershipFilterValues('handicap')[0]==='30.1+'&&Object.keys(membershipExplorerFilters).length===1?`<p class="me-finding">Women represent <strong>${pct(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleShareAbove30)}</strong> of unique golfers in this selection (${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleGolfersAbove30)} of ${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.golfersAbove30)}). The table below follows the selected counting measure.</p>`:''}</div>
+ <div class="nh-filter-results" aria-live="polite"><div><span>Total Memberships</span><strong>${fmt(result.total)}</strong></div><div><span>Unique golfers</span><strong>${fmt(result.unique)}</strong></div><div><span>Memberships beyond the first</span><strong>${fmt(result.additional)}</strong></div><div><span>No Handicap rate</span><strong>${pct(result[metric]?result[nhMetric]/result[metric]:0)}</strong><small>${fmt(result[nhMetric])} NH ${unit}</small></div></div>
+ <div class="nh-results-toolbar"><label>Group results by<select id="meGroupBy">${Object.entries(membershipExplorerDimensions).map(([key,label])=>`<option value="${key}" ${key===membershipExplorerGroup?'selected':''}>${label}</option>`).join('')}</select></label><div class="me-count-controls"><div class="me-count-control-row"><span class="me-count-label" id="meCountLabel">Count by</span><div class="me-measure-toggle" role="group" aria-labelledby="meCountLabel">${[['memberships','Memberships'],['golfers','Unique Golfers']].map(([key,label])=>`<button type="button" data-me-measure="${key}" aria-pressed="${membershipExplorerMeasure===key}">${label}</button>`).join('')}</div></div><span class="me-result-caption">${fmt(result.groups.length)} results · Ranked by ${unit}</span></div></div>
+ <div class="nh-club-scroll"><table class="nh-table"><thead><tr><th scope="col">${esc(membershipExplorerDimensions[membershipExplorerGroup])}</th><th scope="col">${isUnique?'Unique golfers':'Memberships'}</th><th scope="col">Share</th><th scope="col">NH ${unit}</th><th scope="col">NH rate</th></tr></thead><tbody>${result.groups.map(row=>`<tr><th scope="row">${esc(membershipExplorerLabel(membershipExplorerGroup,row.key))}</th><td>${fmt(row[metric])}</td><td>${pct(result[metric]?row[metric]/result[metric]:0)}</td><td>${fmt(row[nhMetric])}</td><td>${pct(row[metric]?row[nhMetric]/row[metric]:0)}</td></tr>`).join('')}</tbody></table></div>${isUnique?'<p class="live-source-note">Each golfer counts once within each row. Golfers can appear in more than one group, so row counts and shares may sum to more than the overall total or 100%. NH counts golfers with at least one matching No Index membership.</p>':''}${result.total?'':'<p class="public-empty">No memberships match these filters.</p>'}</div></article>`;
 }
 function populateMembershipExplorerValues(){
  const dim=document.getElementById('meFilterDimension'),value=document.getElementById('meFilterValue');if(!dim||!value)return;
@@ -60,6 +68,7 @@ function populateMembershipExplorerValues(){
 function refreshMembershipExplorer(){const el=document.querySelector('.membership-explorer');if(el)el.outerHTML=membershipExplorer();}
 document.addEventListener('change',event=>{if(event.target.id==='meFilterDimension')populateMembershipExplorerValues();if(event.target.id==='meFilterValue'){const add=document.querySelector('[data-me-add]');if(add)add.disabled=!event.target.value;}if(event.target.id==='meGroupBy'){membershipExplorerGroup=event.target.value;refreshMembershipExplorer();document.getElementById('meGroupBy')?.focus({preventScroll:true});}});
 document.addEventListener('click',event=>{
+ const measure=event.target.closest?.('[data-me-measure]');if(measure){membershipExplorerMeasure=measure.dataset.meMeasure;refreshMembershipExplorer();document.querySelector(`[data-me-measure="${membershipExplorerMeasure}"]`)?.focus({preventScroll:true});return;}
  const remove=event.target.closest?.('[data-me-remove]'),add=event.target.closest?.('[data-me-add]'),clear=event.target.closest?.('[data-me-clear]');
  let keepDimension='';
  if(remove){const key=remove.dataset.meRemove,remaining=membershipFilterValues(key).filter(value=>value!==remove.dataset.meValue);if(remaining.length)membershipExplorerFilters[key]=remaining;else delete membershipExplorerFilters[key];}
@@ -193,7 +202,7 @@ function openCategoryDefinitions(){
     "A membership explicitly marked NH (No Index). NH rate is NH memberships divided by all memberships in the same selection or row. Share of NH uses the total NH membership pool instead."
   ]
 ];
-  dialog.innerHTML=`<header><div><h2 id="categoryDefinitionsTitle">Category Definitions</h2><p>How to read the Membership Explorer</p></div><button type="button" data-close-definitions aria-label="Close category definitions">×</button></header><div class="category-definitions-content"><aside><strong>Memberships and unique golfers</strong><p>A membership is one golfer’s registration with one club. A golfer may have multiple memberships. Unique golfers counts each golfer once within the combined selection. Memberships beyond the first equals total memberships minus unique golfers.</p><p>Multiple values within one filter match any selected value (OR). Different filters combine as an intersection (AND). Shares in the results table use all matching memberships.</p></aside><dl>${definitions.map(([name,definition])=>`<div><dt>${name}</dt><dd>${definition}</dd></div>`).join('')}</dl></div>`;
+  dialog.innerHTML=`<header><div><h2 id="categoryDefinitionsTitle">Category Definitions</h2><p>How to read the Membership Explorer</p></div><button type="button" data-close-definitions aria-label="Close category definitions">×</button></header><div class="category-definitions-content"><aside><strong>Memberships and unique golfers</strong><p>A membership is one golfer’s registration with one club. A golfer may have multiple memberships. Unique golfers counts each golfer once within the combined selection. Memberships beyond the first equals total memberships minus unique golfers.</p><p>Multiple values within one filter match any selected value (OR). Different filters combine as an intersection (AND). The counting toggle switches table counts, ranking, shares and NH rates between memberships and unique golfers. Unique-golfer shares use all matching unique golfers; a golfer can appear in multiple groups.</p></aside><dl>${definitions.map(([name,definition])=>`<div><dt>${name}</dt><dd>${definition}</dd></div>`).join('')}</dl></div>`;
   document.body.appendChild(dialog);
   dialog.querySelector('[data-close-definitions]').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});

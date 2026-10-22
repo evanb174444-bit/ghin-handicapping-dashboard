@@ -183,3 +183,7 @@ Keep explanations short and simple. When Evan asks for a query, provide the quer
 - [Score posting decisions](SCORE_POSTING_NOTES.md)
 
 The detailed intake document remains authoritative for access-type mappings, Affiliate/WORE, Type 1/2/3, GC identification by the authoritative club list, NH handling, and composition drilldowns. This handoff does not change those rules.
+
+## Membership Explorer counting toggle — October 21, 2026
+
+Added Memberships / Unique Golfers toggle to the grouped results table. Unique counts derive from existing golferPatterns, deduplicated within each matching group after filters and population selection. Table ranking/share/NH counts/NH rates follow the toggle; first three summary cards retain memberships, unique golfers, and additional memberships. NH unique counts require at least one matching No Index membership. Unique shares use the overall distinct matching golfer denominator; overlapping groups can sum above 100%. No new export required. Source script and embedded dashboard both updated; not pushed.

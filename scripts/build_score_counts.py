@@ -110,7 +110,7 @@ start=s.index('// Scope selections are available;') if '// Scope selections are 
 endpos=s.index('let scoresPopulation="all";',start)
 s=s[:start]+'// BEGIN LIVE SCORE COUNTS\nconst SCORE_COUNTS_DATA='+json.dumps(payload,separators=(',',':'))+';\n'+helper+'\n// END LIVE SCORE COUNTS\n'+s[endpos:]
 old='if(activeTop==="scores"){if(scoresGeography!=="all")$("app").innerHTML=scoresScopePendingView();else $("app").insertAdjacentHTML("afterbegin",scoresScopePendingNotice());}'
-new='if(activeTop==="scores"){$("app").innerHTML=liveScoresPage();document.querySelector(".subtitle").textContent="Scores through August 31, 2026 · "+scoresScopeLabel();}'
+new='if(activeTop==="scores"){$("app").innerHTML=liveScoresPage();document.querySelector(".subtitle").textContent=(activeSub==="explorer"?"Score participation through October 21, 2026 · ":"Scores through August 31, 2026 · ")+scoresScopeLabel();}'
 if old in s: s=s.replace(old,new,1)
 else: assert new in s
 old='${summaryTrendCard("SCORES POSTED","scores",c.map(x=>x.scoresGhin),p.map(x=>x.scoresGhin),"scores","Open Scores →","▲ 6.3%","▲ 6.3%")}'
