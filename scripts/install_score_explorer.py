@@ -1,10 +1,24 @@
 from pathlib import Path
-import json
+import json,gzip,base64
 ROOT=Path(__file__).resolve().parents[1]
 page=ROOT/'Handicapping and GHIN Dashboard.html';h=page.read_text()
 view=ROOT/'scripts/scores_scope_view.js';old=view.read_text();new=old.replace('${liveScoresParticipation()}</section>','${scoreParticipationExplorer()}</section>')
 assert old.strip() in h;h=h.replace(old.strip(),new.strip(),1);view.write_text(new)
-block='// BEGIN SCORE PARTICIPATION EXPLORER\nconst SCORE_EXPLORER_DATA='+ (ROOT/'data/processed/score_explorer.json').read_text()+';\n'+(ROOT/'scripts/score_explorer_view.js').read_text()+'\n// END SCORE PARTICIPATION EXPLORER\n'
+def compressed_data(name):
+ return base64.b64encode(gzip.compress((ROOT/'data/processed'/name).read_bytes(),mtime=0)).decode()
+loader='''let SCORE_EXPLORER_DATA=null,SCORE_TRIAL_EXPLORER_DATA=null,scoreExplorerLoadError=false;
+async function unpackScoreExplorerData(encoded){
+ const bytes=Uint8Array.from(atob(encoded),c=>c.charCodeAt(0));
+ const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+ return JSON.parse(await new Response(stream).text());
+}
+const SCORE_EXPLORER_READY=Promise.all([
+unpackScoreExplorerData('MEMBER_PAYLOAD'),
+unpackScoreExplorerData('TRIAL_PAYLOAD')
+]).then(([members,trials])=>{SCORE_EXPLORER_DATA=members;SCORE_TRIAL_EXPLORER_DATA=trials;refreshScoreExplorer();}).catch(error=>{scoreExplorerLoadError=true;console.error('Score Explorer data could not load',error);refreshScoreExplorer();});
+'''.replace('MEMBER_PAYLOAD',compressed_data('score_explorer.json')).replace('TRIAL_PAYLOAD',compressed_data('score_trial_explorer.json'))
+block='// BEGIN SCORE PARTICIPATION EXPLORER\n'+loader+(ROOT/'scripts/score_explorer_view.js').read_text()+'\n// END SCORE PARTICIPATION EXPLORER\n'
+
 if '// BEGIN SCORE PARTICIPATION EXPLORER' in h:
  start=h.index('// BEGIN SCORE PARTICIPATION EXPLORER');end=h.index('// END SCORE PARTICIPATION EXPLORER',start)+len('// END SCORE PARTICIPATION EXPLORER\n');h=h[:start]+block+h[end:]
 else:h=h.replace('// END LIVE SCORE COUNTS', '// END LIVE SCORE COUNTS\n'+block,1)

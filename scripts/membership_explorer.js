@@ -20,6 +20,24 @@ function membershipExplorerOptions(){
  sets.age.add('Known age');
  return membershipExplorerOptionsCache=Object.fromEntries(Object.entries(sets).map(([key,set])=>[key,[...set].map(value=>({value,label:key==='association'?associationNames.get(value):membershipExplorerLabel(key,value)})).sort((a,b)=>a.label.localeCompare(b.label))]));
 }
+function membershipIndexSummary(hist){
+ const n=[...hist.values()].reduce((a,b)=>a+b,0);if(!n)return {n:0,mean:null,median:null};
+ let sum=0,cumulative=0,lo=null,hi=null;const left=Math.floor((n-1)/2),right=Math.floor(n/2);
+ for(const [value,count] of [...hist].sort((a,b)=>a[0]-b[0])){sum+=value*count;cumulative+=count;if(lo===null&&cumulative>left)lo=value;if(hi===null&&cumulative>right)hi=value;}
+ return {n,mean:sum/n/10,median:(lo+hi)/20};
+}
+function membershipIndexFormat(value){return value==null?'—':value<0?'+'+Math.abs(value).toFixed(1):value.toFixed(1);}
+function membershipIndexStats(matched,cellGroups,groups){
+ if(!MEMBERSHIP_INDEX_STATS)return null;
+ const total=new Map(),byGroup=new Map();
+ const add=(hist,hi,n)=>hist.set(hi,(hist.get(hi)||0)+n);
+ for(const [cells,hi,n] of MEMBERSHIP_INDEX_STATS.patterns){
+  const seen=new Set();for(const i of cells)if(matched[i])seen.add(cellGroups[i]);if(!seen.size)continue;
+  add(total,hi,n);for(const key of seen){if(!byGroup.has(key))byGroup.set(key,new Map());add(byGroup.get(key),hi,n);}
+ }
+ for(const [key,group] of groups)group.indexStats=membershipIndexSummary(byGroup.get(key)||new Map());
+ return membershipIndexSummary(total);
+}
 function membershipExplorerResult(){
  const data=MEMBERSHIP_INTERSECTIONS,groups=new Map(),matched=new Uint8Array(data.cells.length),cellGroups=new Array(data.cells.length),nhCells=new Uint8Array(data.cells.length);
  const population=membershipPopulation==='all'?null:membershipPopulation==='regular'?'Regular':'Junior';
@@ -41,8 +59,9 @@ function membershipExplorerResult(){
   for(const key of seen)groups.get(key).unique+=count;
   for(const key of seenNH)groups.get(key).nhUnique+=count;
  }
+ const indexStats=membershipIndexStats(matched,cellGroups,groups);
  const metric=membershipExplorerMeasure==='golfers'?'unique':'total';
- return {total,nh,unique,nhUnique,additional:total-unique,groups:[...groups.values()].sort((a,b)=>b[metric]-a[metric]||String(a.key).localeCompare(String(b.key)))};
+ return {total,nh,unique,nhUnique,indexStats,additional:total-unique,groups:[...groups.values()].sort((a,b)=>b[metric]-a[metric]||String(a.key).localeCompare(String(b.key)))};
 }
 function membershipExplorer(){
  const result=membershipExplorerResult(),isUnique=membershipExplorerMeasure==='golfers',metric=isUnique?'unique':'total',nhMetric=isUnique?'nhUnique':'nh',unit=isUnique?'unique golfers':'memberships';
@@ -52,8 +71,10 @@ function membershipExplorer(){
  ${Object.keys(membershipExplorerFilters).length?`<div class="nh-filter-chips">${Object.keys(membershipExplorerFilters).map(key=>`<div class="me-filter-group" role="group" aria-label="${esc(membershipExplorerDimensions[key])}: match any selected value"><span class="me-filter-group-label">${esc(membershipExplorerDimensions[key])}:</span>${membershipFilterValues(key).map(value=>`<button type="button" data-me-remove="${key}" data-me-value="${esc(value)}" aria-label="Remove ${esc(membershipExplorerDimensions[key])}: ${esc(membershipExplorerLabel(key,value))}"><strong>${esc(membershipExplorerLabel(key,value))}</strong> ×</button>`).join('<span class="me-filter-operator">OR</span>')}</div>`).join('<span class="me-filter-operator me-filter-and">AND</span>')}<button type="button" class="me-clear-inline" data-me-clear>Clear all</button></div>`:''}
  ${membershipPopulation==='all'&&membershipFilterValues('handicap').length===1&&membershipFilterValues('handicap')[0]==='30.1+'&&Object.keys(membershipExplorerFilters).length===1?`<p class="me-finding">Women represent <strong>${pct(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleShareAbove30)}</strong> of unique golfers in this selection (${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleGolfersAbove30)} of ${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.golfersAbove30)}). The table below follows the selected counting measure.</p>`:''}</div>
  <div class="nh-filter-results" aria-live="polite"><div><span>Total Memberships</span><strong>${fmt(result.total)}</strong></div><div><span>Unique golfers</span><strong>${fmt(result.unique)}</strong></div><div><span>Memberships beyond the first</span><strong>${fmt(result.additional)}</strong></div><div><span>No Handicap rate</span><strong>${pct(result[metric]?result[nhMetric]/result[metric]:0)}</strong><small>${fmt(result[nhMetric])} NH ${unit}</small></div></div>
+ <div class="me-index-kpis" aria-live="polite"><div><span>Average Handicap Index</span><strong data-me-average>${result.indexStats?membershipIndexFormat(result.indexStats.mean):(membershipIndexLoadError?'Unavailable':'Loading…')}</strong><small>${result.indexStats?fmt(result.indexStats.n)+' unique golfers with a valid Index':''}</small></div><div><span>Median Handicap Index</span><strong data-me-median>${result.indexStats?membershipIndexFormat(result.indexStats.median):(membershipIndexLoadError?'Unavailable':'Loading…')}</strong><small>Middle Index among the same golfers</small></div></div>
+ <p class="live-source-note">Index statistics always count each golfer once, regardless of the counting toggle. NH and Unknown are excluded; plus handicaps count as negative values. October 13, 2026 snapshot.</p>
  <div class="nh-results-toolbar"><label>Group results by<select id="meGroupBy">${Object.entries(membershipExplorerDimensions).map(([key,label])=>`<option value="${key}" ${key===membershipExplorerGroup?'selected':''}>${label}</option>`).join('')}</select></label><div class="me-count-controls"><div class="me-count-control-row"><span class="me-count-label" id="meCountLabel">Count by</span><div class="me-measure-toggle" role="group" aria-labelledby="meCountLabel">${[['memberships','Memberships'],['golfers','Unique Golfers']].map(([key,label])=>`<button type="button" data-me-measure="${key}" aria-pressed="${membershipExplorerMeasure===key}">${label}</button>`).join('')}</div></div><span class="me-result-caption">${fmt(result.groups.length)} results · Ranked by ${unit}</span></div></div>
- <div class="nh-club-scroll"><table class="nh-table"><thead><tr><th scope="col">${esc(membershipExplorerDimensions[membershipExplorerGroup])}</th><th scope="col">${isUnique?'Unique golfers':'Memberships'}</th><th scope="col">Share</th><th scope="col">NH ${unit}</th><th scope="col">NH rate</th></tr></thead><tbody>${result.groups.map(row=>`<tr><th scope="row">${esc(membershipExplorerLabel(membershipExplorerGroup,row.key))}</th><td>${fmt(row[metric])}</td><td>${pct(result[metric]?row[metric]/result[metric]:0)}</td><td>${fmt(row[nhMetric])}</td><td>${pct(row[metric]?row[nhMetric]/row[metric]:0)}</td></tr>`).join('')}</tbody></table></div>${isUnique?'<p class="live-source-note">Each golfer counts once within each row. Golfers can appear in more than one group, so row counts and shares may sum to more than the overall total or 100%. NH counts golfers with at least one matching No Index membership.</p>':''}${result.total?'':'<p class="public-empty">No memberships match these filters.</p>'}</div></article>`;
+ <div class="nh-club-scroll"><table class="nh-table"><thead><tr><th scope="col">${esc(membershipExplorerDimensions[membershipExplorerGroup])}</th><th scope="col">${isUnique?'Unique golfers':'Memberships'}</th><th scope="col">Share</th><th scope="col">NH ${unit}</th><th scope="col">NH rate</th><th scope="col">Golfers with Index</th><th scope="col">Average Index</th><th scope="col">Median Index</th></tr></thead><tbody>${result.groups.map(row=>`<tr><th scope="row">${esc(membershipExplorerLabel(membershipExplorerGroup,row.key))}</th><td>${fmt(row[metric])}</td><td>${pct(result[metric]?row[metric]/result[metric]:0)}</td><td>${fmt(row[nhMetric])}</td><td>${pct(row[metric]?row[nhMetric]/row[metric]:0)}</td><td>${row.indexStats?fmt(row.indexStats.n):'—'}</td><td>${membershipIndexFormat(row.indexStats?.mean)}</td><td>${membershipIndexFormat(row.indexStats?.median)}</td></tr>`).join('')}</tbody></table></div>${isUnique?'<p class="live-source-note">Each golfer counts once within each row. Golfers can appear in more than one group, so row counts and shares may sum to more than the overall total or 100%. NH counts golfers with at least one matching No Index membership.</p>':''}${result.total?'':'<p class="public-empty">No memberships match these filters.</p>'}</div></article>`;
 }
 function populateMembershipExplorerValues(){
  const dim=document.getElementById('meFilterDimension'),value=document.getElementById('meFilterValue');if(!dim||!value)return;

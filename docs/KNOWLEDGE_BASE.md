@@ -187,3 +187,9 @@ The detailed intake document remains authoritative for access-type mappings, Aff
 ## Membership Explorer counting toggle — October 21, 2026
 
 Added Memberships / Unique Golfers toggle to the grouped results table. Unique counts derive from existing golferPatterns, deduplicated within each matching group after filters and population selection. Table ranking/share/NH counts/NH rates follow the toggle; first three summary cards retain memberships, unique golfers, and additional memberships. NH unique counts require at least one matching No Index membership. Unique shares use the overall distinct matching golfer denominator; overlapping groups can sum above 100%. No new export required. Source script and embedded dashboard both updated; not pushed.
+
+
+### October 26: exact Handicap Index statistics in Membership Explorer
+Average and median Index cards and grouped table columns use unique golfers with a valid numeric Index from the October 13 membership export, independent of the Memberships/Unique Golfers count toggle. NH and unknown values are excluded. Plus handicaps use negative arithmetic and display with a plus sign. Each row also shows the contributing unique golfer count.
+All 3,859,441 existing AGA membership rows reconcile at the anonymous cell level. There are 3,119,595 golfers with valid Index values and no conflicting values across their memberships. GC Clubs: 521,674 valid unique golfers, mean 14.7981233491 (display 14.8), median 14.0. This replaces the earlier band-based estimate with exact source-value statistics. Private staging stays under data/raw/membership_index_stats; only anonymous cell patterns and Index values are embedded.
+The audit also identified 45 numeric-index membership rows above 54.0, excluded from valid-index statistics. Existing membership totals and NH rates remain unchanged.
