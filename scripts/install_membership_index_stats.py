@@ -29,5 +29,10 @@ css="""/* MEMBERSHIP INDEX STATISTICS */
 @media(max-width:650px){.me-index-kpis{grid-template-columns:1fr;}}
 """
 if '/* MEMBERSHIP INDEX STATISTICS */' not in h:h=h.replace('</style>',css+'\n</style>',1)
+start_marker='/* BEGIN MEMBERSHIP COMPARE */';end_marker='/* END MEMBERSHIP COMPARE */'
+comparison_css=start_marker+'\n'+(ROOT/'scripts/membership_compare.css').read_text()+'\n'+end_marker
+if start_marker in h:
+ start=h.index(start_marker);end=h.index(end_marker,start)+len(end_marker);h=h[:start]+comparison_css+h[end:]
+else:h=h.replace('</style>',comparison_css+'\n</style>',1)
 p.write_text(h)
 print('Installed exact Index statistics; HTML MB',round(p.stat().st_size/1e6,1))

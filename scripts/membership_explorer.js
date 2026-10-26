@@ -38,18 +38,18 @@ function membershipIndexStats(matched,cellGroups,groups){
  for(const [key,group] of groups)group.indexStats=membershipIndexSummary(byGroup.get(key)||new Map());
  return membershipIndexSummary(total);
 }
-function membershipExplorerResult(){
+function membershipExplorerResult(selectedFilters=membershipExplorerFilters,selectedPopulation=membershipPopulation,selectedGroup=membershipExplorerGroup){
  const data=MEMBERSHIP_INTERSECTIONS,groups=new Map(),matched=new Uint8Array(data.cells.length),cellGroups=new Array(data.cells.length),nhCells=new Uint8Array(data.cells.length);
- const population=membershipPopulation==='all'?null:membershipPopulation==='regular'?'Regular':'Junior';
+ const population=selectedPopulation==='all'?null:selectedPopulation==='regular'?'Regular':'Junior';
  let total=0,nh=0;
- const filters=Object.keys(membershipExplorerFilters).map(key=>[key,membershipFilterValues(key)]);
+ const filters=Object.entries(selectedFilters).map(([key,value])=>[key,Array.isArray(value)?value:[value]]);
  data.cells.forEach((row,i)=>{
   const values=membershipExplorerValues(row);
   if(population&&values.membershipType!==population)return;
   if(filters.some(([key,choices])=>!choices.some(value=>key==='age'&&value==='Known age'?values.age!=='Unknown / invalid':values[key]===value)))return;
   matched[i]=1;const n=row[5],noIndex=values.handicap==='No Index'?n:0;
   total+=n;nh+=noIndex;
-  const key=values[membershipExplorerGroup],group=groups.get(key)||{key,total:0,nh:0,unique:0,nhUnique:0};group.total+=n;group.nh+=noIndex;groups.set(key,group);cellGroups[i]=key;nhCells[i]=noIndex>0?1:0;
+  const key=values[selectedGroup],group=groups.get(key)||{key,total:0,nh:0,unique:0,nhUnique:0};group.total+=n;group.nh+=noIndex;groups.set(key,group);cellGroups[i]=key;nhCells[i]=noIndex>0?1:0;
  });
  let unique=0,nhUnique=0;
  for(const [cells,count] of data.golferPatterns){
@@ -61,13 +61,14 @@ function membershipExplorerResult(){
  }
  const indexStats=membershipIndexStats(matched,cellGroups,groups);
  const metric=membershipExplorerMeasure==='golfers'?'unique':'total';
- return {total,nh,unique,nhUnique,indexStats,additional:total-unique,groups:[...groups.values()].sort((a,b)=>b[metric]-a[metric]||String(a.key).localeCompare(String(b.key)))};
+ return {matched,total,nh,unique,nhUnique,indexStats,additional:total-unique,groups:[...groups.values()].sort((a,b)=>b[metric]-a[metric]||String(a.key).localeCompare(String(b.key)))};
 }
 function membershipExplorer(){
+ if(membershipCompareState)return membershipCompareView();
  const result=membershipExplorerResult(),isUnique=membershipExplorerMeasure==='golfers',metric=isUnique?'unique':'total',nhMetric=isUnique?'nhUnique':'nh',unit=isUnique?'unique golfers':'memberships';
  const keys=Object.keys(membershipExplorerDimensions);
  queueMicrotask(populateMembershipExplorerValues);
- return `<article class="composition-card membership-explorer"><div class="nh-workspace"><div class="me-filter-panel"><div class="nh-filter-add me-compact-toolbar"><label for="meFilterDimension" class="me-filter-by">Select filters</label><select id="meFilterDimension"><option value="" disabled selected>Select a Filter</option>${keys.map(key=>`<option value="${key}">${membershipExplorerDimensions[key]}</option>`).join('')}</select><select id="meFilterValue" aria-label="Filter value" disabled><option value="" disabled selected>Select a Value</option></select><button type="button" data-me-add disabled>+ Add</button></div>
+ return `<article class="composition-card membership-explorer"><div class="nh-workspace"><div class="mc-heading"><strong>Membership Explorer</strong><button type="button" data-mc-open>Compare segments</button></div><div class="me-filter-panel"><div class="nh-filter-add me-compact-toolbar"><label for="meFilterDimension" class="me-filter-by">Select filters</label><select id="meFilterDimension"><option value="" disabled selected>Select a Filter</option>${keys.map(key=>`<option value="${key}">${membershipExplorerDimensions[key]}</option>`).join('')}</select><select id="meFilterValue" aria-label="Filter value" disabled><option value="" disabled selected>Select a Value</option></select><button type="button" data-me-add disabled>+ Add</button></div>
  ${Object.keys(membershipExplorerFilters).length?`<div class="nh-filter-chips">${Object.keys(membershipExplorerFilters).map(key=>`<div class="me-filter-group" role="group" aria-label="${esc(membershipExplorerDimensions[key])}: match any selected value"><span class="me-filter-group-label">${esc(membershipExplorerDimensions[key])}:</span>${membershipFilterValues(key).map(value=>`<button type="button" data-me-remove="${key}" data-me-value="${esc(value)}" aria-label="Remove ${esc(membershipExplorerDimensions[key])}: ${esc(membershipExplorerLabel(key,value))}"><strong>${esc(membershipExplorerLabel(key,value))}</strong> ×</button>`).join('<span class="me-filter-operator">OR</span>')}</div>`).join('<span class="me-filter-operator me-filter-and">AND</span>')}<button type="button" class="me-clear-inline" data-me-clear>Clear all</button></div>`:''}
  ${membershipPopulation==='all'&&membershipFilterValues('handicap').length===1&&membershipFilterValues('handicap')[0]==='30.1+'&&Object.keys(membershipExplorerFilters).length===1?`<p class="me-finding">Women represent <strong>${pct(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleShareAbove30)}</strong> of unique golfers in this selection (${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.femaleGolfersAbove30)} of ${fmt(MEMBERSHIP_COMPOSITION_DATA.all.highIndexInsight.golfersAbove30)}). The table below follows the selected counting measure.</p>`:''}</div>
  <div class="nh-filter-results" aria-live="polite"><div><span>Total Memberships</span><strong>${fmt(result.total)}</strong></div><div><span>Unique golfers</span><strong>${fmt(result.unique)}</strong></div><div><span>Memberships beyond the first</span><strong>${fmt(result.additional)}</strong></div><div><span>No Handicap rate</span><strong>${pct(result[metric]?result[nhMetric]/result[metric]:0)}</strong><small>${fmt(result[nhMetric])} NH ${unit}</small></div></div>
@@ -233,3 +234,43 @@ function openCategoryDefinitions(){
 document.addEventListener('click',event=>{if(event.target.closest?.('[data-category-definitions]'))openCategoryDefinitions();});
 
 document.addEventListener('click',event=>{if(!event.target.closest?.('[data-toggle-insights]'))return;membershipInsightsExpanded=!membershipInsightsExpanded;refreshInsightCarousel();document.querySelector('[data-toggle-insights]')?.focus({preventScroll:true});});
+
+let membershipCompareState=null;
+const membershipCompareMetrics={unique:'Unique golfers',mean:'Average Index',median:'Median Index',nhRate:'No Index %',valid:'Golfers with Index'};
+function membershipCompareValue(r,key){if(!r)return null;if(key==='unique')return r.unique;if(key==='nhRate')return r.unique?r.nhUnique/r.unique:null;if(key==='valid')return r.indexStats?.n??null;return r.indexStats?.[key]??null;}
+function membershipCompareFormat(v,key){if(v==null)return '—';return key==='nhRate'?pct(v):['mean','median'].includes(key)?membershipIndexFormat(v):fmt(v);}
+function membershipCompareDifference(a,b,key){if(a==null||b==null)return '—';const d=b-a,sign=d>0?'+':d<0?'−':'';return sign+(key==='nhRate'?(Math.abs(d)*100).toFixed(1)+' pp':['mean','median'].includes(key)?Math.abs(d).toFixed(1):fmt(Math.abs(d)));}
+function membershipCompareView(){
+ const state=membershipCompareState,results=state.segments.map(s=>membershipExplorerResult(s.filters,s.population,state.group));
+ let overlap=0;for(const [cells,n] of MEMBERSHIP_INTERSECTIONS.golferPatterns)if(cells.some(i=>results[0].matched[i])&&cells.some(i=>results[1].matched[i]))overlap+=n;
+ const choices=Object.entries(membershipExplorerDimensions).map(([k,v])=>`<option value="${k}">${esc(v)}</option>`).join('');
+ const panels=state.segments.map((segment,i)=>`<section class="mc-segment" data-mc-panel="${i}" aria-label="Segment ${i?'B':'A'} filters"><h3>Segment ${i?'B':'A'}</h3><label>Members<select data-mc-pop="${i}">${[['all','All Members'],['regular','Regular Members'],['junior','Junior Members']].map(([k,v])=>`<option value="${k}" ${segment.population===k?'selected':''}>${v}</option>`).join('')}</select></label><div class="mc-filter-row"><select data-mc-dimension="${i}" aria-label="Segment ${i?'B':'A'} filter"><option value="">Select a Filter</option>${choices}</select><select data-mc-value="${i}" aria-label="Segment ${i?'B':'A'} value" disabled><option value="">Select a Value</option></select><button type="button" data-mc-add="${i}" disabled>+ Add</button></div><div class="mc-chips">${Object.entries(segment.filters).map(([key,values])=>`<div><strong>${esc(membershipExplorerDimensions[key])}:</strong> ${values.map(value=>`<button type="button" data-mc-remove="${i}" data-key="${key}" data-value="${esc(value)}" aria-label="Remove ${esc(membershipExplorerLabel(key,value))} from Segment ${i?'B':'A'}">${esc(membershipExplorerLabel(key,value))} ×</button>`).join(' <small>OR</small> ')}</div>`).join('')||'<span>No additional filters</span>'}</div><button type="button" data-mc-clear="${i}">Clear filters</button></section>`).join('');
+ const rows=Object.entries(membershipCompareMetrics).map(([key,label])=>{const a=membershipCompareValue(results[0],key),b=membershipCompareValue(results[1],key);return `<tr><th scope="row">${label}</th><td>${membershipCompareFormat(a,key)}</td><td>${membershipCompareFormat(b,key)}</td><td>${membershipCompareDifference(a,b,key)}</td></tr>`;}).join('');
+ const maps=results.map(r=>new Map(r.groups.map(g=>[g.key,g]))),keys=[...new Set([...maps[0].keys(),...maps[1].keys()])].sort((a,b)=>((maps[0].get(b)?.unique||0)+(maps[1].get(b)?.unique||0))-((maps[0].get(a)?.unique||0)+(maps[1].get(a)?.unique||0))||String(a).localeCompare(String(b)));
+ const groupRows=keys.map(key=>{const values=maps.map(m=>{const r=m.get(key);return !r&&['unique','valid'].includes(state.metric)?0:membershipCompareValue(r,state.metric);});return `<tr><th scope="row">${esc(membershipExplorerLabel(state.group,key))}</th><td>${membershipCompareFormat(values[0],state.metric)}</td><td>${membershipCompareFormat(values[1],state.metric)}</td><td>${membershipCompareDifference(values[0],values[1],state.metric)}</td></tr>`;}).join('');
+ return `<article class="composition-card membership-explorer mc-workspace"><div class="nh-workspace"><div class="mc-heading"><div><h2>Compare segments</h2><span>Unique golfers · October 13, 2026</span></div><button type="button" data-mc-close>Back to Explorer</button></div><div class="mc-panels">${panels}</div><div class="mc-actions"><button type="button" data-mc-copy>Copy A to B</button><button type="button" data-mc-swap>Swap A and B</button></div><div class="nh-club-scroll"><table class="nh-table mc-table"><caption>Segment comparison</caption><thead><tr><th scope="col">Metric</th><th scope="col">Segment A</th><th scope="col">Segment B</th><th scope="col">Difference (B − A)</th></tr></thead><tbody>${rows}</tbody></table></div><p class="live-source-note">${fmt(overlap)} golfers belong to both segments and count once in each. Index statistics exclude NH and Unknown; plus handicaps use negative values. Rate differences are percentage points (pp).</p>${!MEMBERSHIP_INDEX_STATS?'<p role="status">'+(membershipIndexLoadError?'Index statistics are unavailable.':'Loading Index statistics…')+'</p>':''}<div class="nh-results-toolbar"><label>Group results by<select data-mc-group>${Object.entries(membershipExplorerDimensions).map(([k,v])=>`<option value="${k}" ${state.group===k?'selected':''}>${v}</option>`).join('')}</select></label><label>Compare metric<select data-mc-metric>${Object.entries(membershipCompareMetrics).map(([k,v])=>`<option value="${k}" ${state.metric===k?'selected':''}>${v}</option>`).join('')}</select></label></div><div class="nh-club-scroll"><table class="nh-table mc-table"><caption>${esc(membershipCompareMetrics[state.metric])} by ${esc(membershipExplorerDimensions[state.group])}</caption><thead><tr><th scope="col">${esc(membershipExplorerDimensions[state.group])}</th><th scope="col">Segment A</th><th scope="col">Segment B</th><th scope="col">Difference (B − A)</th></tr></thead><tbody>${groupRows||'<tr><td colspan="4">No golfers match either segment.</td></tr>'}</tbody></table></div><p class="live-source-note">A golfer may appear in more than one group. Filters within a category use OR; different categories must match the same membership. NH counts golfers with at least one matching No Index membership.</p></div></article>`;
+}
+document.addEventListener('change',event=>{
+ const el=event.target;if(!membershipCompareState)return;
+ if(el.hasAttribute('data-mc-dimension')){const i=el.dataset.mcDimension,value=document.querySelector(`[data-mc-value="${i}"]`);value.innerHTML='<option value="">Select a Value</option>'+(membershipExplorerOptions()[el.value]||[]).filter(r=>!membershipCompareState.segments[i].filters[el.value]?.includes(r.value)).map(r=>`<option value="${esc(r.value)}">${esc(r.label)}</option>`).join('');value.disabled=!el.value;document.querySelector(`[data-mc-add="${i}"]`).disabled=true;return;}
+ if(el.hasAttribute('data-mc-value')){document.querySelector(`[data-mc-add="${el.dataset.mcValue}"]`).disabled=!el.value;return;}
+ if(el.hasAttribute('data-mc-pop'))membershipCompareState.segments[el.dataset.mcPop].population=el.value;
+ else if(el.hasAttribute('data-mc-group'))membershipCompareState.group=el.value;
+ else if(el.hasAttribute('data-mc-metric'))membershipCompareState.metric=el.value;
+ else return;
+ refreshMembershipExplorer();
+});
+document.addEventListener('click',event=>{
+ const el=event.target.closest('button');if(!el)return;
+ const clone=x=>JSON.parse(JSON.stringify(x));
+ if(el.hasAttribute('data-mc-open')){const segment={filters:Object.fromEntries(Object.keys(membershipExplorerFilters).map(k=>[k,[...membershipFilterValues(k)]])),population:membershipPopulation};membershipCompareState={segments:[clone(segment),clone(segment)],group:membershipExplorerGroup,metric:'mean'};}
+ else if(!membershipCompareState)return;
+ else if(el.hasAttribute('data-mc-close'))membershipCompareState=null;
+ else if(el.hasAttribute('data-mc-copy'))membershipCompareState.segments[1]=clone(membershipCompareState.segments[0]);
+ else if(el.hasAttribute('data-mc-swap'))membershipCompareState.segments.reverse();
+ else if(el.hasAttribute('data-mc-clear'))membershipCompareState.segments[el.dataset.mcClear].filters={};
+ else if(el.hasAttribute('data-mc-add')){const i=el.dataset.mcAdd,key=document.querySelector(`[data-mc-dimension="${i}"]`).value,value=document.querySelector(`[data-mc-value="${i}"]`).value;if(!key||!value)return;const f=membershipCompareState.segments[i].filters;f[key]=[...new Set([...(f[key]||[]),value])];}
+ else if(el.hasAttribute('data-mc-remove')){const f=membershipCompareState.segments[el.dataset.mcRemove].filters,key=el.dataset.key;f[key]=f[key].filter(v=>v!==el.dataset.value);if(!f[key].length)delete f[key];}
+ else return;
+ refreshMembershipExplorer();
+});
