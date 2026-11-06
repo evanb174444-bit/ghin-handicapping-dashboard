@@ -1,5 +1,5 @@
 {
-  "source": "/Users/EvanBelfi/Documents/GHIN Handicapping Dashboard/data/raw/membership_refresh_2026-10-13/membership_refresh_2026-10-13.csv.csv",
+  "source": "membership_refresh_2026-11-03.csv.csv",
   "clubList": "reports/gc_recorded_club_types.json",
   "clubCount": 57,
   "history": {
@@ -90,16 +90,16 @@
           4090
         ],
         "2026": [
-          5822,
-          6190,
-          11832,
-          19898,
-          21250,
-          21727,
-          18420,
-          16211,
-          9825,
-          null,
+          5823,
+          6191,
+          11833,
+          19897,
+          21246,
+          21726,
+          18415,
+          16212,
+          9822,
+          7254,
           null,
           null
         ]
@@ -190,16 +190,16 @@
           4090
         ],
         "2026": [
-          5822,
-          6190,
-          11832,
-          19898,
-          21250,
-          21727,
-          18420,
-          16211,
-          9825,
-          null,
+          5823,
+          6191,
+          11833,
+          19897,
+          21246,
+          21726,
+          18415,
+          16212,
+          9822,
+          7254,
           null,
           null
         ]
@@ -299,7 +299,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -399,7 +399,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -501,7 +501,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -601,7 +601,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -701,7 +701,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -801,7 +801,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -894,16 +894,16 @@
           4090
         ],
         "2026": [
-          5822,
-          6190,
-          11832,
-          19898,
-          21250,
-          21727,
-          18420,
-          16211,
-          9825,
-          null,
+          5823,
+          6191,
+          11833,
+          19897,
+          21246,
+          21726,
+          18415,
+          16212,
+          9822,
+          7254,
           null,
           null
         ]
@@ -994,16 +994,16 @@
           4090
         ],
         "2026": [
-          5822,
-          6190,
-          11832,
-          19898,
-          21250,
-          21727,
-          18420,
-          16211,
-          9825,
-          null,
+          5823,
+          6191,
+          11833,
+          19897,
+          21246,
+          21726,
+          18415,
+          16212,
+          9822,
+          7254,
           null,
           null
         ]
@@ -1103,7 +1103,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -1203,14 +1203,14 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
       }
     }
   },
-  "methodology": "GC is zero for 2020 and 2021 per Evan. New golfers by golfer_creation_date with at least one qualifying GC membership in the October 13 extract. All statuses. GC has precedence for golfers also in other clubs; remainder is total minus GC. Current affiliation, not verified original acquisition channel. GC detail extract and historical total aggregate are separate October 13 exports.",
+  "methodology": "2026 GC subset uses the same Nov3 all-status membership source and established club list; earlier GC history preserved. Current affiliation, not original acquisition channel.",
   "excludedPreGCYears": [
     2020,
     2021

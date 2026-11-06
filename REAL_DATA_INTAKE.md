@@ -1,5 +1,7 @@
 # Handicapping and GHIN Dashboard — Real Data Intake
 
+For the next refresh, use the [export process and rulebook](docs/DASHBOARD_EXPORT_RULEBOOK.md) and [eight-query package](sql/dashboard_refresh/README.md).
+
 Start with the [project knowledge base](docs/KNOWLEDGE_BASE.md) for the October 13 definitions, acquisition-query correction, source status, and database handoff. The unfiltered 508,625 result is diagnostic only, not a validated acquisition headline.
 
 ## Reporting rules

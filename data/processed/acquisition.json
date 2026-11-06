@@ -1,5 +1,5 @@
 {
-  "source": "new_golfers_historical_2026-10-13.csv.csv",
+  "source": "membership_refresh_2026-11-03.csv.csv",
   "sourceSha256": "5db9fb646d4f0e9031c09e24335385d306139b322f21befa28b2d26597a4bc6f",
   "creationField": "golfer_creation_date (v_golfer_clubs.golfer_creation_date)",
   "years": [
@@ -12,7 +12,7 @@
     2026
   ],
   "latestYear": 2026,
-  "latestMonth": 8,
+  "latestMonth": 9,
   "history": {
     "aga": {
       "all": {
@@ -101,16 +101,16 @@
           13130
         ],
         "2026": [
-          22447,
-          22682,
-          45109,
-          73122,
-          72949,
-          65267,
-          53297,
-          43296,
-          25640,
-          null,
+          22446,
+          22678,
+          45103,
+          73106,
+          72938,
+          65242,
+          53278,
+          43277,
+          25628,
+          22166,
           null,
           null
         ]
@@ -201,16 +201,16 @@
           8941
         ],
         "2026": [
-          16998,
-          16424,
-          32572,
-          50137,
-          45571,
-          39232,
-          33105,
-          27586,
-          17132,
-          null,
+          16948,
+          16366,
+          32339,
+          49535,
+          44925,
+          38516,
+          32515,
+          27097,
+          16915,
+          12950,
           null,
           null
         ]
@@ -301,16 +301,16 @@
           4234
         ],
         "2026": [
-          5514,
-          6329,
-          12663,
-          23157,
-          27550,
-          26167,
-          20266,
-          15763,
-          8528,
-          null,
+          5567,
+          6384,
+          12891,
+          23736,
+          28182,
+          26863,
+          20840,
+          16238,
+          8736,
+          9241,
           null,
           null
         ]
@@ -410,7 +410,7 @@
           4,
           7,
           3,
-          null,
+          3,
           null,
           null
         ]
@@ -504,7 +504,7 @@
         ],
         "2026": [
           1604,
-          1332,
+          1333,
           1158,
           4855,
           1034,
@@ -512,7 +512,7 @@
           755,
           989,
           1344,
-          null,
+          877,
           null,
           null
         ]
@@ -604,15 +604,15 @@
         ],
         "2026": [
           1488,
-          1251,
+          1252,
           1083,
           4777,
           965,
           822,
           702,
           908,
-          1241,
-          null,
+          1239,
+          766,
           null,
           null
         ]
@@ -711,8 +711,8 @@
           59,
           53,
           81,
-          103,
-          null,
+          105,
+          111,
           null,
           null
         ]
@@ -812,7 +812,7 @@
           0,
           0,
           0,
-          null,
+          0,
           null,
           null
         ]
@@ -905,16 +905,16 @@
           13797
         ],
         "2026": [
-          24039,
-          24013,
-          46264,
-          77971,
-          73981,
-          66140,
-          54051,
-          44285,
-          26981,
-          null,
+          24038,
+          24009,
+          46258,
+          77955,
+          73970,
+          66115,
+          54032,
+          44266,
+          26969,
+          23042,
           null,
           null
         ]
@@ -1005,16 +1005,16 @@
           9534
         ],
         "2026": [
-          18475,
-          17674,
-          33653,
-          54908,
-          46534,
-          40049,
-          33806,
-          28494,
-          18371,
-          null,
+          18425,
+          17616,
+          33420,
+          54306,
+          45888,
+          39333,
+          33216,
+          28005,
+          18152,
+          13715,
           null,
           null
         ]
@@ -1105,16 +1105,16 @@
           4308
         ],
         "2026": [
-          5630,
-          6411,
-          12739,
-          23235,
-          27619,
-          26226,
-          20319,
-          15844,
-          8631,
-          null,
+          5683,
+          6466,
+          12967,
+          23814,
+          28251,
+          26922,
+          20893,
+          16319,
+          8841,
+          9352,
           null,
           null
         ]
@@ -1214,7 +1214,7 @@
           4,
           7,
           3,
-          null,
+          3,
           null,
           null
         ]
@@ -1224,44 +1224,44 @@
   "scopes": {
     "aga": {
       "all": [
-        22447,
-        22682,
-        45109,
-        73122,
-        72949,
-        65267,
-        53297,
-        43296,
-        25640,
-        null,
+        22446,
+        22678,
+        45103,
+        73106,
+        72938,
+        65242,
+        53278,
+        43277,
+        25628,
+        22166,
         null,
         null
       ],
       "regular": [
-        16998,
-        16424,
-        32572,
-        50137,
-        45571,
-        39232,
-        33105,
-        27586,
-        17132,
-        null,
+        16948,
+        16366,
+        32339,
+        49535,
+        44925,
+        38516,
+        32515,
+        27097,
+        16915,
+        12950,
         null,
         null
       ],
       "junior": [
-        5514,
-        6329,
-        12663,
-        23157,
-        27550,
-        26167,
-        20266,
-        15763,
-        8528,
-        null,
+        5567,
+        6384,
+        12891,
+        23736,
+        28182,
+        26863,
+        20840,
+        16238,
+        8736,
+        9241,
         null,
         null
       ],
@@ -1275,7 +1275,7 @@
         4,
         7,
         3,
-        null,
+        3,
         null,
         null
       ]
@@ -1283,7 +1283,7 @@
     "international": {
       "all": [
         1604,
-        1332,
+        1333,
         1158,
         4855,
         1034,
@@ -1291,21 +1291,21 @@
         755,
         989,
         1344,
-        null,
+        877,
         null,
         null
       ],
       "regular": [
         1488,
-        1251,
+        1252,
         1083,
         4777,
         965,
         822,
         702,
         908,
-        1241,
-        null,
+        1239,
+        766,
         null,
         null
       ],
@@ -1318,8 +1318,8 @@
         59,
         53,
         81,
-        103,
-        null,
+        105,
+        111,
         null,
         null
       ],
@@ -1333,51 +1333,51 @@
         0,
         0,
         0,
-        null,
+        0,
         null,
         null
       ]
     },
     "all": {
       "all": [
-        24039,
-        24013,
-        46264,
-        77971,
-        73981,
-        66140,
-        54051,
-        44285,
-        26981,
-        null,
+        24038,
+        24009,
+        46258,
+        77955,
+        73970,
+        66115,
+        54032,
+        44266,
+        26969,
+        23042,
         null,
         null
       ],
       "regular": [
-        18475,
-        17674,
-        33653,
-        54908,
-        46534,
-        40049,
-        33806,
-        28494,
-        18371,
-        null,
+        18425,
+        17616,
+        33420,
+        54306,
+        45888,
+        39333,
+        33216,
+        28005,
+        18152,
+        13715,
         null,
         null
       ],
       "junior": [
-        5630,
-        6411,
-        12739,
-        23235,
-        27619,
-        26226,
-        20319,
-        15844,
-        8631,
-        null,
+        5683,
+        6466,
+        12967,
+        23814,
+        28251,
+        26922,
+        20893,
+        16319,
+        8841,
+        9352,
         null,
         null
       ],
@@ -1391,15 +1391,15 @@
         4,
         7,
         3,
-        null,
+        3,
         null,
         null
       ]
     }
   },
-  "methodology": "Distinct GHIN numbers by Creation Date. All membership statuses included. Non-test clubs and associations, known parent federation, trial association 237 excluded. Scope and member type follow memberships represented in the database view. Absent subgroup rows from the grouped SQL result are zero; future months are unavailable.",
+  "methodology": "Distinct golfer IDs by membership golfer_creation_date; all statuses. Non-test known AGA/international associations; trials excluded. 2026 Jan-Oct rebuilt from Nov3 membership snapshot. Pre-2026 history and approved corrections preserved. Current affiliation and type; absent golfers outside coverage.",
   "gc": {
-    "source": "/Users/EvanBelfi/Documents/GHIN Handicapping Dashboard/data/raw/membership_refresh_2026-10-13/membership_refresh_2026-10-13.csv.csv",
+    "source": "membership_refresh_2026-11-03.csv.csv",
     "clubList": "reports/gc_recorded_club_types.json",
     "clubCount": 57,
     "history": {
@@ -1490,16 +1490,16 @@
             4090
           ],
           "2026": [
-            5822,
-            6190,
-            11832,
-            19898,
-            21250,
-            21727,
-            18420,
-            16211,
-            9825,
-            null,
+            5823,
+            6191,
+            11833,
+            19897,
+            21246,
+            21726,
+            18415,
+            16212,
+            9822,
+            7254,
             null,
             null
           ]
@@ -1590,16 +1590,16 @@
             4090
           ],
           "2026": [
-            5822,
-            6190,
-            11832,
-            19898,
-            21250,
-            21727,
-            18420,
-            16211,
-            9825,
-            null,
+            5823,
+            6191,
+            11833,
+            19897,
+            21246,
+            21726,
+            18415,
+            16212,
+            9822,
+            7254,
             null,
             null
           ]
@@ -1699,7 +1699,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -1799,7 +1799,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -1901,7 +1901,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -2001,7 +2001,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -2101,7 +2101,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -2201,7 +2201,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -2294,16 +2294,16 @@
             4090
           ],
           "2026": [
-            5822,
-            6190,
-            11832,
-            19898,
-            21250,
-            21727,
-            18420,
-            16211,
-            9825,
-            null,
+            5823,
+            6191,
+            11833,
+            19897,
+            21246,
+            21726,
+            18415,
+            16212,
+            9822,
+            7254,
             null,
             null
           ]
@@ -2394,16 +2394,16 @@
             4090
           ],
           "2026": [
-            5822,
-            6190,
-            11832,
-            19898,
-            21250,
-            21727,
-            18420,
-            16211,
-            9825,
-            null,
+            5823,
+            6191,
+            11833,
+            19897,
+            21246,
+            21726,
+            18415,
+            16212,
+            9822,
+            7254,
             null,
             null
           ]
@@ -2503,7 +2503,7 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
@@ -2603,14 +2603,14 @@
             0,
             0,
             0,
-            null,
+            0,
             null,
             null
           ]
         }
       }
     },
-    "methodology": "GC is zero for 2020 and 2021 per Evan. New golfers by golfer_creation_date with at least one qualifying GC membership in the October 13 extract. All statuses. GC has precedence for golfers also in other clubs; remainder is total minus GC. Current affiliation, not verified original acquisition channel. GC detail extract and historical total aggregate are separate October 13 exports.",
+    "methodology": "2026 GC subset uses the same Nov3 all-status membership source and established club list; earlier GC history preserved. Current affiliation, not original acquisition channel.",
     "excludedPreGCYears": [
       2020,
       2021
@@ -2641,5 +2641,6 @@
       "source": "Evan-approved reconciliation to Steve\u2019s 2020 annual total of 481,969",
       "method": "Subtract annual discrepancy from January 2020. Manual aggregate correction; no individual records reclassified."
     }
-  ]
+  ],
+  "snapshot": "2026-11-03"
 }

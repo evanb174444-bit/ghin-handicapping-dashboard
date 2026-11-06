@@ -1,0 +1,21 @@
+{
+  "definition": "Distinct active golfer-association pairs",
+  "snapshot": "2026-11-03",
+  "counts": {
+    "aga": {
+      "all": 3697136,
+      "regular": 3280782,
+      "junior": 404664
+    },
+    "international": {
+      "all": 95052,
+      "regular": 91673,
+      "junior": 3171
+    },
+    "all": {
+      "all": 3792188,
+      "regular": 3372455,
+      "junior": 407835
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "snapshot": "2026-11-03",
+  "definition": "Distinct golfers with more than one distinct association among qualifying active memberships in the selected scope/population",
+  "counts": {
+    "aga": {
+      "all": 119938,
+      "regular": 115812,
+      "junior": 1633
+    },
+    "international": {
+      "all": 94,
+      "regular": 89,
+      "junior": 3
+    },
+    "all": {
+      "all": 121136,
+      "regular": 116927,
+      "junior": 1658
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query,output_filename,connection,reporting_timezone,export_started_at,export_finished_at,exported_rows,file_bytes,notes
+01_memberships.sql,memberships_2026-11-03.csv,,,,,,,
+02_acquisition_history.sql,acquisition_history_2026-11-03.csv,,,,,,,
+03_scores_posting_mix.sql,scores_posting_mix_2026-11-03.csv,,,,,,,
+04_scores_demographics.sql,scores_demographics_2026-11-03.csv,,,,,,,
+05_score_participation.sql,score_participation_2026-11-03.csv,,,,,,,
+06_trials.sql,trials_full_refresh_2026-11-03.csv,,,,,,,
+07_gps.sql,gps_2026-11-03.csv,,,,,,,
+08_challenges.sql,challenges_2026-11-03.csv,,,,,,,
+09_gc_snapshot.sql,gc_current_snapshot_2026-11-03.csv,,,,,,,

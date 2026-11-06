@@ -1,0 +1,54 @@
+{
+  "source": "scores_posting_mix_sep_oct_2026.csv",
+  "sha256": "527817afcf656a9a04997b48faad4bc47fb4419dfddce7b9132d9a62d9c73182",
+  "rows": 34806,
+  "months": [
+    "2026-09",
+    "2026-10"
+  ],
+  "extractedAt": [
+    "2026-11-06 12:14:09.134 -0500",
+    "2026-11-06 12:39:42.141 -0500",
+    "2026-11-06 12:39:44.952 -0500",
+    "2026-11-06 12:39:47.629 -0500"
+  ],
+  "database": [
+    "ghin2020pilot"
+  ],
+  "rawMonthly": {
+    "2026-09": 7986423,
+    "2026-10": 6950448
+  },
+  "excludedTests": {
+    "2026-09": 344,
+    "2026-10": 426
+  },
+  "scorePeriodStart": "2026-09-01",
+  "scorePeriodEndExclusive": "2026-11-01",
+  "timezoneEvidence": "CSV timestamps include -0500; session timezone name not supplied",
+  "validation": "No duplicate aggregate keys; all months/methods/breakdown/association totals reconcile; prior installed months and demographics unchanged.",
+  "monthly": {
+    "2026-09": 7986079,
+    "2026-10": 6950022
+  },
+  "ytd": {
+    "all": {
+      "all": 79957035,
+      "regular": 77598321,
+      "junior": 1547454,
+      "trial": 339663
+    },
+    "aga": {
+      "all": 77827216,
+      "regular": 75893160,
+      "junior": 1516952,
+      "trial": 444
+    },
+    "international": {
+      "all": 1741401,
+      "regular": 1705135,
+      "junior": 30502,
+      "trial": 0
+    }
+  }
+}

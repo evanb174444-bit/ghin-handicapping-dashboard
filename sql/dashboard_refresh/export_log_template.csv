@@ -1,0 +1,9 @@
+query,file,connection,server_database,reporting_timezone,export_started_at,export_finished_at,exported_rows,file_bytes,notes
+01,memberships_2026-11-02.csv,,,,,,,,
+02,acquisition_history_2026-11-02.csv,,,,,,,,
+03,scores_posting_mix_2026-11-02.csv,,,,,,,,
+04,scores_demographics_2026-11-02.csv,,,,,,,,
+05,score_participation_2026-11-02.csv,,,,,,,,
+06,trials_2026-11-02.csv,,,,,,,,
+07,gps_2026-11-02.csv,,,,,,,,
+08,challenges_2026-11-02.csv,,,,,,,,

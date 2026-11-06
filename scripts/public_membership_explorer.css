@@ -369,3 +369,18 @@
 .membership-explorer .me-measure-toggle button:focus-visible{outline:2px solid #337ab7;outline-offset:2px;}
 .membership-explorer .me-result-caption{font-size:12px;color:#63758b;}
 @media(max-width:650px){.membership-explorer .me-count-controls{margin-left:0;align-items:flex-start;}.membership-explorer .me-count-control-row{gap:9px;}.membership-explorer .me-measure-toggle button{padding:9px 12px;}}
+
+/* Standalone Insights page: always open, with the same content and controls. */
+.membership-insights-page .membership-insights{padding:0;margin:0}
+.membership-insights-page .insights-page-heading{margin:0;padding:22px;color:#193f66;font-size:21px;line-height:1.3}
+.membership-insights-page .insight-accordion-content{padding:0 22px 22px}
+@media(max-width:760px){.membership-insights-page .insights-page-heading{padding:20px 16px}.membership-insights-page .insight-accordion-content{padding:0 16px 20px}}
+
+/* All Insights remain on the page; categories jump to their first tile. */
+.membership-insights-page .insight-all-tiles{margin-top:20px}
+.membership-insights-page .insight-tile-window{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.membership-insights-page .insight-summary-tile{display:flex;min-width:0;scroll-margin-top:24px}
+.membership-insights-page .insight-summary-tile:focus-visible{outline:3px solid #7194b5;outline-offset:4px}
+@media(max-width:1000px){.membership-insights-page .insight-tile-window{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.membership-insights-page .insight-tile-window{grid-template-columns:1fr}.membership-insights-page .insight-summary-tile:not(:first-child){display:flex}}
+@media(prefers-reduced-motion:reduce){.membership-insights-page{scroll-behavior:auto}}

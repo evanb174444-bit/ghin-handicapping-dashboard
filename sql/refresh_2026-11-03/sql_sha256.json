@@ -1,0 +1,11 @@
+{
+  "01_memberships.sql": "91613b0ff493370394658d76547429cf9e760b5774e36979602ded15b9b040eb",
+  "02_acquisition_history.sql": "46f322debf48514bbed3a5af5e05aa6ffbde8aa8ddc4ca9af2e26d19276889d8",
+  "03_scores_posting_mix.sql": "2aeee4865d13edcf389447fa935ee3c7fe5f8d32eeb1faaa9b6c79dbc662e6fe",
+  "04_scores_demographics.sql": "37bfe536e98f00e4d5d9c9c5edb4c2aa91b3363183bf7fe10632a4bd95c007c5",
+  "05_score_participation.sql": "4973b8710a0262c303b2da4d7e49078341bbd5553d6700a0bf733827f1e9368e",
+  "06_trials.sql": "b564e9fe694ca2b2f457196bd9c04012b2d2d69bed20d2955d0c6833744f1db4",
+  "07_gps.sql": "e16e06965a9e9c1383a67c5525dd293c12a8cf2e39fe5bf774e45d5ea3fdc8a9",
+  "08_challenges.sql": "b0afcf127109f7ca8b6e2951b89db6c2f2b7a18960241e9bb56cd1ea96425b46",
+  "09_gc_snapshot.sql": "0a301dbe2306889371855968d4835360f0843c743d820832e7cfcb0c7ffc1ecd"
+}

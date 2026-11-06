@@ -1,5 +1,5 @@
 let membershipInsightSection='membership';
-try {const saved=localStorage.getItem('ghin_insight_section');if(['membership','clubs','age'].includes(saved))membershipInsightSection=saved;} catch(e){}
+try {const saved=localStorage.getItem('ghin_insight_section');if(['membership','clubs','age','insights'].includes(saved))membershipInsightSection=saved;} catch(e){}
 document.addEventListener('click',event=>{
  const button=event.target.closest?.('[data-insight-section]');if(!button)return;
  membershipInsightSection=button.dataset.insightSection;
@@ -19,7 +19,7 @@ function liveCompositionDonut(title, tone, items, colors) {
     .replace('</article>', `${liveCompositionLegend(items, colors)}</article>`);
 }
 function liveCompositionTrend(title, tone) {
-  return `<article class="composition-card ${tone}"><div class="composition-band">${title}</div><div class="live-history-empty"><strong>Historical snapshots needed</strong><p>The October 13, 2026 export provides the current membership composition. Earlier snapshots are needed to show a trend.</p></div></article>`;
+  return `<article class="composition-card ${tone}"><div class="composition-band">${title}</div><div class="live-history-empty"><strong>Historical snapshots needed</strong><p>The November 3, 2026 export provides the current membership composition. Earlier snapshots are needed to show a trend.</p></div></article>`;
 }
 const clubGroupLabel = name => name === 'Virtual clubs / eClubs' ? 'Other Type 3 (Virtual/eClubs)' : name;
 let selectedPublicGroup = 'All Clubs';
@@ -201,8 +201,16 @@ document.addEventListener('click',event=>{
  if(sort){const key=sort.dataset.ageDetailSort;ageDetailSort={key,direction:ageDetailSort.key===key?(ageDetailSort.direction==='asc'?'desc':'asc'):key==='label'?'asc':'desc'};document.getElementById('age-cohort-panel').outerHTML=ageCohortPanel();document.querySelector(`[data-age-detail-sort="${key}"]`)?.focus({preventScroll:true});}
 });
 document.addEventListener('change',event=>{if(event.target.id!=='ageCohortGroup')return;ageDetailGroup=event.target.value;document.getElementById('age-cohort-panel').outerHTML=ageCohortPanel();document.getElementById('ageCohortGroup')?.focus({preventScroll:true});});
+let membershipCompositionGolferView='all';
+function compositionGolferFilterControl(){
+ return `<label class="membership-scope-control composition-golfer-control"><select aria-label="Composition golfer filter" onchange="membershipCompositionGolferView=this.value;render()">${[['all','All Golfers'],['gc','GC Only'],['exclude','Exclude GC']].map(([key,label])=>`<option value="${key}" ${membershipCompositionGolferView===key?'selected':''}>${label}</option>`).join('')}</select></label>`;
+}
+function filteredCompositionData(pop){
+ return membershipCompositionGolferView==='all'?scopedCompositionData(pop):MEMBERSHIP_COMPOSITION_GC_FILTERS[membershipCompositionGolferView][membershipGeography][pop];
+}
 function membershipComposition(insights = false) {
-  const d = insights ? MEMBERSHIP_COMPOSITION_DATA[membershipPopulation] : scopedCompositionData(membershipPopulation);
+  const d = insights ? MEMBERSHIP_COMPOSITION_DATA[membershipPopulation] : filteredCompositionData(membershipPopulation);
+  if(!insights&&!d.counts.memberships)return `<section class="membership-composition membership-live"><div class="composition-filters"></div><div class="empty"><h3>No memberships for this selection</h3><p>Try another association scope, member type, or golfer filter.</p></div></section>`;
   const chart = (key, title, tone, items, colors) => compositionTileControl(key,
     liveCompositionDonut(title, tone, items, colors), liveCompositionTrend(title, tone));
   const ageNote = `<p class="live-profile-note">${fmt(d.quality.ageUnknown)} memberships have missing or invalid age (${pct(d.quality.ageUnknown / d.counts.memberships)}). Averages use available ages from 0–120. ${profileGenderViews.age==='split'?'Bars show percentages within each gender, including unknown ages.':'Bars show percentages of all memberships, including unknown gender and age.'}</p>`;
@@ -215,8 +223,8 @@ function membershipComposition(insights = false) {
   const insight = d.highIndexInsight;
   const insightNote = insight.femaleShare == null ? '' : `<aside class="profile-key-insight"><span>Key insight</span><p>Women make up <strong>${pct(insight.femaleShare)}</strong> of unique golfers with a Handicap Index above 20${membershipPopulation==='all'?'':membershipPopulation==='regular'?' among Regular members':' among Junior members'}.</p><small>${fmt(insight.femaleGolfersAbove20)} of ${fmt(insight.golfersAbove20)} golfers · Each golfer counted once</small>${insight.femaleShareAbove30 == null ? '' : `<p>Women make up <strong>${pct(insight.femaleShareAbove30)}</strong> of unique golfers with a Handicap Index above 30${membershipPopulation==='all'?'':membershipPopulation==='regular'?' among Regular members':' among Junior members'}.</p><small>${fmt(insight.femaleGolfersAbove30)} of ${fmt(insight.golfersAbove30)} golfers · Each golfer counted once</small>`}</aside>`;
   const profile = (markup, note) => markup.replace('</article>', `${note}</article>`);
-  const cards = insights ? [membershipInsightSection==='clubs'?publicMembershipExplorer(d):membershipInsightSection==='age'?ageIndexExplorer(d,ageNote,ageInsightNote,indexNote,insightNote):
-    `<section class="membership-explorer-unit" aria-label="Membership Explorer">${membershipInsightCallouts()}<h2 class="membership-explorer-heading">Membership Explorer</h2>${membershipExplorer()}</section>`
+  const cards = insights ? [membershipInsightSection==='clubs'?publicMembershipExplorer(d):membershipInsightSection==='age'?ageIndexExplorer(d,ageNote,ageInsightNote,indexNote,insightNote):membershipInsightSection==='insights'?`<section class="membership-explorer-unit membership-insights-page" aria-label="Membership Insights">${membershipInsightCallouts()}</section>`:
+    `<section class="membership-explorer-unit" aria-label="Membership Explorer">${membershipExplorer()}</section>`
   ] : [
     d.clubMetadataAvailable===false?`<article class="composition-card access"><div class="composition-band">Access Type</div><div class="live-history-empty"><strong>no data</strong><p>Club access classifications were not included in the international export.</p></div></article>`:chart('access', 'Access Type', 'access', d.access, ['#2f6597', '#a9c4dc', '#b8bec8', '#b8bec8']),
     chart('membership', 'Membership Type', 'membership', d.membership, ['#b64545', '#e7aaaa', '#b8bec8']),
@@ -225,13 +233,10 @@ function membershipComposition(insights = false) {
     compositionTileControl('age',compositionAge(d.age).replace('composition-card age','composition-card age composition-static-profile'),liveCompositionTrend('Age Profile','age')),
     compositionTileControl('handicap',compositionHandicap(d.handicap).replace('composition-card handicap','composition-card handicap composition-static-profile'),liveCompositionTrend('Handicap Index Profile','handicap')),
   ];
-  const measures = [['Total Memberships', d.counts.memberships], ['Unique golfers', d.counts.uniqueGolfers],
-    ['Unique Regular Golfers', membershipPopulation === 'junior' ? 0 : (insights?MEMBERSHIP_COMPOSITION_DATA.regular:scopedCompositionData('regular')).counts.uniqueGolfers],
-    ['Unique Junior Golfers', membershipPopulation === 'regular' ? 0 : (insights?MEMBERSHIP_COMPOSITION_DATA.junior:scopedCompositionData('junior')).counts.uniqueGolfers]];
   return `<section class="membership-composition membership-live">
-    ${insights?`<nav class="insights-tertiary-nav" aria-label="Insights sections">${[['membership','Membership'],['clubs','Golf Clubs'],['age','Age & Handicap']].map(([key,label])=>`<button type="button" data-insight-section="${key}" aria-current="${membershipInsightSection===key?'page':'false'}">${label}</button>`).join('')}</nav>`:''}
-    ${insights?'':`<div class="live-membership-counts">${measures.map(([label, value], i) => `<div class="${i === 0 ? 'primary' : ''}"><span>${label}</span><strong>${fmt(value)}</strong></div>`).join('')}</div>`}
+    ${insights?`<nav class="insights-tertiary-nav" aria-label="Insights sections">${[['membership','Membership'],['clubs','Golf Clubs'],['age','Age & Handicap'],['insights','Insights']].map(([key,label])=>`<button type="button" data-insight-section="${key}" aria-current="${membershipInsightSection===key?'page':'false'}">${label}</button>`).join('')}</nav>`:''}
+    ${insights?'':'<div class="composition-filters"></div>'}
     <div class="composition-grid">${cards.join('')}</div>
-    <details class="live-data-notes"><summary>About these membership numbers</summary>${insights&&membershipInsightSection==='membership'?`<p>Share uses all matching memberships. NH rate is the portion of each row marked No Index. Values within a filter use OR; different filters use AND. Unique golfers are counted once within the combined selection. Memberships beyond the first equals Total Memberships minus unique golfers. Unknown ages, genders and indexes remain available as separate values. Club Type follows the source Type 1/2/3; Club Group keeps GC Clubs separate.</p>`:''}<p>${insights?esc(MEMBERSHIP_SCOPE.definition):esc(membershipScopeLabel())+' follows association affiliation, not golfer residence. All Associations counts each golfer once across both scopes.'}</p>${!insights&&d.clubMetadataAvailable===false?'<p>International club access and club type were not supplied. Those memberships appear as Unknown in the classification charts.</p>':''}<p>Each qualifying club membership is counted. Unique golfers and multiple-membership measures are recalculated within the selected population. Unclassified memberships remain included in All Members. GC identification uses the 57 club IDs in the September GC source.</p><p>The live extraction date is ${insights?'October 13, 2026':membershipScopeDate()}. The file was exported in batches between 2:33 and 2:48 p.m. Eastern; it is not a certified single-time snapshot. ${d.quality.missingGolferDetails==null?'Matching golfer-record coverage: no data.':fmt(d.quality.missingGolferDetails)+' memberships in this selection have no matching golfer details.'} Averages are membership-weighted.</p></details>
+    <details class="live-data-notes"><summary>About these membership numbers</summary>${insights&&membershipInsightSection==='membership'?`<p>Share uses all matching memberships. NH rate is the portion of each row marked No Index. Values within a filter use OR; different filters use AND. Unique golfers are counted once within the combined selection. Memberships beyond the first equals Total Memberships minus unique golfers. Unknown ages, genders and indexes remain available as separate values. Club Type follows the source Type 1/2/3; Club Group keeps GC Clubs separate.</p><p>Index statistics always count each golfer once, regardless of the counting toggle. NH and Unknown are excluded; plus handicaps count as negative values. November 3, 2026 snapshot.</p>`:''}<p>${insights?esc(MEMBERSHIP_SCOPE.definition):esc(membershipScopeLabel())+' follows association affiliation, not golfer residence. All Associations counts each golfer once across both scopes.'}</p>${!insights&&d.clubMetadataAvailable===false?'<p>International club access and club type were not supplied. Those memberships appear as Unknown in the classification charts.</p>':''}<p>Each qualifying club membership is counted. Unique golfers and multiple-membership measures are recalculated within the selected population. Unclassified memberships remain included in All Members. GC identification uses the 57 club IDs in the September GC source. ${!insights?'GC Only includes memberships at GC clubs; Exclude GC includes memberships at other clubs. A golfer with both kinds of membership can appear in either selection.':''}</p><p>The live extraction date is ${insights?'November 3, 2026':membershipScopeDate()}. The file was exported in 1,028 batches between 3:33 and 3:47 p.m. Eastern on November 3; it is not a certified single-time snapshot. ${d.quality.missingGolferDetails==null?'Matching golfer-record coverage: no data.':fmt(d.quality.missingGolferDetails)+' memberships in this selection have no matching golfer details.'} Averages are membership-weighted.</p></details>
   </section>`;
 }
