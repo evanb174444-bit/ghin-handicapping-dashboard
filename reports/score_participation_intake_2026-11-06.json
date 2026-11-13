@@ -1,0 +1,30 @@
+{
+  "source": "score_participation_2026-11-06.csv.csv",
+  "sha256": "4befb7f852caa3e4023c96d775e646a2610ac05fd90a708d872fb5d06febed3d",
+  "bytes": 523720993,
+  "rows": 3825075,
+  "populations": {
+    "non_trial": 3665462,
+    "trial": 159613
+  },
+  "overlapGolfers": 38,
+  "extractionTimestampCount": 383,
+  "extractionStart": "2026-11-06 18:17:51.397 -0500",
+  "extractionEnd": "2026-11-06 18:27:22.369 -0500",
+  "duplicatePopulationGolfers": 0,
+  "unknownPopulations": 0,
+  "endEqualsExtractionForAllRows": true,
+  "validation": {
+    "patternBandTotalsReconcile": true,
+    "browserChecks": [
+      "All Associations / All Member Types: 3,665,462, bands 820,525 / 605,228 / 2,239,709",
+      "Trial: 159,613, bands 131,424 / 27,375 / 814",
+      "Club Group GC Clubs: 550,221, bands 65,189 / 129,922 / 355,110",
+      "International + GC: empty; no NaN percentages",
+      "AGA Regular: 3,157,019",
+      "Unique-golfer sorting ascending and descending; unmatched group retained"
+    ],
+    "browserErrors": 0,
+    "publication": "Local only"
+  }
+}

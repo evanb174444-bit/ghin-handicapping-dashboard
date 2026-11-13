@@ -1,0 +1,17 @@
+{
+  "chart": "Categorical line distribution; no smoothing",
+  "defaultGroups": [
+    "Private Clubs",
+    "Public Green Grass Clubs",
+    "GC Clubs",
+    "Virtual clubs / eClubs"
+  ],
+  "embeddedScorePayloadsUnchanged": true,
+  "browserChecks": [
+    "AGA Regular point values match original screenshot",
+    "Group checkbox adds/removes line without closing chooser",
+    "Public/private grouping redraws curves",
+    "Default collapsed; chart replaces table"
+  ],
+  "publication": "Local only"
+}

@@ -1,0 +1,46 @@
+{
+  "score_explorer": {
+    "bucketCounts": [
+      820525,
+      605228,
+      1043019,
+      715788,
+      480902
+    ],
+    "gcBucketCounts": [
+      65189,
+      129922,
+      219056,
+      102719,
+      33335
+    ],
+    "priorTotalsPreserved": true,
+    "membershipCellsUnchanged": true
+  },
+  "score_trial_explorer": {
+    "bucketCounts": [
+      131424,
+      27375,
+      766,
+      41,
+      7
+    ],
+    "gcBucketCounts": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "priorTotalsPreserved": true,
+    "membershipCellsUnchanged": true
+  },
+  "browserValidation": {
+    "allFiveBandsAndPercentages": true,
+    "gcFilterMatchesRebuild": true,
+    "trialMatchesRebuild": true,
+    "sort50PlusPercentage": true,
+    "consoleErrors": 0,
+    "publication": "local only"
+  }
+}

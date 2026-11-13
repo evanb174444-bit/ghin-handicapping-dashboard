@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "source": "https://www.ngf.org/monthly-rounds-played-reports/",
+    "retrievedAt": "2026-11-12T23:16:43.254091+00:00",
+    "publisher": "NGF / Golf Datatech",
+    "measure": "United States rounds played year-over-year percentage change",
+    "rawRoundCountsAvailable": false,
+    "latestMonth": "2026-09",
+    "archiveIndexSha256": "ce823033f61475cb5f064290c97f345eb7a337ed28ab5f11d8cc79d6f3b5df05"
+  },
+  "months": [
+    {
+      "month": "2023-01",
+      "monthlyYoy": 7.1,
+      "ytdYoy": 7.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/January-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "79132c93eee337b8e6a012f0ca110445a9b64ba8809817ceb9c37d93e1d6a1e5"
+    },
+    {
+      "month": "2023-02",
+      "monthlyYoy": -2.8,
+      "ytdYoy": 1.8,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/February-2023-National-Rounds-Played.pdf",
+      "sourcePage": 2,
+      "sha256": "664c0725c49ca62b504ff65d523c856a0f2c5d627a486b70fdbb47252da50ccb"
+    },
+    {
+      "month": "2023-03",
+      "monthlyYoy": -2.3,
+      "ytdYoy": -0.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/March-2023-National-Rounds-Played.pdf",
+      "sourcePage": 2,
+      "sha256": "1616befad7df7326374dcc9acc297af76e7304e29bf7c04c3c3368adcccbd8de"
+    },
+    {
+      "month": "2023-04",
+      "monthlyYoy": 7.8,
+      "ytdYoy": 3.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/April-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "bbf116ff8f6d0ddbed1dca35f8ab3be1fe550304b0fb282b4c61ef6b07fbc74d"
+    },
+    {
+      "month": "2023-05",
+      "monthlyYoy": 10.1,
+      "ytdYoy": 5.5,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/May-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "1ca3e895915cf3d00641836f916974b0a9d2efcb90c8abe472b77df38e66e52f"
+    },
+    {
+      "month": "2023-06",
+      "monthlyYoy": 5.5,
+      "ytdYoy": 5.5,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/June-2023-National-Rounds-Played.pdf",
+      "sourcePage": 2,
+      "sha256": "8aa97f9c1653d7e4ae85143acdb0c60d938aa37e6bb17571c961dc5ddbbeb068"
+    },
+    {
+      "month": "2023-07",
+      "monthlyYoy": 3.2,
+      "ytdYoy": 5.0,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/July-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "0b823e4b7e70981c7378fa7ac5beb239484e22a19fe0bf240e6c9fbbf980d828"
+    },
+    {
+      "month": "2023-08",
+      "monthlyYoy": 0.1,
+      "ytdYoy": 4.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/August-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "2909c8523fe1db90d7c5700fa6d217da9f9e5ee8d7411f6f52fe97cdee44516d"
+    },
+    {
+      "month": "2023-09",
+      "monthlyYoy": 1.6,
+      "ytdYoy": 3.8,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/September-2023-National-Rounds-Played.pdf",
+      "sourcePage": 2,
+      "sha256": "4ce26d529388c42dbbef25eb58df33217863c1afcf577f9cc0378fd7c18cc4c1"
+    },
+    {
+      "month": "2023-10",
+      "monthlyYoy": -1.0,
+      "ytdYoy": 3.3,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/October-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "7b4ba7b2384873bcb24cd22b2d51faaf5b12d9b35e9af3acd3337e7ae72e0474"
+    },
+    {
+      "month": "2023-11",
+      "monthlyYoy": 8.2,
+      "ytdYoy": 3.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/November-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "0a2197cc714ec8de9515a8718e244b022edf2591d79a4d9250870942ac19349a"
+    },
+    {
+      "month": "2023-12",
+      "monthlyYoy": 23.9,
+      "ytdYoy": 4.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/December-2023-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "0fa4cd5cc8afd354dd9d3e2fde783fbec72bea94270921361aff4df7c58b81dc"
+    },
+    {
+      "month": "2024-01",
+      "monthlyYoy": -16.6,
+      "ytdYoy": -16.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/January-2024-National-Rounds-Played-Report-1.pdf",
+      "sourcePage": 2,
+      "sha256": "0e329ced820698166394b3098b4e2e14481af66b01da5639117e80f61ade5902"
+    },
+    {
+      "month": "2024-02",
+      "monthlyYoy": 4.9,
+      "ytdYoy": -5.4,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/February-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "fd9c0273326e5880819de7960b1c7ee32553918af5e9e4c01475f15ebb8e843e"
+    },
+    {
+      "month": "2024-03",
+      "monthlyYoy": 21.2,
+      "ytdYoy": 6.8,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/March-2024-National-Rounds-Played-Report-1.pdf",
+      "sourcePage": 2,
+      "sha256": "1fb482e7beddfd2ab3d4882862c5c4f044d6ed1b17b276cbbbe8558c309cb804"
+    },
+    {
+      "month": "2024-04",
+      "monthlyYoy": 0.8,
+      "ytdYoy": 4.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/April-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "565e65b02c4f3b8f740a69bd126d1a673d3cb0ca12d4728fd393d8ed2afc50bd"
+    },
+    {
+      "month": "2024-05",
+      "monthlyYoy": -0.8,
+      "ytdYoy": 2.4,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/May-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "d382679d984f0f9cb7cbc80b4706cb4babe7088fa9cfda3c17d8f24a2783b7f9"
+    },
+    {
+      "month": "2024-06",
+      "monthlyYoy": 1.2,
+      "ytdYoy": 2.0,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/June-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "f660466ba35cd375625c83eb8b0d049fd34bbee3ad53b10022bc8458443ab74a"
+    },
+    {
+      "month": "2024-07",
+      "monthlyYoy": -1.4,
+      "ytdYoy": 1.3,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/July-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "3bd9753491eadf792ec77c8e2cc4ac57a87a5b2788474d4e6b0d7fe3c93e7c00"
+    },
+    {
+      "month": "2024-08",
+      "monthlyYoy": 1.9,
+      "ytdYoy": 1.4,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/August-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "5799f472eeb3544f4282686149f45502bc26ac358009945c87db886a76b4a53f"
+    },
+    {
+      "month": "2024-09",
+      "monthlyYoy": 3.6,
+      "ytdYoy": 1.7,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/September-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "df324058ea4ab147b6157a639634b7ddf3125bc6bde324af72d59cc2cc0e483a"
+    },
+    {
+      "month": "2024-10",
+      "monthlyYoy": 11.5,
+      "ytdYoy": 2.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/October-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "215ba32e95f184d25ae5e755a40190cfd0032fe950fda7d091bce26b805132e5"
+    },
+    {
+      "month": "2024-11",
+      "monthlyYoy": 3.0,
+      "ytdYoy": 2.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/01/November-2024-National-Rounds-Played.pdf",
+      "sourcePage": 2,
+      "sha256": "373ba28ace482a4d6732ff5b906d3e9c9f5165ee336533ef3ac4c7d5e26f83d3"
+    },
+    {
+      "month": "2024-12",
+      "monthlyYoy": -9.1,
+      "ytdYoy": 2.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/02/December-2024-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "984206630b16cc89e55570445fa6661bec793fe2d14f56f1c4cc2bdc7be73b3c"
+    },
+    {
+      "month": "2025-01",
+      "monthlyYoy": -2.9,
+      "ytdYoy": -2.9,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/03/January-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "51b06dc4017e82ca94a828117b6aa235cd6ba849bfc7e44572fd5d1cba15f0cf"
+    },
+    {
+      "month": "2025-02",
+      "monthlyYoy": -11.4,
+      "ytdYoy": -7.9,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/04/February-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "f8af57708d1c1f23a70eed8948d63e63b5c0448e6e6623cfa0010172cf0e6148"
+    },
+    {
+      "month": "2025-03",
+      "monthlyYoy": 3.8,
+      "ytdYoy": -1.9,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/04/March-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "5177ba2618c37000c7f413ab5dda9b3e1064e673ac687cbfed0e10eae8224c8d"
+    },
+    {
+      "month": "2025-04",
+      "monthlyYoy": 2.7,
+      "ytdYoy": 0.0,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/06/April-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "6362988118a29026672b884ba932e1e3edca6d67d2701e1c3eb1c41cfc577e79"
+    },
+    {
+      "month": "2025-05",
+      "monthlyYoy": -1.7,
+      "ytdYoy": -0.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/06/May-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "f2c7a6947f882c47de5ca92040a9f3c71cf469d17531d244452291fd202da078"
+    },
+    {
+      "month": "2025-06",
+      "monthlyYoy": -0.6,
+      "ytdYoy": -0.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/07/June-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "1f2bc84720626b9a8cb6509b7083c572b576a433892c2bc537520233c1a8b2c9"
+    },
+    {
+      "month": "2025-07",
+      "monthlyYoy": 2.6,
+      "ytdYoy": 0.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/08/July-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "7d2ff86377c1c0cedfbafadf8f6d263f7335cc3f0db594f65d1cb1324885657d"
+    },
+    {
+      "month": "2025-08",
+      "monthlyYoy": 7.7,
+      "ytdYoy": 1.4,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/09/August-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "60d073a8b6bbfca2edbd7d1cf7a313ab70d99e0456fb62b063b502b7794aacc5"
+    },
+    {
+      "month": "2025-09",
+      "monthlyYoy": 1.8,
+      "ytdYoy": 1.4,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/10/September-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "65c621d5d33b160dd1185869ff2e8c50b6499df55314d88348d339d6aefdbe57"
+    },
+    {
+      "month": "2025-10",
+      "monthlyYoy": -2.2,
+      "ytdYoy": 1.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/11/October-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "d146884ec167c495951011e77ab7ac5a32bd86424fc3c7ff264f732f29355ab8"
+    },
+    {
+      "month": "2025-11",
+      "monthlyYoy": 3.2,
+      "ytdYoy": 1.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2025/12/November-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "9dbd1d327f02709541bac1cd8711b3c966a36a04967a3a33e2895dc2e61b3d51"
+    },
+    {
+      "month": "2025-12",
+      "monthlyYoy": 0.2,
+      "ytdYoy": 1.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/01/December-2025-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "b46ad488eb835931706fac1c2637e82bc136711fe1aa360ae3f74df1f8a0923a"
+    },
+    {
+      "month": "2026-01",
+      "monthlyYoy": 18.6,
+      "ytdYoy": 18.6,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/02/January-2026-National-Rounds-Played-Report-002.pdf",
+      "sourcePage": 2,
+      "sha256": "22e6aad76808e4a0a9bf459561f9d38c4899b43b1bd169154b15f3fb852c0acc"
+    },
+    {
+      "month": "2026-02",
+      "monthlyYoy": 5.1,
+      "ytdYoy": 11.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/03/February-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "934ff9003fe580f9d2f968ec70a90b593c110a09049326a72a841a0ce24c6fcb"
+    },
+    {
+      "month": "2026-03",
+      "monthlyYoy": -0.3,
+      "ytdYoy": 4.9,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/04/MMarch-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "f3d77da121a99c2e642da91ed672f8a9887c102ad080cce5d928c5eba1e394dc"
+    },
+    {
+      "month": "2026-04",
+      "monthlyYoy": 5.9,
+      "ytdYoy": 5.3,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/05/April-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "3dcea84d69855ed0009ba6eb5638c0130380c96349c2ff8d71b1bd1ae32f26ec"
+    },
+    {
+      "month": "2026-05",
+      "monthlyYoy": 5.6,
+      "ytdYoy": 5.4,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/06/May-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "60c2a43a3180881256d658a083c0462355621c2cf5ac54d30b6ca836796f2066"
+    },
+    {
+      "month": "2026-06",
+      "monthlyYoy": 1.2,
+      "ytdYoy": 4.2,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/07/June-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "5b229cd2049721ba1516685908cbb0c9aec4c3f899de41f9950e95cf0eaec617"
+    },
+    {
+      "month": "2026-07",
+      "monthlyYoy": -3.6,
+      "ytdYoy": 2.5,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/08/July-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "74d682bf74e13fc57cbb973c2900dc8b81a8af7843656182eee557e78c576a67"
+    },
+    {
+      "month": "2026-08",
+      "monthlyYoy": -5.1,
+      "ytdYoy": 1.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/09/August-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "d7ea3d1e2c93d401a1a054a7b20830fbe7bb50038ccf1258435c3cfe5174703f"
+    },
+    {
+      "month": "2026-09",
+      "monthlyYoy": -6.4,
+      "ytdYoy": 0.1,
+      "source": "https://www.ngf.org/wp-content/uploads/2026/11/September-2026-National-Rounds-Played-Report.pdf",
+      "sourcePage": 2,
+      "sha256": "9b3a76341b8a804d0e69c007fcefbba225689bfbb033d2982e4b367c09a6321d"
+    }
+  ]
+}

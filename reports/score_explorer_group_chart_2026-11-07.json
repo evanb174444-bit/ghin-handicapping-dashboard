@@ -1,0 +1,13 @@
+{
+  "embeddedTrialAndMemberPayloadsUnchanged": true,
+  "browserChecks": [
+    "Default chart collapsed with table visible",
+    "Show chart replaces table with 100% bars",
+    "AGA Regular matches supplied screenshot",
+    "Age grouping redraws eight groups",
+    "GC membership intersection shows 550221 golfers",
+    "International GC intersection is empty",
+    "Sort by zero-score percentage shared with table"
+  ],
+  "publication": "Local only"
+}

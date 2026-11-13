@@ -1,0 +1,15 @@
+{
+  "alwaysOpen": true,
+  "defaultAllSelected": true,
+  "defaultExcludedLabels": [
+    "Unknown / invalid",
+    "No November 3 active membership match"
+  ],
+  "browserValidation": [
+    "Age: seven checked, two excluded unchecked",
+    "Checkbox changes update lines and leave controls visible",
+    "No browser errors"
+  ],
+  "dataUnchanged": true,
+  "publication": "Local only"
+}

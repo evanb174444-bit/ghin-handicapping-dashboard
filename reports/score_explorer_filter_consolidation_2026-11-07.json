@@ -1,0 +1,20 @@
+{
+  "explorerTopDropdownsRemoved": true,
+  "singleFilterArea": [
+    "Association Scope",
+    "Golfer Population",
+    "Membership Type",
+    "existing dimensions"
+  ],
+  "explorerIndependentOfOtherScorePages": true,
+  "browserChecks": {
+    "allMembers": 3665462,
+    "AGAandRegular": 3157019,
+    "trialGolfers": 159613,
+    "international": 94897,
+    "clearAllResetsScopeAndPopulation": true,
+    "totalsRetainsBothTopControls": true
+  },
+  "dataUnchanged": true,
+  "publication": "local only"
+}

@@ -1,0 +1,20 @@
+{
+  "unmatchedRemovedFromGraphAndChooser": true,
+  "unknownDefaultRule": "Any label beginning Unknown, case insensitive",
+  "dataUnchanged": true,
+  "footerSourceUnmatchedBands": [
+    1674,
+    893,
+    449,
+    160,
+    83
+  ],
+  "verifiedGroups": [
+    "Age",
+    "Club Group",
+    "Public / Private",
+    "Handicap Index"
+  ],
+  "browserErrors": 0,
+  "publication": "local only"
+}

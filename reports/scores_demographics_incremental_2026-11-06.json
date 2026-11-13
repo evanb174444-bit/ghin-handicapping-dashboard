@@ -1,0 +1,268 @@
+{
+  "source": "scores_demographics_sep_oct_2026.csv",
+  "sha256": "76948cad2176887892064849dff27107d4dec0c5706b6de16df4b14887eb135b",
+  "rows": 282942,
+  "months": [
+    "2026-09",
+    "2026-10"
+  ],
+  "rawMonthly": {
+    "2026-09": 7986419,
+    "2026-10": 6950407
+  },
+  "excludedTests": {
+    "2026-09": 344,
+    "2026-10": 426
+  },
+  "extractedAt": [
+    "2026-11-06 17:31:49.886 -0500",
+    "2026-11-06 17:40:34.109 -0500",
+    "2026-11-06 17:40:35.392 -0500",
+    "2026-11-06 17:40:36.324 -0500",
+    "2026-11-06 17:40:37.678 -0500",
+    "2026-11-06 17:40:38.813 -0500",
+    "2026-11-06 17:40:39.706 -0500",
+    "2026-11-06 17:40:40.795 -0500",
+    "2026-11-06 17:40:41.908 -0500",
+    "2026-11-06 17:40:42.834 -0500",
+    "2026-11-06 17:40:43.828 -0500",
+    "2026-11-06 17:40:44.669 -0500",
+    "2026-11-06 17:40:45.782 -0500",
+    "2026-11-06 17:40:46.805 -0500",
+    "2026-11-06 17:40:47.863 -0500",
+    "2026-11-06 17:40:48.780 -0500",
+    "2026-11-06 17:40:49.973 -0500",
+    "2026-11-06 17:40:50.914 -0500",
+    "2026-11-06 17:40:51.863 -0500",
+    "2026-11-06 17:40:53.197 -0500",
+    "2026-11-06 17:40:54.078 -0500",
+    "2026-11-06 17:40:55.217 -0500",
+    "2026-11-06 17:40:56.208 -0500",
+    "2026-11-06 17:40:57.058 -0500",
+    "2026-11-06 17:40:57.983 -0500",
+    "2026-11-06 17:40:58.789 -0500",
+    "2026-11-06 17:40:59.789 -0500",
+    "2026-11-06 17:41:00.908 -0500",
+    "2026-11-06 17:41:01.787 -0500"
+  ],
+  "database": [
+    "ghin2020pilot"
+  ],
+  "definition": "Established demographic export; current gender/age and primary-club affiliation. Separate capture from posting mix; differences preserved, no rescaling.",
+  "timezoneEvidence": "Source offsets -0500; session timezone name not supplied",
+  "reconciliation": [
+    {
+      "scope": "all",
+      "population": "all",
+      "month": "2026-09",
+      "postingCount": 7986079,
+      "demographicCount": 7986075,
+      "difference": -4
+    },
+    {
+      "scope": "all",
+      "population": "all",
+      "month": "2026-10",
+      "postingCount": 6950022,
+      "demographicCount": 6949981,
+      "difference": -41
+    },
+    {
+      "scope": "all",
+      "population": "regular",
+      "month": "2026-09",
+      "postingCount": 7763024,
+      "demographicCount": 7763078,
+      "difference": 54
+    },
+    {
+      "scope": "all",
+      "population": "regular",
+      "month": "2026-10",
+      "postingCount": 6784681,
+      "demographicCount": 6784727,
+      "difference": 46
+    },
+    {
+      "scope": "all",
+      "population": "junior",
+      "month": "2026-09",
+      "postingCount": 141550,
+      "demographicCount": 141549,
+      "difference": -1
+    },
+    {
+      "scope": "all",
+      "population": "junior",
+      "month": "2026-10",
+      "postingCount": 103045,
+      "demographicCount": 103045,
+      "difference": 0
+    },
+    {
+      "scope": "all",
+      "population": "trial",
+      "month": "2026-09",
+      "postingCount": 31549,
+      "demographicCount": 31523,
+      "difference": -26
+    },
+    {
+      "scope": "all",
+      "population": "trial",
+      "month": "2026-10",
+      "postingCount": 25487,
+      "demographicCount": 25457,
+      "difference": -30
+    },
+    {
+      "scope": "aga",
+      "population": "all",
+      "month": "2026-09",
+      "postingCount": 7803200,
+      "demographicCount": 7803217,
+      "difference": 17
+    },
+    {
+      "scope": "aga",
+      "population": "all",
+      "month": "2026-10",
+      "postingCount": 6745573,
+      "demographicCount": 6745559,
+      "difference": -14
+    },
+    {
+      "scope": "aga",
+      "population": "regular",
+      "month": "2026-09",
+      "postingCount": 7617935,
+      "demographicCount": 7617989,
+      "difference": 54
+    },
+    {
+      "scope": "aga",
+      "population": "regular",
+      "month": "2026-10",
+      "postingCount": 6612259,
+      "demographicCount": 6612303,
+      "difference": 44
+    },
+    {
+      "scope": "aga",
+      "population": "junior",
+      "month": "2026-09",
+      "postingCount": 139301,
+      "demographicCount": 139300,
+      "difference": -1
+    },
+    {
+      "scope": "aga",
+      "population": "junior",
+      "month": "2026-10",
+      "postingCount": 99493,
+      "demographicCount": 99493,
+      "difference": 0
+    },
+    {
+      "scope": "aga",
+      "population": "trial",
+      "month": "2026-09",
+      "postingCount": 16,
+      "demographicCount": 16,
+      "difference": 0
+    },
+    {
+      "scope": "aga",
+      "population": "trial",
+      "month": "2026-10",
+      "postingCount": 0,
+      "demographicCount": 0,
+      "difference": 0
+    },
+    {
+      "scope": "international",
+      "population": "all",
+      "month": "2026-09",
+      "postingCount": 147846,
+      "demographicCount": 147846,
+      "difference": 0
+    },
+    {
+      "scope": "international",
+      "population": "all",
+      "month": "2026-10",
+      "postingCount": 176572,
+      "demographicCount": 176574,
+      "difference": 2
+    },
+    {
+      "scope": "international",
+      "population": "regular",
+      "month": "2026-09",
+      "postingCount": 145086,
+      "demographicCount": 145086,
+      "difference": 0
+    },
+    {
+      "scope": "international",
+      "population": "regular",
+      "month": "2026-10",
+      "postingCount": 172420,
+      "demographicCount": 172422,
+      "difference": 2
+    },
+    {
+      "scope": "international",
+      "population": "junior",
+      "month": "2026-09",
+      "postingCount": 2249,
+      "demographicCount": 2249,
+      "difference": 0
+    },
+    {
+      "scope": "international",
+      "population": "junior",
+      "month": "2026-10",
+      "postingCount": 3552,
+      "demographicCount": 3552,
+      "difference": 0
+    },
+    {
+      "scope": "international",
+      "population": "trial",
+      "month": "2026-09",
+      "postingCount": 0,
+      "demographicCount": 0,
+      "difference": 0
+    },
+    {
+      "scope": "international",
+      "population": "trial",
+      "month": "2026-10",
+      "postingCount": 0,
+      "demographicCount": 0,
+      "difference": 0
+    }
+  ],
+  "validation": "Unique aggregate groups; nonnegative counts; exactly two months; all categories/associations reconcile; prior demographic history and all posting totals unchanged.",
+  "ytdDemographicTotals": {
+    "all": {
+      "all": 79957107,
+      "regular": 77601554,
+      "junior": 1547295,
+      "trial": 339239
+    },
+    "aga": {
+      "all": 77827502,
+      "regular": 75896395,
+      "junior": 1516793,
+      "trial": 444
+    },
+    "international": {
+      "all": 1741399,
+      "regular": 1705133,
+      "junior": 30502,
+      "trial": 0
+    }
+  }
+}

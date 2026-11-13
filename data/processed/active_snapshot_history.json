@@ -12,51 +12,69 @@
           "all": {
             "uniqueGolfers": 3560991,
             "associationMemberships": 3686458,
-            "memberships": 3859441
+            "memberships": 3859441,
+            "multiMembershipGolfers": 261739,
+            "multiAssociationGolfers": null
           },
           "regular": {
             "uniqueGolfers": 3160610,
             "associationMemberships": 3281831,
-            "memberships": 3437657
+            "memberships": 3437657,
+            "multiMembershipGolfers": 242158,
+            "multiAssociationGolfers": null
           },
           "junior": {
             "uniqueGolfers": 391437,
             "associationMemberships": 393044,
-            "memberships": 405292
+            "memberships": 405292,
+            "multiMembershipGolfers": 12927,
+            "multiAssociationGolfers": null
           }
         },
         "international": {
           "all": {
             "uniqueGolfers": 94708,
             "associationMemberships": 94802,
-            "memberships": 96703
+            "memberships": 96703,
+            "multiMembershipGolfers": 1902,
+            "multiAssociationGolfers": null
           },
           "regular": {
             "uniqueGolfers": 91381,
             "associationMemberships": 91470,
-            "memberships": 93251
+            "memberships": 93251,
+            "multiMembershipGolfers": 1788,
+            "multiAssociationGolfers": null
           },
           "junior": {
             "uniqueGolfers": 3098,
             "associationMemberships": 3101,
-            "memberships": 3175
+            "memberships": 3175,
+            "multiMembershipGolfers": 71,
+            "multiAssociationGolfers": null
           }
         },
         "all": {
           "all": {
             "uniqueGolfers": 3654391,
             "associationMemberships": 3781260,
-            "memberships": 3956144
+            "memberships": 3956144,
+            "multiMembershipGolfers": 264593,
+            "multiAssociationGolfers": null
           },
           "regular": {
             "uniqueGolfers": 3250762,
             "associationMemberships": 3373301,
-            "memberships": 3530908
+            "memberships": 3530908,
+            "multiMembershipGolfers": 244835,
+            "multiAssociationGolfers": null
           },
           "junior": {
             "uniqueGolfers": 394513,
             "associationMemberships": 396145,
-            "memberships": 408467
+            "memberships": 408467,
+            "multiMembershipGolfers": 13018,
+            "multiAssociationGolfers": null
           }
         }
       }
@@ -72,51 +90,69 @@
           "all": {
             "uniqueGolfers": 3570690,
             "associationMemberships": 3697136,
-            "memberships": 3872001
+            "memberships": 3872001,
+            "multiMembershipGolfers": 264171,
+            "multiAssociationGolfers": 119938
           },
           "regular": {
             "uniqueGolfers": 3158655,
             "associationMemberships": 3280782,
-            "memberships": 3438170
+            "memberships": 3438170,
+            "multiMembershipGolfers": 244240,
+            "multiAssociationGolfers": 115812
           },
           "junior": {
             "uniqueGolfers": 402957,
             "associationMemberships": 404664,
-            "memberships": 417329
+            "memberships": 417329,
+            "multiMembershipGolfers": 13394,
+            "multiAssociationGolfers": 1633
           }
         },
         "international": {
           "all": {
             "uniqueGolfers": 94958,
             "associationMemberships": 95052,
-            "memberships": 96981
+            "memberships": 96981,
+            "multiMembershipGolfers": 1929,
+            "multiAssociationGolfers": 94
           },
           "regular": {
             "uniqueGolfers": 91584,
             "associationMemberships": 91673,
-            "memberships": 93483
+            "memberships": 93483,
+            "multiMembershipGolfers": 1816,
+            "multiAssociationGolfers": 89
           },
           "junior": {
             "uniqueGolfers": 3168,
             "associationMemberships": 3171,
-            "memberships": 3243
+            "memberships": 3243,
+            "multiMembershipGolfers": 70,
+            "multiAssociationGolfers": 3
           }
         },
         "all": {
           "all": {
             "uniqueGolfers": 3664334,
             "associationMemberships": 3792188,
-            "memberships": 3968982
+            "memberships": 3968982,
+            "multiMembershipGolfers": 267055,
+            "multiAssociationGolfers": 121136
           },
           "regular": {
             "uniqueGolfers": 3249006,
             "associationMemberships": 3372455,
-            "memberships": 3531653
+            "memberships": 3531653,
+            "multiMembershipGolfers": 246947,
+            "multiAssociationGolfers": 116927
           },
           "junior": {
             "uniqueGolfers": 406103,
             "associationMemberships": 407835,
-            "memberships": 420572
+            "memberships": 420572,
+            "multiMembershipGolfers": 13484,
+            "multiAssociationGolfers": 1658
           }
         }
       }

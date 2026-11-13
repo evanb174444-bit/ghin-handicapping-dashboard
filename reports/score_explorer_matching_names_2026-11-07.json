@@ -1,0 +1,28 @@
+{
+  "coreLabelsReusedFrom": "membershipExplorerDimensions",
+  "removedCategories": [
+    "Association Scope",
+    "Golfer Population"
+  ],
+  "associationChoices": [
+    "All Associations",
+    "AGA Only",
+    "International Only",
+    "individual associations"
+  ],
+  "membershipTypeChoices": [
+    "All Member Types",
+    "Trial Golfers",
+    "Junior",
+    "Regular",
+    "Unclassified"
+  ],
+  "existingCreationYearFiltersRetained": true,
+  "browserChecks": {
+    "trialGolfers": 159613,
+    "switchTrialToRegularThenAGA": 3157019,
+    "chipsUseAssociationAndMembershipType": true
+  },
+  "dataUnchanged": true,
+  "publication": "local only"
+}

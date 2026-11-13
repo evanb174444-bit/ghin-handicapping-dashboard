@@ -1,0 +1,38 @@
+{
+  "controlsBelowPlot": true,
+  "introRemoved": true,
+  "noteMovedToCollapsedDefinitions": true,
+  "legendSwatchPixels": [
+    34,
+    6
+  ],
+  "legendFontPixels": 15,
+  "chooserFontPixels": 14,
+  "embeddedDataUnchanged": true,
+  "browserChecks": [
+    "Age seven selected: counts match user screenshots",
+    "Selectors follow SVG in accessible document order",
+    "Checkbox changes keep selector open"
+  ],
+  "profilingFeasibility": {
+    "jointDimensions": [
+      "membershipType",
+      "association",
+      "access",
+      "clubGroup",
+      "clubType",
+      "gender",
+      "age",
+      "handicap",
+      "club",
+      "scope",
+      "golferCreationYear",
+      "membershipCreationYear"
+    ],
+    "totalGolfers": 3665462,
+    "golfersWithUsableAge": 2096732,
+    "golfersWithoutUsableAge": 1568730,
+    "newFeatureBuilt": false
+  },
+  "publication": "local only"
+}

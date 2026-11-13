@@ -206,3 +206,76 @@ The audit also identified 45 numeric-index membership rows above 54.0, excluded 
 
 ### October 26: local segment comparison
 Membership Explorer now has Compare segments. It copies the current filters and population into independent A/B panels, with copy, swap, and return controls. Each panel has its own member population; the comparison uses those panel selections. Summary and grouped comparisons use unique golfers, exact average/median Index, valid Index count, and NH unique-golfer rate. Differences are B minus A, with percentage-point rate differences. Overlap is calculated from golferPatterns, counting people matching both segments even through different memberships. Existing Explorer selection is preserved when returning. Local browser checks passed for independent filters, inherited selection, grouping, differences, copy/swap, mobile overflow, and restored Explorer. Not published.
+
+## November 6, 2026 — Scores Explorer refresh (local)
+
+Imported score_participation_2026-11-06.csv.csv: 3,825,075 rows, unique by population/golfer, zero duplicate keys or unexpected populations. Non-trial: 3,665,462 golfers (820,525 zero; 605,228 with 1–7; 2,239,709 with 8+). Trial: 159,613 golfers (131,424 zero; 27,375 with 1–7; 814 with 8+). The pools overlap by 38 golfers and are not additive.
+
+Score created_at window starts January 1 and ends at each recorded execution time: November 6, 18:17:51.397–18:27:22.369 America/New_York, 383 timestamps. This includes partial November and is not one frozen read; monthly totals/composition/associations remain completed October. Membership attributes use the November 3 archive. Unmatched current-eligibility golfers remain in overall totals with actual score bands: 3,259 non-trial and 1,893 trial; matched-attribute selections exclude these unknown affiliations. Trial counts include all qualifying YTD scores for currently eligible golfers, not trial-flagged-only scores. Club Group GC Clubs selects matched GC membership rows.
+
+Private raw source archived at data/raw/score_participation_2026-11-06/. SHA-256: 4befb7f852caa3e4023c96d775e646a2610ac05fd90a708d872fb5d06febed3d. Builders: scripts/build_score_explorer_2026_11_06.py (--trial); scripts/install_score_explorer_2026_11_06.py. Source audit: reports/score_participation_intake_2026-11-06.json; per-population validation reports retain all capture timestamps. Only anonymous grouped patterns embedded. Local refresh only; no GitHub or USGA publication.
+
+## November 7, 2026 — four Scores Explorer posting bands
+
+Split the prior 8+ score bucket into 8–24 and 25+, using exact ytd_score_count values in the existing November 6 export. No database query, new export, source-period change, or population change. Both trial and non-trial Explorer data, grouped tables, percentage sorting, stacked bars and responsive bucket cards now use 0 / 1–7 / 8–24 / 25+. Existing membership joins were reused read-only with identical cells and labels.
+
+Non-trial bands: 820,525 / 605,228 / 1,043,019 / 1,196,690. Trial: 131,424 / 27,375 / 766 / 48. Total golfer counts, source score counts and unmatched populations are unchanged. Each new upper pair reconciles exactly to the previous 8+ bucket. Validation: reports/score_explorer_four_bands_2026-11-07.json. Builder: scripts/build_score_explorer_2026_11_06.py (--reuse-matches; --trial for trial). Local review only; nothing published.
+
+## November 7, 2026 — 50+ Scores Explorer band
+
+At Evan's request, split 25+ into mutually exclusive 25–49 and 50+ score bands. The five bands are 0 / 1–7 / 8–24 / 25–49 / 50+. Source remains the November 6 participation export, with November 3 membership attributes and unchanged score eligibility. No new query or export. Non-trial counts: 820,525 / 605,228 / 1,043,019 / 715,788 / 480,902. Trial counts: 131,424 / 27,375 / 766 / 41 / 7. The upper two bands sum exactly to the former 25+ bucket; source score totals, golfer totals, membership cells and unmatched populations are unchanged. Cards, stacked bars, grouped tables and percentage sorting use all five bands. Validation: reports/score_explorer_five_bands_2026-11-07.json. Local only; no publication.
+
+## November 7, 2026 — collapsible Scores Explorer comparison chart
+
+Added Show chart beside Group results by. Starts collapsed on load with the established table visible. Expanding replaces the table with horizontal 100% stacked bars using all five posting bands; collapsing restores the same table selection and sorting. Grouping, scope, member population and per-record Explorer filters feed the existing result calculation unchanged. Group counts are unique within each group; affiliations can overlap. Exact segment counts and percentages are available through hover titles and accessible labels. Chart sorting uses the shared sort state and has its own direction control while table headers are hidden. Up to 100 groups, with a bounded scroll area and responsive labels. Existing embedded trial/member payloads verified unchanged. Local preview checks matched AGA Regular values in Evan's screenshot, Age grouping, GC intersection and empty results. Validation: reports/score_explorer_group_chart_2026-11-07.json. No publication.
+
+## November 7, 2026 — line comparison replaces stacked group bars
+
+Evan rejected stacked group bars as difficult to compare. Replaced that chart with categorical line distributions: posting bands on x, share within each group on y. Straight segments connect measured band percentages; no smoothing or inferred intermediate values. Four representative affiliations selected initially, with a collapsed Choose groups checklist for adding/removing curves. Other groupings start with up to four groups. Membership/association filters still feed the same result calculation; member/trial dataset switches reset line selections safely. Exact percentage/count/source group total is in each point's hover title and accessible label. Colors remain stable across filters. No table-sort caption is shown in line mode. Chart remains collapsed by default and replaces the table while expanded. Original stack-chart notes above are superseded. Source payloads unchanged; local only. Validation: reports/score_explorer_line_chart_2026-11-07.json.
+
+## November 7, 2026 — line chart controls and legend refinement
+
+Moved Choose groups and its checkboxes below the graph. Removed the introductory sentence. Moved the categorical-band/denominator/multiple-affiliation note into the existing collapsed Show data and definitions area. Legend labels increased to 15px; legend and checkbox swatches increased to 34x6px; chooser labels 14px; plotted line width 3.5px. Verified seven age groups selected with unknown/unmatched off, matching Evan's screenshots. Source payloads unchanged; no publication.
+
+Exploratory profile question: existing anonymous membership-cell patterns retain joint intersections across demographic, affiliation, Index and creation-year dimensions, so combined zero-posting profiles can be analyzed without another export. No profile feature implemented. Non-trial usable-age coverage is 2,096,732 / 3,665,462; 1,568,730 lack usable age. Combinations must retain within-selection unique-golfer counting, report cohort sizes/unknowns and comparison baselines, and account for creation-cohort exposure. Creation year alone is coarse tenure; records are current membership attributes, not historical attributes at posting. An observed association is not a causal explanation. Validation: reports/score_explorer_controls_2026-11-07.json.
+
+## November 7, 2026 — stable Data / Graph switch
+
+Replaced Show/Hide chart with a fixed-width, right-aligned Data | Graph segmented control. Each button exposes aria-pressed and targets its result region; selected state updates independently of button labels. Grouping and view controls use a stable two-column grid. The data caption reserves its height while hidden in Graph view, preventing layout movement. Browser measurements were identical in both modes: x783.2, document y855, width164, height42.4 at the tested viewport. Mobile control width140px. Score payloads unchanged. Local only. Validation: reports/score_explorer_view_toggle_2026-11-07.json. Three earlier chart HTML backups were losslessly gzip-compressed with verified SHA-256 matches after a disk-space failure; the failed partial new backup was removed and recreated completely.
+
+## November 7, 2026 — always-open group selection
+
+Removed the group chooser accordion. Controls remain visible beneath the line chart in Graph view. All groups default checked except Unknown / invalid and unmatched active-membership groups. Defaults cover the complete grouping label set, so filters do not silently leave newly visible groups unchecked; manual choices persist during the session. Verified Age starts with seven valid groups checked and both requested exceptions unchecked, and manual checkbox changes remain functional. Source payloads unchanged; local only. Validation: reports/score_explorer_open_groups_2026-11-07.json.
+
+## November 7, 2026 — styled score line-point rollovers
+
+Replaced native browser point titles with white callout cards: series-colored accent and marker, group label, large percentage, posting band, and separate golfer count/denominator. A connector links card to point. Cards render in an SVG overlay after all series, with positions clamped to chart bounds and placed above or below the point. Point hit areas enlarged; the same callout appears on keyboard focus. Pointer hover takes priority when another point retains keyboard focus; leaving/blur dismisses. Exact accessible labels remain. Verified 45–54 / 8–24: 34.5%, 86,701 of 251,277; right-edge and upper-left cards stay inside the plot; dismissal leaves zero cards visible. Source payloads unchanged. Local only. Validation: reports/score_explorer_callouts_2026-11-07.json.
+
+## November 7, 2026 — remove unmatched graph category; Unknown off by default
+
+Removed the unmatched active-membership group from graph rendering and its checkbox options for every dimension. Retained those golfers in source/overall totals and the existing data table; their source posting-band counts are documented within collapsed Show data and definitions. All category names beginning Unknown now default unchecked, including Unknown Access, Unknown / invalid, Unknown Index/gender/year labels and Unknown public/private access. Users may explicitly enable Unknown if needed. Other categories remain default on; manual choices persist within the session. Verified Age, Club Group, Public/Private and Handicap Index in the local browser. Source payloads unchanged; no publication. Validation: reports/score_explorer_unknown_cleanup_2026-11-07.json.
+
+November 7, 2026: Removed the Scores Explorer group-count/sort-direction status caption at Evan's request. Grouping, Data/Graph toggle and table-header sorting remain functional. Local only.
+
+## November 7, 2026 — one filter area on Scores Explorer
+
+Removed the association-scope and member-population dropdowns above Explorer only. The existing Select filters builder now includes Association Scope (All Associations / AGA Only / International Only) and Golfer Population (Members / Trial Golfers); Regular, Junior and Unclassified remain under Membership Type. Nondefault scope/population selections appear as removable filter chips beside existing cell filters, and Clear all resets every Explorer selection. Trial remains the separate established participation dataset; switching member/trial populations retains the prior behavior of clearing dataset-dependent cell filters. Explorer now owns scope and population state independently of Totals/Composition/Associations, preventing hidden inherited filters. Other Scores pages retain their top controls. Intro displays reporting period, with active choices shown by chips.
+
+Local browser checks: default members 3,665,462; AGA + Regular 3,157,019 with unchanged band counts; Trial 159,613; International 94,897. Totals controls retained; switching from AGA Regular Totals to Explorer did not restrict Explorer secretly. Source payloads unchanged; no publication. Validation: reports/score_explorer_filter_consolidation_2026-11-07.json.
+
+## November 7, 2026 — reuse Membership Explorer naming
+
+Removed the newly introduced Association Scope and Golfer Population filter categories. Scores now reuses Membership Explorer's core filter label map and order directly: Membership Type, Association, Public / Private, Club Group, Club Type, Gender, Age, Handicap Index, Club. Existing Scores creation-year filters remain available. All/AGA/International choices and individual associations are under Association; All Member Types, Regular/Junior/Unclassified and Trial Golfers are under Membership Type. Chips use the same established labels. Selecting a member type while viewing Trial correctly returns to member data before applying the type filter. Verified Trial159,613 and AGA+Regular3,157,019; payloads unchanged. Local only. Validation: reports/score_explorer_matching_names_2026-11-07.json.
+
+## Pending Tom request — November 12, 2026
+
+Tom Padula requests offseason score reporting after November ends: overall counts, daily/weekly/monthly breakdowns, and AGA breakdowns, potentially in Scores Explorer. Full request and open definition questions are recorded in docs/SCORE_POSTING_NOTES.md under “Tom request — offseason score reporting (November 12, 2026)”. Recorded only; implementation pending.
+
+## Pending Tom request — historical monthly score comparisons
+
+Evan clarified November 12: Tom explicitly wants GHIN scores-posted trends compared with NGF rounds-played trends, including monthly history and aligned YoY comparisons. NGF is a required part of the request. Evan further clarified that Tom says the monthly NGF rounds data is public. Use the public NGF reports for a month-by-month comparison with GHIN score postings; do not treat subscription access as a prerequisite. Full details are in docs/SCORE_POSTING_NOTES.md under “Tom request — historical monthly score comparisons”. Offseason reporting remains a separate request; leave prior-year Scores Explorer reconstruction alone. Recorded only.
+
+
+## November 12, 2026 — public NGF comparison
+
+Scores → Scores vs Rounds is implemented locally. Compares existing AGA-affiliated GHIN score-entry YoY with published U.S. national NGF rounds-played YoY; Monthly/YTD modes and 2023–2026 lookback. NGF currently through September 2026, GHIN through October. Source archive: https://www.ngf.org/monthly-rounds-played-reports/. Intake and methodology: docs/SCORE_POSTING_NOTES.md; data/processed/ngf_rounds_played.json; scripts/import_ngf_rounds_2026_11_12.py. Validation: reports/scores_ngf_comparison_2026-11-12.json. Local review only; nothing published.

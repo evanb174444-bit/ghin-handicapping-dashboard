@@ -18,7 +18,7 @@ The SQL has been prepared and reviewed locally. It has not been run against the 
 | 2 | Acquisition history | Monthly new-golfer comparisons, with AGA/international and Regular/Junior/Unclassified selections | January 2020–October 2026 |
 | 3 | Scores: totals and posting mix | Score totals, associations, posting methods, applications/API and holes | January 2025–October 2026 |
 | 4 | Scores: demographics | Score counts by gender, age and current primary-club details | January 2025–October 2026 |
-| 5 | Score participation | Zero, 1–7 and 8+ score bands for current active non-trial and trial golfers | January 1, 2026 through query execution |
+| 5 | Score participation | Zero, 1–7, 8–24, 25–49 and 50+ score bands for current active non-trial and trial golfers | January 1, 2026 through query execution |
 | 6 | Trials | Monthly events, creation cohorts, current trial pools and candidate conversion destinations | Retained history/current state; destination matching January–October 2026 |
 | 7 | Enhanced GPS | Current subscribers and date checks, monthly activity, tenure and explicit renewal-status labels | Retained history/current state |
 | 8 | Challenges | Challenge counters plus challenge/course names | Retained challenge records/current values |

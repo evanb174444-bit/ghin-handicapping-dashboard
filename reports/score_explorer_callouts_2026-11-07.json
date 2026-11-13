@@ -1,0 +1,21 @@
+{
+  "styledCallout": true,
+  "colorLinkedToSeries": true,
+  "prominentPercentage": true,
+  "separateCountAndDenominator": true,
+  "nativePointTitlesRemoved": true,
+  "hoverAndKeyboardFocus": true,
+  "singleCalloutPriority": "pointer over focus",
+  "browserChecks": {
+    "referenceAge45to54_8to24": {
+      "percent": "34.5%",
+      "count": 86701,
+      "groupTotal": 251277
+    },
+    "rightEdgeInsideChart": true,
+    "upperLeftInsideChart": true,
+    "dismissalVisibleCount": 0
+  },
+  "dataUnchanged": true,
+  "publication": "Local only"
+}
