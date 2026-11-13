@@ -57,3 +57,6 @@
 @media(max-width:650px){.nr-toolbar{flex-wrap:wrap;}.nr-years{width:210px;}}
 
 .nr-kpis{background:#fff;overflow:hidden;}
+
+.nr-toolbar{flex-wrap:wrap;}
+.nr-population{width:230px;}

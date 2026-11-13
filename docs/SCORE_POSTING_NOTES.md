@@ -235,3 +235,6 @@ November 12, 2026: Moved AGA-affiliated GHIN scores / U.S. NGF rounds context in
 November 12, 2026: Restored white backgrounds on Scores vs Rounds top callouts at Evan’s request. Local only.
 
 November 12, 2026: Scores vs Rounds Show data now defaults open; removed the redundant monthly comparison table caption at Evan’s request. Local only.
+
+
+November 12, 2026: At Evan’s request, both Scores vs Rounds and Membership Acquisition vs Rounds now use the established AGA / Regular population rather than All Member Types. Historical/current totals, YoY, callouts, point labels, data tables and percentage-point differences all use Regular data; NGF national all-golfer reports unchanged. Regular membership classification is not an age filter. Other dashboard views and all source payloads unchanged. Local only; prior GitHub publishing authorization does not apply to these new changes.

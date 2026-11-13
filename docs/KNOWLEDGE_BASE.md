@@ -279,3 +279,14 @@ Evan clarified November 12: Tom explicitly wants GHIN scores-posted trends compa
 ## November 12, 2026 — public NGF comparison
 
 Scores → Scores vs Rounds is implemented locally. Compares existing AGA-affiliated GHIN score-entry YoY with published U.S. national NGF rounds-played YoY; Monthly/YTD modes and 2023–2026 lookback. NGF currently through September 2026, GHIN through October. Source archive: https://www.ngf.org/monthly-rounds-played-reports/. Intake and methodology: docs/SCORE_POSTING_NOTES.md; data/processed/ngf_rounds_played.json; scripts/import_ngf_rounds_2026_11_12.py. Validation: reports/scores_ngf_comparison_2026-11-12.json. Local review only; nothing published.
+
+
+## November 12, 2026 — Membership acquisition vs rounds
+
+Added Membership → Acquisition vs Rounds locally at Evan’s request. Reuses Scores comparison CSS and visual layout, with independent 2026/2025/2024 year and Monthly/YTD controls, two white YTD summaries, open horizontal data table, percentage-point difference row and collapsed Data notes. Fixed AGA Only / All Member Types acquisition history preserves established eligibility and manual adjustments; other Membership filters do not carry over. Reuses verified public NGF reports. Source histories unchanged. Acquisition’s vertical scale expands in uniform 5/10-point steps to avoid clipping larger changes. Local review only; no publication authorized for this new change.
+
+
+November 12, 2026: At Evan’s request, both Scores vs Rounds and Membership Acquisition vs Rounds now use the established AGA / Regular population rather than All Member Types. Historical/current totals, YoY, callouts, point labels, data tables and percentage-point differences all use Regular data; NGF national all-golfer reports unchanged. Regular membership classification is not an age filter. Other dashboard views and all source payloads unchanged. Local only; prior GitHub publishing authorization does not apply to these new changes.
+
+
+November 12, 2026: Membership Acquisition vs Rounds now has All Regular / GC only selection. Uses existing ACQUISITION_DATA.gc.history.aga.regular for both current/prior years, preserving the same AGA/Regular scope, with no new export. Chart, YTD summaries, table and differences update together. GC denotes a retained GC membership, including other club affiliations, not original acquisition channel. NGF national benchmark unchanged. All Regular remains the default. Local only.

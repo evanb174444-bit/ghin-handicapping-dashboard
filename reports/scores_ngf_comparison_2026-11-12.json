@@ -1,21 +1,19 @@
 {
   "checkedMonthlyAndYtdRows": 90,
   "latestCommonMonth": "2026-09",
-  "commonGhinScores": 71081643,
-  "commonPriorGhinScores": 69695438,
-  "commonGhinYoy": 1.9889465362137537,
+  "commonGhinScores": 69280901,
+  "commonPriorGhinScores": 68106293,
+  "commonGhinYoy": 1.7246688202513072,
   "commonNgfYoy": 0.1,
   "missingOctoberNotZero": true,
   "futureGhinMonthsNotZero": true,
   "ngfYtdNotAveraged": true,
+  "population": "AGA / Regular",
   "existingEmbeddedJsonUnchanged": true,
-  "ngfReportsVerifiedByIndependentExtractors": 45,
-  "localBrowserChecks": [
-    "2023\u20132026 year selection",
-    "Monthly and YTD modes",
-    "October NGF unavailable",
-    "source-linked data table",
-    "Totals filters retained; comparison fixed AGA scope"
-  ],
-  "published": false
+  "published": false,
+  "browserChecks": [
+    "Regular labels and summary totals",
+    "year controls",
+    "Monthly/YTD switch"
+  ]
 }

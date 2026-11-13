@@ -1,0 +1,22 @@
+{
+  "gcCurrentAcquisition": 131165,
+  "gcPriorAcquisition": 135242,
+  "gcAcquisitionYoy": -3.0145960574377795,
+  "checkedRows": 144,
+  "latestCommonMonth": "2026-09",
+  "currentAcquisition": 275156,
+  "priorAcquisition": 293151,
+  "acquisitionYoy": -6.13847471098512,
+  "ngfYoy": 0.1,
+  "missingDataNotZero": true,
+  "axisContainsAllValues": true,
+  "style": "shared Scores comparison CSS",
+  "published": false,
+  "population": "AGA / Regular; All Regular or GC-only retained membership",
+  "browserChecks": [
+    "GC toggle updates labels, chart, YTD summaries and table",
+    "NGF benchmark unchanged",
+    "GC selection retained across year and Monthly/YTD controls",
+    "All Regular restores original figures"
+  ]
+}
