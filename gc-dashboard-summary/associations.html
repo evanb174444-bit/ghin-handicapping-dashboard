@@ -10,7 +10,7 @@
 </head>
 <body>
 <main>
-  <div class="heading"><h1>GC Association Membership Totals</h1><p>Click any column heading to sort; rank recalculates after every sort. October membership comparison. YoY change compares active memberships with the prior year. % share is each association’s portion of the current total.</p></div>
+  <div class="heading"><h1>GC Association Membership Totals</h1><p>Click any column heading to sort; rank recalculates after every sort. Latest membership snapshot comparison. YoY change compares active memberships with the prior year. % share is each association’s portion of the current total.</p></div>
   <section class="summary" id="summary"></section>
   <div class="table-shell"><table><thead id="columns"></thead><tbody id="rows"></tbody></table></div><div class="table-note" id="period" role="status">Loading GC association data…</div>
 </main>
@@ -29,17 +29,19 @@ Promise.all(["data/segmentation_status.json","data/association_history.json"].ma
   const latestPeriod=Math.max(...valid.map(r=>r.year*12+r.monthNum));
   const latest=valid.filter(r=>r.year*12+r.monthNum===latestPeriod);
   const reportDate=new Date(latest[0].reportDate),year=reportDate.getFullYear();
-  const monthDay=`${String(reportDate.getMonth()+1).padStart(2,"0")}-${String(reportDate.getDate()).padStart(2,"0")}`;
+  const monthDay=`${String(reportDate.getMonth()+1).padStart(2,"0")}-01`;
+  const reportLabel=reportDate.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
   const snapshots=history.snapshots.filter(s=>s.date.endsWith(monthDay)&&Number(s.date.slice(0,4))<year).map(s=>({...s,year:Number(s.date.slice(0,4))}));
   const total=latest.reduce((sum,r)=>sum+r.activeGolfers,0);
-  snapshots.push({year,totalActive:total,associations:latest.map(r=>({name:r.clubName,active:r.activeGolfers}))});
+  snapshots.push({year,date:`${year}-${String(reportDate.getMonth()+1).padStart(2,"0")}-${String(reportDate.getDate()).padStart(2,"0")}`,totalActive:total,associations:latest.map(r=>({name:r.clubName,active:r.activeGolfers}))});
   snapshots.sort((a,b)=>a.year-b.year);years=snapshots.map(s=>s.year);
+  const snapshotLabel=s=>new Date(s.date+"T12:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
   const counts=new Map(snapshots.map(s=>{const map=new Map();for(const r of s.associations){const key=keyFor(r.name);map.set(key,(map.get(key)||0)+r.active)}return [s.year,map]}));
   data=canonical.map(name=>{const key=keyFor(name),row={name};for(const y of years){row["count"+y]=counts.get(y).get(key)??null;const previous=counts.get(y-1)?.get(key);row["growth"+y]=row["count"+y]!=null&&previous>0?row["count"+y]/previous-1:null}row.active=row["count"+year];const twoYearsAgo=row["count"+(year-2)];row.twoYearChange=row.active!=null&&twoYearsAgo>0?row.active/twoYearsAgo-1:null;row.share=row.active!=null&&total>0?row.active/total:null;return row});
   for(const snapshot of snapshots){if(data.reduce((sum,r)=>sum+(r["count"+snapshot.year]||0),0)!==snapshot.totalActive)throw new Error(`Association totals do not reconcile for ${snapshot.year}`)}
-  document.getElementById("columns").innerHTML=`<tr><th><button data-sort="rank">Rank ↕</button></th><th><button data-sort="name">Association ↕</button></th>${years.map((y,i)=>`${i?`<th class="change-column"><button data-sort="growth${y}" title="Percentage change from ${y-1} to ${y}">% change ↕</button></th>`:""}<th><button data-sort="count${y}">${y} GC Golfers ↕</button></th>`).join("")}<th class="change-column"><button data-sort="twoYearChange" title="Percentage change from ${year-2} to ${year}">2 year change ↕</button></th><th><button data-sort="share" title="Share of current active memberships">${year} % share ↕</button></th></tr>`;
-  document.getElementById("period").textContent=`October membership comparison: ${years.join(", ")}. Historical Nevada counts combine Northern and Southern Nevada. A dash indicates unavailable history or a zero prior-year count.`;
-  document.getElementById("summary").innerHTML=snapshots.map(s=>{const prior=snapshots.find(p=>p.year===s.year-1);return `<article class="metric"><span>Active GC Golfers · ${s.year}</span><strong>${fmt(s.totalActive)}</strong>${prior?`<div style="margin-top:6px;font-size:13px">${signedPct(s.totalActive/prior.totalActive-1)} vs. ${prior.year}</div>`:""}</article>`}).join("");
+  document.getElementById("columns").innerHTML=`<tr><th><button data-sort="rank">Rank ↕</button></th><th><button data-sort="name">Association ↕</button></th>${years.map((y,i)=>`${i?`<th class="change-column"><button data-sort="growth${y}" title="Percentage change from ${y-1} to ${y}">% change ↕</button></th>`:""}<th><button data-sort="count${y}">GC Golfers<br><span style="font-size:11px;font-weight:500">As of ${snapshotLabel(snapshots.find(s=>s.year===y))}</span> ↕</button></th>`).join("")}<th class="change-column"><button data-sort="twoYearChange" title="Percentage change from ${year-2} to ${year}">2 year change ↕</button></th><th><button data-sort="share" title="Share of current active memberships">Current % share ↕</button></th></tr>`;
+  document.getElementById("period").textContent=`Current snapshot: ${reportLabel}; prior-year snapshots use the same calendar month. Years: ${years.join(", ")}. Historical Nevada counts combine Northern and Southern Nevada. November 2025 is reconstructed: 386,772 observed Active memberships plus 49,903 missing memberships Active in both October and December = 436,675 Active memberships in the reconstructed comparison base. The historical headline is 438,198, leaving 1,523 unreconciled. The reconstruction assumes continuous activity between the two snapshots. A dash indicates unavailable history or a zero prior-year count.`;
+  document.getElementById("summary").innerHTML=snapshots.map(s=>{const prior=snapshots.find(p=>p.year===s.year-1);return `<article class="metric"><span>Active GC Golfers · As of ${snapshotLabel(s)}</span><strong>${fmt(s.totalActive)}</strong>${prior?`<div style="margin-top:6px;font-size:13px">${signedPct(s.totalActive/prior.totalActive-1)} vs. ${prior.year}</div>`:""}</article>`}).join("");
   render();
 }).catch(e=>{const status=document.getElementById("period");status.hidden=false;status.textContent=`Unable to load association data: ${e.message}`});
 

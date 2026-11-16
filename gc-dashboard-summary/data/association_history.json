@@ -479,6 +479,242 @@
           "active": 879
         }
       ]
+    },
+    {
+      "date": "2025-11-01",
+      "estimated": true,
+      "source": "Observed November memberships plus missing memberships Active in both October and December",
+      "totalActive": 436675,
+      "associations": [
+        {
+          "name": "USGA/Florida GC",
+          "active": 33401
+        },
+        {
+          "name": "USGA/Sun Country GC",
+          "active": 1764
+        },
+        {
+          "name": "USGA/Washington GC",
+          "active": 10088
+        },
+        {
+          "name": "USGA/SCGA GC",
+          "active": 15680
+        },
+        {
+          "name": "USGA/Carolinas GC",
+          "active": 25450
+        },
+        {
+          "name": "USGA/Texas GC",
+          "active": 35935
+        },
+        {
+          "name": "USGA/NCGA GC",
+          "active": 8784
+        },
+        {
+          "name": "USGA/Maryland-DC GC",
+          "active": 9768
+        },
+        {
+          "name": "USGA/Nevada Golf GC",
+          "active": 3309
+        },
+        {
+          "name": "USGA/VSGA GC",
+          "active": 15632
+        },
+        {
+          "name": "USGA/Mass Golf GC",
+          "active": 18593
+        },
+        {
+          "name": "USGA/Montana GC",
+          "active": 2128
+        },
+        {
+          "name": "USGA/GAP GC",
+          "active": 23171
+        },
+        {
+          "name": "USGA/MGA GC",
+          "active": 21518
+        },
+        {
+          "name": "USGA/MiamiValleyGolf GC",
+          "active": 748
+        },
+        {
+          "name": "USGA/NJ GC",
+          "active": 6858
+        },
+        {
+          "name": "USGA/Tennessee GC",
+          "active": 8868
+        },
+        {
+          "name": "USGA/Alaska GC",
+          "active": 485
+        },
+        {
+          "name": "USGA/Colorado State GC",
+          "active": 13228
+        },
+        {
+          "name": "USGA/GSGA GC",
+          "active": 24743
+        },
+        {
+          "name": "USGA/Northern Ohio GC",
+          "active": 7443
+        },
+        {
+          "name": "USGA/Hawaii GC",
+          "active": 1491
+        },
+        {
+          "name": "USGA/GAM GC",
+          "active": 13318
+        },
+        {
+          "name": "USGA/Idaho eClub GC",
+          "active": 3138
+        },
+        {
+          "name": "USGA/Oregon GC",
+          "active": 4739
+        },
+        {
+          "name": "USGA/Arizona GC",
+          "active": 11394
+        },
+        {
+          "name": "USGA/Central Links GC",
+          "active": 4114
+        },
+        {
+          "name": "USGA/Minnesota GC",
+          "active": 8411
+        },
+        {
+          "name": "USGA/Ohio GA GC",
+          "active": 4844
+        },
+        {
+          "name": "USGA/West Virginia GC",
+          "active": 785
+        },
+        {
+          "name": "USGA/Maine GC",
+          "active": 2529
+        },
+        {
+          "name": "USGA/Western Pennsylvania GC",
+          "active": 7557
+        },
+        {
+          "name": "USGA/Wisconsin GC",
+          "active": 6340
+        },
+        {
+          "name": "USGA/Louisiana GC",
+          "active": 3611
+        },
+        {
+          "name": "USGA/RI GC",
+          "active": 1998
+        },
+        {
+          "name": "USGA/Indiana GC",
+          "active": 5346
+        },
+        {
+          "name": "USGA/Chicago District GC",
+          "active": 14984
+        },
+        {
+          "name": "USGA/NYSGA GC",
+          "active": 4360
+        },
+        {
+          "name": "USGA/Greater Cincinnati GC",
+          "active": 3605
+        },
+        {
+          "name": "USGA/Kentucky GC",
+          "active": 3499
+        },
+        {
+          "name": "USGA/Utah GC",
+          "active": 6326
+        },
+        {
+          "name": "USGA/Oklahoma GC",
+          "active": 2468
+        },
+        {
+          "name": "USGA/Mississippi GC",
+          "active": 1312
+        },
+        {
+          "name": "USGA/Wyoming State GC",
+          "active": 877
+        },
+        {
+          "name": "USGA/Nebraska GC",
+          "active": 3309
+        },
+        {
+          "name": "USGA/CSGA GC",
+          "active": 3686
+        },
+        {
+          "name": "USGA/MetAmateur GC",
+          "active": 5043
+        },
+        {
+          "name": "USGA/Iowa GC",
+          "active": 3292
+        },
+        {
+          "name": "USGA/Missouri GC",
+          "active": 1402
+        },
+        {
+          "name": "USGA/Alabama GC",
+          "active": 5050
+        },
+        {
+          "name": "USGA/NH Golf GC",
+          "active": 3227
+        },
+        {
+          "name": "USGA/Vermont GC",
+          "active": 504
+        },
+        {
+          "name": "USGA/North Dakota GC",
+          "active": 2380
+        },
+        {
+          "name": "USGA/ASGA GC",
+          "active": 1500
+        },
+        {
+          "name": "USGA/South Dakota GC",
+          "active": 1091
+        },
+        {
+          "name": "USGA/Puerto Rico GC",
+          "active": 252
+        },
+        {
+          "name": "USGA/RDGA GC",
+          "active": 1299
+        }
+      ]
     }
   ]
 }

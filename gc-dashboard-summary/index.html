@@ -5032,7 +5032,7 @@ main{max-width:none!important;margin:0!important;padding:0!important}
   <div class="header-inner">
     <div>
       <h1>USGA/GC Membership Dashboard</h1>
-      <div class="subtitle">Report Date: October 1, 2026</div>
+      <div class="subtitle">Report Date: November 2, 2026</div>
     </div>
   </div>
 </header>
@@ -5509,7 +5509,7 @@ async function loadGhinTrialsData() {
 }
 
 async function loadRetentionCohortData() {
-  const response = await fetch("./data/retention_cohorts.json?v=20261002");
+  const response = await fetch("./data/retention_cohorts.json?v=20261113");
   if(!response.ok) {
     throw new Error(`Unable to load retention cohort data: ${response.status} ${response.statusText}`);
   }
@@ -5528,7 +5528,7 @@ async function loadRetentionCohortData() {
 }
 
 async function loadRetentionClubRankingsData() {
-  const response = await fetch("./data/retention_club_rankings.json?v=20261002");
+  const response = await fetch("./data/retention_club_rankings.json?v=20261113");
   if(!response.ok) {
     throw new Error(`Unable to load retention club ranking data: ${response.status} ${response.statusText}`);
   }
@@ -5542,7 +5542,7 @@ async function loadRetentionClubRankingsData() {
 }
 
 async function loadRecoveryAnalysisData() {
-  const response = await fetch("./data/recovery_analysis.json?v=20261002");
+  const response = await fetch("./data/recovery_analysis.json?v=20261113");
   if(!response.ok) {
     throw new Error(`Unable to load Recovery Analysis data: ${response.status} ${response.statusText}`);
   }
@@ -5555,7 +5555,7 @@ async function loadRecoveryAnalysisData() {
 }
 
 async function loadSegmentationStatusData() {
-  const response = await fetch("./data/segmentation_status.json?v=20261002");
+  const response = await fetch("./data/segmentation_status.json?v=20261113");
   if(!response.ok) {
     throw new Error(`Unable to load segmentation status data: ${response.status} ${response.statusText}`);
   }
@@ -5569,7 +5569,7 @@ async function loadSegmentationStatusData() {
 }
 
 async function loadSegmentationBreakdownData() {
-  const response = await fetch("./data/segmentation_breakdown.json?v=20261002");
+  const response = await fetch("./data/segmentation_breakdown.json?v=20261113");
   if(!response.ok) {
     throw new Error(`Unable to load segmentation breakdown data: ${response.status} ${response.statusText}`);
   }
@@ -5599,7 +5599,7 @@ const WIDGET_REFS = {};
 let YOY_REF = null;
 
 async function loadMembershipData() {
-  const response = await fetch("./data/membership_monthly.json?v=20261002");
+  const response = await fetch("./data/membership_monthly.json?v=20261113");
   if(!response.ok) {
     throw new Error(`Unable to load membership data: ${response.status} ${response.statusText}`);
   }
@@ -5681,6 +5681,10 @@ function monthName(n) { return MONTHS.find(m => m[1] === Number(n))?.[0] || ""; 
 function reportDateLabelForRow(row) {
   if(!row) return "latest report date";
   if(row.reportDate) return row.reportDate;
+  if(row.snapshotDate){
+    const [year, month, day] = row.snapshotDate.split('-').map(Number);
+    return `${monthName(month)} ${day}, ${year}`;
+  }
   const activityMonth = monthNum(row.month);
   const reportMonth = activityMonth === 12 ? 1 : activityMonth + 1;
   const reportYear = activityMonth === 12 ? Number(row.year) + 1 : Number(row.year);
@@ -9027,29 +9031,32 @@ function renderMembership() {
             ${summaryMetric("New golfers", fmt(ref.newGolfers), changeMarkup(newGolfersChange, `${ref.month} ${ref.year-1}`), `${ref.month} ${ref.year}`)}
             ${summaryMetric("YTD new golfers", fmt(ref.ytdNewGolfers), changeMarkup(ytdNewGolfersChange, `Jan–${ref.month} ${ref.year-1}`), `Jan through ${ref.month}`)}
           </div>
-          <a class="dashboard-summary-link" onclick="setTab('acquisition')">Open Acquisition →</a>
+          <a class="dashboard-summary-link" onclick="parent.openGCAcquisition?.()">Open Acquisition →</a>
         </div>
 
         <div class="dashboard-summary-group retention">
           <div class="dashboard-summary-group-title">Retention</div>
           <div class="dashboard-summary-metrics">
             ${summaryMetric("On-time renewal", fmt(ref.onTimeRenewalRate,'percent'), pointChangeMarkup(onTimeRenewalChange, `${ref.month} ${ref.year-1}`), `${ref.month} ${ref.year}`)}
-            ${summaryMetric("12M retention", fmt(ref.retentionRate,'percent'), pointChangeMarkup(rollingRetentionChange, priorReportDateLabel), `As of ${reportDateLabel}`)}
+            ${summaryMetric(ref.retentionEstimated ? "12M retention (est.)" : "12M retention", fmt(ref.retentionRate,'percent'), pointChangeMarkup(rollingRetentionChange, priorReportDateLabel), `As of ${reportDateLabel}`)}
           </div>
-          <a class="dashboard-summary-link" onclick="setTab('retention')">Open Retention →</a>
+
         </div>
 
         <div class="dashboard-summary-group recovery">
           <div class="dashboard-summary-group-title">Recovery</div>
           <div class="dashboard-summary-metrics">
-            ${summaryMetric("Reactivations", fmt(ref.reactivations), changeMarkup(reactivationsChange, `${ref.month} ${ref.year-1}`), `${ref.month} ${ref.year}`)}
-            ${summaryMetric("Reactivations YTD", fmt(ref.ytdReactivations), changeMarkup(ytdReactivationsChange, `Jan–${ref.month} ${ref.year-1}`), `Jan through ${ref.month}`)}
+            ${summaryMetric(ref.reactivationsPartial ? "Reactivations (partial)" : "Reactivations", fmt(ref.reactivations), changeMarkup(reactivationsChange, `${ref.month} ${ref.year-1}`), `${ref.month} ${ref.year}`)}
+            ${summaryMetric("Reactivations YTD (est.)", fmt(ref.ytdReactivations), changeMarkup(ytdReactivationsChange, `Jan–${ref.month} ${ref.year-1}`), `Jan through ${ref.month}`)}
           </div>
-          <a class="dashboard-summary-link" onclick="setTab('recovery')">Open Recovery →</a>
+
         </div>
       </div>
     </div>
   `;
+
+  document.querySelector(".gc-import-notes")?.remove();
+  document.getElementById("membershipSection").insertAdjacentHTML('beforeend', `<details class="gc-import-notes" style="margin:18px 0;color:#64748b;font-size:12px;line-height:1.6"><summary style="cursor:pointer;font-weight:700">Data notes</summary><p>Membership snapshot: ${reportDateLabel}; activity through October 31, 2026. Counts follow the GC dashboard’s approved membership definitions.</p><p>12-month retention is a reconstructed estimate using observed November 2025 memberships plus missing memberships Active in both October and December; 1,523 memberships remain unreconciled against the historical headline. October renewal and recovery use the authorized June expiration snapshot. October recovery has 100 unclassified records; YTD recovery includes estimated early history.</p></details>`);
 
   document.getElementById("annualCard").innerHTML = `
     <div class="card-head">
