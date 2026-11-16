@@ -1,0 +1,1643 @@
+{
+  "all": {
+    "label": "November 2025\u2013October 2026",
+    "shortLabel": "Nov\u2013Oct",
+    "sampled": true,
+    "channels": {
+      "Direct": {
+        "landing": 274360,
+        "completed": 55520,
+        "profile": 95052,
+        "payment": 62273,
+        "aga": 142759,
+        "verify": 70433,
+        "info": 64135
+      },
+      "Organic Search": {
+        "landing": 214646,
+        "completed": 30977,
+        "profile": 76399,
+        "payment": 35005,
+        "aga": 124091,
+        "verify": 40425,
+        "info": 35822
+      },
+      "Paid Search": {
+        "landing": 377164,
+        "completed": 6253,
+        "profile": 26329,
+        "payment": 7389,
+        "aga": 51780,
+        "verify": 9115,
+        "info": 7631
+      },
+      "Referral": {
+        "landing": 155402,
+        "completed": 10962,
+        "profile": 33112,
+        "payment": 12279,
+        "aga": 55202,
+        "verify": 15882,
+        "info": 13096
+      },
+      "Cross-network": {
+        "landing": 60744,
+        "completed": 9296,
+        "profile": 26647,
+        "payment": 10901,
+        "aga": 39759,
+        "verify": 13399,
+        "info": 11295
+      },
+      "Email": {
+        "landing": 49040,
+        "completed": 2892,
+        "profile": 6177,
+        "payment": 3255,
+        "aga": 11068,
+        "verify": 4739,
+        "info": 3316
+      },
+      "Unassigned": {
+        "landing": 6707,
+        "completed": 212,
+        "profile": 1060,
+        "payment": 303,
+        "aga": 2392,
+        "verify": 424,
+        "info": 318
+      },
+      "Display": {
+        "landing": 6208,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 30,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Social": {
+        "landing": 2695,
+        "completed": 0,
+        "profile": 121,
+        "payment": 0,
+        "aga": 348,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Social": {
+        "landing": 1802,
+        "completed": 0,
+        "profile": 121,
+        "payment": 0,
+        "aga": 409,
+        "verify": 15,
+        "info": 15
+      },
+      "Paid Other": {
+        "landing": 1893,
+        "completed": 15,
+        "profile": 91,
+        "payment": 15,
+        "aga": 197,
+        "verify": 15,
+        "info": 15
+      },
+      "AI Assistant": {
+        "landing": 742,
+        "completed": 91,
+        "profile": 348,
+        "payment": 91,
+        "aga": 500,
+        "verify": 91,
+        "info": 91
+      },
+      "Organic Video": {
+        "landing": 742,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 15,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 61,
+        "completed": 15,
+        "profile": 30,
+        "payment": 15,
+        "aga": 30,
+        "verify": 15,
+        "info": 15
+      }
+    },
+    "total": {
+      "landing": 1149418,
+      "completed": 116536,
+      "profile": 266109,
+      "payment": 132207,
+      "aga": 426976,
+      "verify": 154917,
+      "info": 136158
+    }
+  },
+  "ytd": {
+    "label": "January\u2013October 2026",
+    "shortLabel": "Jan\u2013Oct",
+    "sampled": true,
+    "channels": {
+      "Direct": {
+        "landing": 242560,
+        "completed": 50663,
+        "profile": 85541,
+        "payment": 56683,
+        "aga": 128177,
+        "verify": 64145,
+        "info": 58450
+      },
+      "Organic Search": {
+        "landing": 209788,
+        "completed": 30680,
+        "profile": 74518,
+        "payment": 34623,
+        "aga": 121605,
+        "verify": 40092,
+        "info": 35485
+      },
+      "Paid Search": {
+        "landing": 374821,
+        "completed": 6077,
+        "profile": 25777,
+        "payment": 7179,
+        "aga": 50522,
+        "verify": 8861,
+        "info": 7433
+      },
+      "Referral": {
+        "landing": 141093,
+        "completed": 9977,
+        "profile": 29847,
+        "payment": 11150,
+        "aga": 49843,
+        "verify": 14485,
+        "info": 11956
+      },
+      "Cross-network": {
+        "landing": 54606,
+        "completed": 8606,
+        "profile": 24349,
+        "payment": 9963,
+        "aga": 36192,
+        "verify": 12252,
+        "info": 10359
+      },
+      "Email": {
+        "landing": 44063,
+        "completed": 2671,
+        "profile": 5766,
+        "payment": 2982,
+        "aga": 10147,
+        "verify": 4423,
+        "info": 3010
+      },
+      "Unassigned": {
+        "landing": 6529,
+        "completed": 226,
+        "profile": 1032,
+        "payment": 297,
+        "aga": 2388,
+        "verify": 396,
+        "info": 311
+      },
+      "Display": {
+        "landing": 6190,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 28,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Social": {
+        "landing": 2671,
+        "completed": 0,
+        "profile": 127,
+        "payment": 0,
+        "aga": 339,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Other": {
+        "landing": 1908,
+        "completed": 14,
+        "profile": 99,
+        "payment": 14,
+        "aga": 184,
+        "verify": 14,
+        "info": 14
+      },
+      "Organic Social": {
+        "landing": 1597,
+        "completed": 0,
+        "profile": 127,
+        "payment": 0,
+        "aga": 382,
+        "verify": 14,
+        "info": 14
+      },
+      "AI Assistant": {
+        "landing": 735,
+        "completed": 99,
+        "profile": 339,
+        "payment": 99,
+        "aga": 509,
+        "verify": 99,
+        "info": 99
+      },
+      "Organic Video": {
+        "landing": 735,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 14,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 57,
+        "completed": 14,
+        "profile": 28,
+        "payment": 14,
+        "aga": 28,
+        "verify": 14,
+        "info": 14
+      }
+    },
+    "total": {
+      "landing": 1085826,
+      "completed": 108943,
+      "profile": 249287,
+      "payment": 123626,
+      "aga": 399919,
+      "verify": 145389,
+      "info": 127484
+    }
+  },
+  "2026-09": {
+    "label": "September 2026",
+    "shortLabel": "Sep",
+    "sampled": false,
+    "channels": {
+      "Organic Search": {
+        "landing": 20379,
+        "completed": 2825,
+        "profile": 6541,
+        "payment": 3282,
+        "aga": 10823,
+        "verify": 3754,
+        "info": 3356
+      },
+      "Paid Search": {
+        "landing": 40612,
+        "completed": 567,
+        "profile": 2166,
+        "payment": 656,
+        "aga": 3700,
+        "verify": 764,
+        "info": 672
+      },
+      "Direct": {
+        "landing": 16606,
+        "completed": 2786,
+        "profile": 4748,
+        "payment": 3242,
+        "aga": 7489,
+        "verify": 3536,
+        "info": 3297
+      },
+      "Referral": {
+        "landing": 11079,
+        "completed": 414,
+        "profile": 1422,
+        "payment": 466,
+        "aga": 2861,
+        "verify": 569,
+        "info": 471
+      },
+      "Cross-network": {
+        "landing": 2786,
+        "completed": 288,
+        "profile": 1021,
+        "payment": 342,
+        "aga": 1618,
+        "verify": 405,
+        "info": 352
+      },
+      "Email": {
+        "landing": 2318,
+        "completed": 195,
+        "profile": 396,
+        "payment": 217,
+        "aga": 680,
+        "verify": 331,
+        "info": 221
+      },
+      "Unassigned": {
+        "landing": 427,
+        "completed": 33,
+        "profile": 111,
+        "payment": 38,
+        "aga": 202,
+        "verify": 45,
+        "info": 39
+      },
+      "Display": {
+        "landing": 531,
+        "completed": 0,
+        "profile": 2,
+        "payment": 0,
+        "aga": 7,
+        "verify": 1,
+        "info": 0
+      },
+      "AI Assistant": {
+        "landing": 182,
+        "completed": 20,
+        "profile": 84,
+        "payment": 23,
+        "aga": 125,
+        "verify": 26,
+        "info": 23
+      },
+      "Paid Social": {
+        "landing": 144,
+        "completed": 2,
+        "profile": 10,
+        "payment": 3,
+        "aga": 20,
+        "verify": 3,
+        "info": 3
+      },
+      "Organic Video": {
+        "landing": 120,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Social": {
+        "landing": 41,
+        "completed": 1,
+        "profile": 7,
+        "payment": 1,
+        "aga": 14,
+        "verify": 1,
+        "info": 1
+      },
+      "Paid Other": {
+        "landing": 4,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 94635,
+      "completed": 7007,
+      "profile": 16537,
+      "payment": 8112,
+      "aga": 27772,
+      "verify": 9299,
+      "info": 8289
+    }
+  },
+  "2026-10": {
+    "label": "October 2026",
+    "shortLabel": "Oct",
+    "sampled": false,
+    "channels": {
+      "Organic Search": {
+        "landing": 16364,
+        "completed": 2189,
+        "profile": 5101,
+        "payment": 2576,
+        "aga": 9101,
+        "verify": 2926,
+        "info": 2633
+      },
+      "Direct": {
+        "landing": 15469,
+        "completed": 2469,
+        "profile": 4127,
+        "payment": 2907,
+        "aga": 7243,
+        "verify": 3216,
+        "info": 2959
+      },
+      "Referral": {
+        "landing": 8058,
+        "completed": 311,
+        "profile": 1086,
+        "payment": 373,
+        "aga": 2500,
+        "verify": 430,
+        "info": 378
+      },
+      "Email": {
+        "landing": 1907,
+        "completed": 158,
+        "profile": 255,
+        "payment": 169,
+        "aga": 474,
+        "verify": 223,
+        "info": 173
+      },
+      "Paid Search": {
+        "landing": 1551,
+        "completed": 86,
+        "profile": 222,
+        "payment": 102,
+        "aga": 371,
+        "verify": 124,
+        "info": 103
+      },
+      "Unassigned": {
+        "landing": 359,
+        "completed": 25,
+        "profile": 77,
+        "payment": 32,
+        "aga": 186,
+        "verify": 39,
+        "info": 33
+      },
+      "Paid Other": {
+        "landing": 631,
+        "completed": 5,
+        "profile": 28,
+        "payment": 8,
+        "aga": 44,
+        "verify": 10,
+        "info": 9
+      },
+      "Display": {
+        "landing": 646,
+        "completed": 0,
+        "profile": 2,
+        "payment": 0,
+        "aga": 11,
+        "verify": 0,
+        "info": 0
+      },
+      "Cross-network": {
+        "landing": 176,
+        "completed": 23,
+        "profile": 80,
+        "payment": 25,
+        "aga": 110,
+        "verify": 28,
+        "info": 25
+      },
+      "AI Assistant": {
+        "landing": 88,
+        "completed": 6,
+        "profile": 36,
+        "payment": 8,
+        "aga": 61,
+        "verify": 10,
+        "info": 8
+      },
+      "Organic Social": {
+        "landing": 81,
+        "completed": 1,
+        "profile": 13,
+        "payment": 2,
+        "aga": 33,
+        "verify": 2,
+        "info": 2
+      },
+      "Paid Social": {
+        "landing": 23,
+        "completed": 0,
+        "profile": 3,
+        "payment": 0,
+        "aga": 4,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Video": {
+        "landing": 25,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 2,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 45163,
+      "completed": 5273,
+      "profile": 11016,
+      "payment": 6177,
+      "aga": 20045,
+      "verify": 6978,
+      "info": 6301
+    }
+  },
+  "2026-01": {
+    "label": "January 2026",
+    "shortLabel": "Jan",
+    "sampled": false,
+    "channels": {
+      "Direct": {
+        "landing": 20734,
+        "completed": 2903,
+        "profile": 6661,
+        "payment": 3300,
+        "aga": 10702,
+        "verify": 3948,
+        "info": 3344
+      },
+      "Referral": {
+        "landing": 10920,
+        "completed": 1103,
+        "profile": 3151,
+        "payment": 1231,
+        "aga": 4779,
+        "verify": 1517,
+        "info": 1248
+      },
+      "Cross-network": {
+        "landing": 3274,
+        "completed": 798,
+        "profile": 1834,
+        "payment": 916,
+        "aga": 2388,
+        "verify": 1074,
+        "info": 925
+      },
+      "Paid Search": {
+        "landing": 4544,
+        "completed": 265,
+        "profile": 1232,
+        "payment": 334,
+        "aga": 2287,
+        "verify": 430,
+        "info": 340
+      },
+      "Organic Search": {
+        "landing": 3957,
+        "completed": 326,
+        "profile": 1432,
+        "payment": 383,
+        "aga": 2417,
+        "verify": 465,
+        "info": 387
+      },
+      "Email": {
+        "landing": 1652,
+        "completed": 145,
+        "profile": 263,
+        "payment": 155,
+        "aga": 391,
+        "verify": 190,
+        "info": 157
+      },
+      "Unassigned": {
+        "landing": 96,
+        "completed": 4,
+        "profile": 13,
+        "payment": 6,
+        "aga": 21,
+        "verify": 8,
+        "info": 6
+      },
+      "Display": {
+        "landing": 60,
+        "completed": 4,
+        "profile": 5,
+        "payment": 4,
+        "aga": 5,
+        "verify": 4,
+        "info": 4
+      },
+      "Organic Social": {
+        "landing": 44,
+        "completed": 0,
+        "profile": 3,
+        "payment": 0,
+        "aga": 5,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Video": {
+        "landing": 8,
+        "completed": 1,
+        "profile": 1,
+        "payment": 1,
+        "aga": 4,
+        "verify": 1,
+        "info": 1
+      },
+      "Paid Other": {
+        "landing": 2,
+        "completed": 0,
+        "profile": 1,
+        "payment": 0,
+        "aga": 1,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 45432,
+      "completed": 5549,
+      "profile": 14754,
+      "payment": 6418,
+      "aga": 23176,
+      "verify": 7688,
+      "info": 6499
+    }
+  },
+  "2026-02": {
+    "label": "February 2026",
+    "shortLabel": "Feb",
+    "sampled": false,
+    "channels": {
+      "Direct": {
+        "landing": 19599,
+        "completed": 3162,
+        "profile": 7040,
+        "payment": 3533,
+        "aga": 10874,
+        "verify": 4879,
+        "info": 3973
+      },
+      "Referral": {
+        "landing": 10407,
+        "completed": 976,
+        "profile": 3070,
+        "payment": 1079,
+        "aga": 4769,
+        "verify": 1585,
+        "info": 1249
+      },
+      "Paid Search": {
+        "landing": 5104,
+        "completed": 354,
+        "profile": 1468,
+        "payment": 415,
+        "aga": 2524,
+        "verify": 633,
+        "info": 510
+      },
+      "Organic Search": {
+        "landing": 4208,
+        "completed": 358,
+        "profile": 1662,
+        "payment": 425,
+        "aga": 2709,
+        "verify": 639,
+        "info": 525
+      },
+      "Cross-network": {
+        "landing": 2851,
+        "completed": 553,
+        "profile": 1442,
+        "payment": 625,
+        "aga": 1956,
+        "verify": 836,
+        "info": 729
+      },
+      "Email": {
+        "landing": 1995,
+        "completed": 225,
+        "profile": 388,
+        "payment": 248,
+        "aga": 506,
+        "verify": 300,
+        "info": 253
+      },
+      "Unassigned": {
+        "landing": 88,
+        "completed": 11,
+        "profile": 16,
+        "payment": 11,
+        "aga": 28,
+        "verify": 14,
+        "info": 12
+      },
+      "Organic Social": {
+        "landing": 40,
+        "completed": 1,
+        "profile": 5,
+        "payment": 1,
+        "aga": 10,
+        "verify": 2,
+        "info": 2
+      },
+      "Display": {
+        "landing": 9,
+        "completed": 2,
+        "profile": 3,
+        "payment": 2,
+        "aga": 4,
+        "verify": 2,
+        "info": 2
+      },
+      "Organic Video": {
+        "landing": 8,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 2,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 5,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Other": {
+        "landing": 3,
+        "completed": 0,
+        "profile": 1,
+        "payment": 0,
+        "aga": 1,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Social": {
+        "landing": 1,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 44033,
+      "completed": 5642,
+      "profile": 15021,
+      "payment": 6328,
+      "aga": 23308,
+      "verify": 8916,
+      "info": 7248
+    }
+  },
+  "2026-03": {
+    "label": "March 2026",
+    "shortLabel": "Mar",
+    "sampled": false,
+    "channels": {
+      "Direct": {
+        "landing": 33046,
+        "completed": 5707,
+        "profile": 12623,
+        "payment": 6338,
+        "aga": 18732,
+        "verify": 9021,
+        "info": 7462
+      },
+      "Referral": {
+        "landing": 17017,
+        "completed": 1568,
+        "profile": 5227,
+        "payment": 1753,
+        "aga": 7996,
+        "verify": 2838,
+        "info": 2241
+      },
+      "Organic Search": {
+        "landing": 9732,
+        "completed": 793,
+        "profile": 3977,
+        "payment": 889,
+        "aga": 6544,
+        "verify": 1443,
+        "info": 1177
+      },
+      "Cross-network": {
+        "landing": 4144,
+        "completed": 754,
+        "profile": 2221,
+        "payment": 839,
+        "aga": 2983,
+        "verify": 1286,
+        "info": 1078
+      },
+      "Paid Search": {
+        "landing": 6222,
+        "completed": 294,
+        "profile": 1511,
+        "payment": 347,
+        "aga": 2767,
+        "verify": 622,
+        "info": 462
+      },
+      "Email": {
+        "landing": 3243,
+        "completed": 357,
+        "profile": 727,
+        "payment": 409,
+        "aga": 998,
+        "verify": 533,
+        "info": 416
+      },
+      "Unassigned": {
+        "landing": 174,
+        "completed": 18,
+        "profile": 46,
+        "payment": 19,
+        "aga": 70,
+        "verify": 32,
+        "info": 27
+      },
+      "Organic Social": {
+        "landing": 93,
+        "completed": 0,
+        "profile": 20,
+        "payment": 1,
+        "aga": 34,
+        "verify": 6,
+        "info": 3
+      },
+      "Display": {
+        "landing": 131,
+        "completed": 2,
+        "profile": 5,
+        "payment": 3,
+        "aga": 5,
+        "verify": 5,
+        "info": 4
+      },
+      "Organic Shopping": {
+        "landing": 25,
+        "completed": 3,
+        "profile": 5,
+        "payment": 3,
+        "aga": 12,
+        "verify": 4,
+        "info": 3
+      },
+      "Paid Social": {
+        "landing": 23,
+        "completed": 1,
+        "profile": 5,
+        "payment": 1,
+        "aga": 8,
+        "verify": 2,
+        "info": 1
+      },
+      "Paid Other": {
+        "landing": 9,
+        "completed": 1,
+        "profile": 4,
+        "payment": 1,
+        "aga": 4,
+        "verify": 3,
+        "info": 2
+      },
+      "Mobile Push Notifications": {
+        "landing": 1,
+        "completed": 0,
+        "profile": 1,
+        "payment": 0,
+        "aga": 1,
+        "verify": 1,
+        "info": 1
+      },
+      "Organic Video": {
+        "landing": 2,
+        "completed": 0,
+        "profile": 1,
+        "payment": 0,
+        "aga": 2,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 73813,
+      "completed": 9420,
+      "profile": 26468,
+      "payment": 10482,
+      "aga": 39893,
+      "verify": 15803,
+      "info": 12863
+    }
+  },
+  "2026-04": {
+    "label": "April 2026",
+    "shortLabel": "Apr",
+    "sampled": false,
+    "channels": {
+      "Direct": {
+        "landing": 38568,
+        "completed": 7673,
+        "profile": 13892,
+        "payment": 8905,
+        "aga": 21174,
+        "verify": 10236,
+        "info": 9126
+      },
+      "Organic Search": {
+        "landing": 28819,
+        "completed": 3874,
+        "profile": 10326,
+        "payment": 4595,
+        "aga": 16859,
+        "verify": 5472,
+        "info": 4698
+      },
+      "Paid Search": {
+        "landing": 49201,
+        "completed": 1140,
+        "profile": 4693,
+        "payment": 1411,
+        "aga": 9126,
+        "verify": 1776,
+        "info": 1444
+      },
+      "Referral": {
+        "landing": 20266,
+        "completed": 1773,
+        "profile": 4878,
+        "payment": 2023,
+        "aga": 8106,
+        "verify": 2659,
+        "info": 2071
+      },
+      "Cross-network": {
+        "landing": 7879,
+        "completed": 1705,
+        "profile": 4207,
+        "payment": 1999,
+        "aga": 5744,
+        "verify": 2393,
+        "info": 2039
+      },
+      "Email": {
+        "landing": 5559,
+        "completed": 401,
+        "profile": 957,
+        "payment": 466,
+        "aga": 1747,
+        "verify": 713,
+        "info": 475
+      },
+      "Display": {
+        "landing": 902,
+        "completed": 0,
+        "profile": 1,
+        "payment": 0,
+        "aga": 1,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Social": {
+        "landing": 596,
+        "completed": 1,
+        "profile": 32,
+        "payment": 5,
+        "aga": 105,
+        "verify": 5,
+        "info": 5
+      },
+      "Unassigned": {
+        "landing": 300,
+        "completed": 43,
+        "profile": 94,
+        "payment": 51,
+        "aga": 132,
+        "verify": 63,
+        "info": 51
+      },
+      "Paid Other": {
+        "landing": 485,
+        "completed": 2,
+        "profile": 11,
+        "payment": 2,
+        "aga": 23,
+        "verify": 3,
+        "info": 2
+      },
+      "Organic Social": {
+        "landing": 131,
+        "completed": 2,
+        "profile": 14,
+        "payment": 2,
+        "aga": 43,
+        "verify": 3,
+        "info": 2
+      },
+      "Organic Shopping": {
+        "landing": 19,
+        "completed": 3,
+        "profile": 7,
+        "payment": 3,
+        "aga": 10,
+        "verify": 5,
+        "info": 3
+      },
+      "Organic Video": {
+        "landing": 5,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 2,
+        "verify": 0,
+        "info": 0
+      },
+      "Mobile Push Notifications": {
+        "landing": 1,
+        "completed": 0,
+        "profile": 1,
+        "payment": 0,
+        "aga": 1,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 152886,
+      "completed": 16622,
+      "profile": 39123,
+      "payment": 19474,
+      "aga": 62365,
+      "verify": 23316,
+      "info": 19925
+    }
+  },
+  "2026-05": {
+    "label": "May 2026",
+    "shortLabel": "May",
+    "sampled": false,
+    "channels": {
+      "Organic Search": {
+        "landing": 47293,
+        "completed": 8335,
+        "profile": 18029,
+        "payment": 9446,
+        "aga": 27979,
+        "verify": 11034,
+        "info": 9632
+      },
+      "Paid Search": {
+        "landing": 76702,
+        "completed": 654,
+        "profile": 3377,
+        "payment": 837,
+        "aga": 7044,
+        "verify": 1073,
+        "info": 854
+      },
+      "Direct": {
+        "landing": 24389,
+        "completed": 4360,
+        "profile": 7840,
+        "payment": 5028,
+        "aga": 12249,
+        "verify": 5630,
+        "info": 5108
+      },
+      "Referral": {
+        "landing": 20250,
+        "completed": 975,
+        "profile": 3094,
+        "payment": 1105,
+        "aga": 5904,
+        "verify": 1448,
+        "info": 1125
+      },
+      "Cross-network": {
+        "landing": 8465,
+        "completed": 1777,
+        "profile": 4396,
+        "payment": 2056,
+        "aga": 6055,
+        "verify": 2414,
+        "info": 2083
+      },
+      "Email": {
+        "landing": 10776,
+        "completed": 334,
+        "profile": 785,
+        "payment": 358,
+        "aga": 1556,
+        "verify": 554,
+        "info": 363
+      },
+      "Unassigned": {
+        "landing": 2606,
+        "completed": 46,
+        "profile": 232,
+        "payment": 59,
+        "aga": 649,
+        "verify": 76,
+        "info": 62
+      },
+      "Display": {
+        "landing": 1420,
+        "completed": 4,
+        "profile": 16,
+        "payment": 4,
+        "aga": 21,
+        "verify": 5,
+        "info": 4
+      },
+      "Paid Social": {
+        "landing": 669,
+        "completed": 1,
+        "profile": 23,
+        "payment": 3,
+        "aga": 60,
+        "verify": 4,
+        "info": 3
+      },
+      "Paid Other": {
+        "landing": 262,
+        "completed": 0,
+        "profile": 12,
+        "payment": 0,
+        "aga": 21,
+        "verify": 3,
+        "info": 0
+      },
+      "Organic Social": {
+        "landing": 119,
+        "completed": 4,
+        "profile": 13,
+        "payment": 4,
+        "aga": 35,
+        "verify": 4,
+        "info": 4
+      },
+      "Organic Video": {
+        "landing": 146,
+        "completed": 0,
+        "profile": 5,
+        "payment": 0,
+        "aga": 15,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 16,
+        "completed": 0,
+        "profile": 4,
+        "payment": 0,
+        "aga": 5,
+        "verify": 1,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 190292,
+      "completed": 16480,
+      "profile": 37984,
+      "payment": 18954,
+      "aga": 61384,
+      "verify": 22382,
+      "info": 19280
+    }
+  },
+  "2026-06": {
+    "label": "June 2026",
+    "shortLabel": "Jun",
+    "sampled": false,
+    "channels": {
+      "Organic Search": {
+        "landing": 44959,
+        "completed": 6416,
+        "profile": 15505,
+        "payment": 7473,
+        "aga": 26063,
+        "verify": 8693,
+        "info": 7659
+      },
+      "Paid Search": {
+        "landing": 74471,
+        "completed": 746,
+        "profile": 4324,
+        "payment": 910,
+        "aga": 9451,
+        "verify": 1046,
+        "info": 916
+      },
+      "Direct": {
+        "landing": 35859,
+        "completed": 5992,
+        "profile": 10570,
+        "payment": 6743,
+        "aga": 18365,
+        "verify": 7416,
+        "info": 6873
+      },
+      "Referral": {
+        "landing": 18099,
+        "completed": 837,
+        "profile": 2984,
+        "payment": 955,
+        "aga": 5726,
+        "verify": 1249,
+        "info": 978
+      },
+      "Cross-network": {
+        "landing": 11147,
+        "completed": 1441,
+        "profile": 4228,
+        "payment": 1651,
+        "aga": 7099,
+        "verify": 2041,
+        "info": 1696
+      },
+      "Email": {
+        "landing": 6964,
+        "completed": 458,
+        "profile": 927,
+        "payment": 509,
+        "aga": 1628,
+        "verify": 678,
+        "info": 509
+      },
+      "Unassigned": {
+        "landing": 1080,
+        "completed": 79,
+        "profile": 266,
+        "payment": 90,
+        "aga": 543,
+        "verify": 113,
+        "info": 90
+      },
+      "Paid Social": {
+        "landing": 933,
+        "completed": 0,
+        "profile": 40,
+        "payment": 0,
+        "aga": 68,
+        "verify": 0,
+        "info": 0
+      },
+      "Display": {
+        "landing": 650,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 6,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Social": {
+        "landing": 447,
+        "completed": 0,
+        "profile": 23,
+        "payment": 0,
+        "aga": 96,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Video": {
+        "landing": 141,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "AI Assistant": {
+        "landing": 45,
+        "completed": 0,
+        "profile": 17,
+        "payment": 0,
+        "aga": 28,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Other": {
+        "landing": 62,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 6,
+        "completed": 0,
+        "profile": 6,
+        "payment": 0,
+        "aga": 6,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 194726,
+      "completed": 15968,
+      "profile": 38844,
+      "payment": 18331,
+      "aga": 68994,
+      "verify": 21236,
+      "info": 18721
+    }
+  },
+  "2026-07": {
+    "label": "July 2026",
+    "shortLabel": "Jul",
+    "sampled": false,
+    "channels": {
+      "Organic Search": {
+        "landing": 31816,
+        "completed": 5250,
+        "profile": 11834,
+        "payment": 6084,
+        "aga": 18690,
+        "verify": 7038,
+        "info": 6205
+      },
+      "Paid Search": {
+        "landing": 60534,
+        "completed": 994,
+        "profile": 4313,
+        "payment": 1221,
+        "aga": 8404,
+        "verify": 1421,
+        "info": 1247
+      },
+      "Direct": {
+        "landing": 28781,
+        "completed": 5441,
+        "profile": 9062,
+        "payment": 6237,
+        "aga": 14020,
+        "verify": 6877,
+        "info": 6370
+      },
+      "Referral": {
+        "landing": 17992,
+        "completed": 780,
+        "profile": 2659,
+        "payment": 891,
+        "aga": 5069,
+        "verify": 1185,
+        "info": 914
+      },
+      "Cross-network": {
+        "landing": 8068,
+        "completed": 1076,
+        "profile": 3117,
+        "payment": 1261,
+        "aga": 4889,
+        "verify": 1479,
+        "info": 1278
+      },
+      "Email": {
+        "landing": 4802,
+        "completed": 309,
+        "profile": 629,
+        "payment": 336,
+        "aga": 1161,
+        "verify": 491,
+        "info": 340
+      },
+      "Unassigned": {
+        "landing": 968,
+        "completed": 53,
+        "profile": 221,
+        "payment": 63,
+        "aga": 441,
+        "verify": 72,
+        "info": 63
+      },
+      "Display": {
+        "landing": 1135,
+        "completed": 0,
+        "profile": 10,
+        "payment": 3,
+        "aga": 19,
+        "verify": 3,
+        "info": 3
+      },
+      "Paid Other": {
+        "landing": 448,
+        "completed": 0,
+        "profile": 4,
+        "payment": 0,
+        "aga": 9,
+        "verify": 0,
+        "info": 0
+      },
+      "AI Assistant": {
+        "landing": 138,
+        "completed": 13,
+        "profile": 69,
+        "payment": 17,
+        "aga": 99,
+        "verify": 23,
+        "info": 17
+      },
+      "Organic Social": {
+        "landing": 263,
+        "completed": 0,
+        "profile": 11,
+        "payment": 1,
+        "aga": 49,
+        "verify": 3,
+        "info": 1
+      },
+      "Paid Social": {
+        "landing": 211,
+        "completed": 1,
+        "profile": 13,
+        "payment": 1,
+        "aga": 30,
+        "verify": 3,
+        "info": 3
+      },
+      "Organic Video": {
+        "landing": 136,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Shopping": {
+        "landing": 3,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 154335,
+      "completed": 13898,
+      "profile": 31688,
+      "payment": 16056,
+      "aga": 52916,
+      "verify": 18449,
+      "info": 16388
+    }
+  },
+  "2026-08": {
+    "label": "August 2026",
+    "shortLabel": "Aug",
+    "sampled": false,
+    "channels": {
+      "Paid Search": {
+        "landing": 64362,
+        "completed": 834,
+        "profile": 3326,
+        "payment": 973,
+        "aga": 6034,
+        "verify": 1161,
+        "info": 991
+      },
+      "Organic Search": {
+        "landing": 28160,
+        "completed": 4473,
+        "profile": 10198,
+        "payment": 5198,
+        "aga": 16480,
+        "verify": 5871,
+        "info": 5347
+      },
+      "Direct": {
+        "landing": 24475,
+        "completed": 4824,
+        "profile": 7754,
+        "payment": 5519,
+        "aga": 12218,
+        "verify": 5912,
+        "info": 5613
+      },
+      "Referral": {
+        "landing": 16139,
+        "completed": 673,
+        "profile": 2099,
+        "payment": 783,
+        "aga": 4101,
+        "verify": 912,
+        "info": 799
+      },
+      "Cross-network": {
+        "landing": 6345,
+        "completed": 720,
+        "profile": 2406,
+        "payment": 818,
+        "aga": 3912,
+        "verify": 942,
+        "info": 828
+      },
+      "Email": {
+        "landing": 5597,
+        "completed": 290,
+        "profile": 566,
+        "payment": 319,
+        "aga": 1067,
+        "verify": 439,
+        "info": 323
+      },
+      "Unassigned": {
+        "landing": 607,
+        "completed": 37,
+        "profile": 164,
+        "payment": 49,
+        "aga": 270,
+        "verify": 57,
+        "info": 51
+      },
+      "Display": {
+        "landing": 746,
+        "completed": 0,
+        "profile": 2,
+        "payment": 0,
+        "aga": 12,
+        "verify": 0,
+        "info": 0
+      },
+      "AI Assistant": {
+        "landing": 266,
+        "completed": 22,
+        "profile": 117,
+        "payment": 25,
+        "aga": 194,
+        "verify": 29,
+        "info": 25
+      },
+      "Organic Social": {
+        "landing": 345,
+        "completed": 0,
+        "profile": 20,
+        "payment": 0,
+        "aga": 57,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Social": {
+        "landing": 276,
+        "completed": 0,
+        "profile": 22,
+        "payment": 0,
+        "aga": 37,
+        "verify": 0,
+        "info": 0
+      },
+      "Organic Video": {
+        "landing": 149,
+        "completed": 0,
+        "profile": 0,
+        "payment": 0,
+        "aga": 0,
+        "verify": 0,
+        "info": 0
+      },
+      "Paid Other": {
+        "landing": 14,
+        "completed": 0,
+        "profile": 2,
+        "payment": 0,
+        "aga": 4,
+        "verify": 0,
+        "info": 0
+      }
+    },
+    "total": {
+      "landing": 147637,
+      "completed": 11875,
+      "profile": 26913,
+      "payment": 13651,
+      "aga": 44628,
+      "verify": 15317,
+      "info": 13921
+    }
+  }
+}

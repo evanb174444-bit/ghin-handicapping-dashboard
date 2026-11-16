@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-16",
+  "property": "331309674",
+  "exploration": "Get a Handicap - Overview_Eb",
+  "segment": "Get a Handicap",
+  "openFunnel": false,
+  "steps": [
+    "Landing Page",
+    "AGA Search",
+    "Profile Lookup",
+    "Verify Lookup",
+    "Profile Info",
+    "Payment",
+    "Completed Registration"
+  ],
+  "exports": [
+    {
+      "source": "/Users/EvanBelfi/Downloads/download (1).csv",
+      "period": "20261001-20261031",
+      "values": [
+        45163,
+        20045,
+        11016,
+        6978,
+        6301,
+        6177,
+        5273
+      ],
+      "sha256": "c6832ff801fe3454ce83a3fe3798a6363480fef2aa4605696b074fde8f23ccb1",
+      "archive": "data/raw/ga4/2026-11-16/getahandicap_funnel_20261001-20261031.csv"
+    },
+    {
+      "source": "/Users/EvanBelfi/Downloads/download (2).csv",
+      "period": "20260101-20261031",
+      "values": [
+        1085826,
+        399919,
+        249287,
+        145389,
+        127484,
+        123626,
+        108943
+      ],
+      "sha256": "66a29a957b598ffdca88189177adb5a8929cbfc8c50d0908aac93aba875c54a8",
+      "archive": "data/raw/ga4/2026-11-16/getahandicap_funnel_20260101-20261031.csv"
+    },
+    {
+      "source": "/Users/EvanBelfi/Downloads/download (3).csv",
+      "period": "20251101-20261031",
+      "values": [
+        1149418,
+        426976,
+        266109,
+        154917,
+        136158,
+        132207,
+        116536
+      ],
+      "sha256": "40fe2d896931f815e29f782dec2c2b2c23e7b2d1273cd0b9e9ca3e4aa08708d1",
+      "archive": "data/raw/ga4/2026-11-16/getahandicap_funnel_20251101-20261031.csv"
+    },
+    {
+      "source": "/Users/EvanBelfi/Downloads/download (4).csv",
+      "period": "20260101-20260930",
+      "values": [
+        1045984,
+        381497,
+        239462,
+        138346,
+        121131,
+        117388,
+        103247
+      ],
+      "sha256": "113b4beb177e7e9d6a90af5547c37e962c432e49a03ac2b2d24dcb8c8d025ff6",
+      "archive": "data/raw/ga4/2026-11-16/getahandicap_funnel_20260101-20260930.csv"
+    },
+    {
+      "source": "/Users/EvanBelfi/Downloads/download.csv",
+      "period": "20260901-20260930",
+      "values": [
+        94635,
+        27772,
+        16537,
+        9299,
+        8289,
+        8112,
+        7007
+      ],
+      "sha256": "a5d230bb4962a100776070564731b8ace155557ef05029b7336375678627c6a7",
+      "archive": "data/raw/ga4/2026-11-16/getahandicap_funnel_20260901-20260930.csv"
+    }
+  ],
+  "periods": {
+    "month": {
+      "label": "October 2026",
+      "values": [
+        45163,
+        20045,
+        11016,
+        6978,
+        6301,
+        6177,
+        5273
+      ]
+    },
+    "ytd": {
+      "label": "Jan\u2013Oct 2026 (sampled)",
+      "values": [
+        1085826,
+        399919,
+        249287,
+        145389,
+        127484,
+        123626,
+        108943
+      ],
+      "sampleFraction": 0.071
+    },
+    "all": {
+      "label": "Nov 2025\u2013Oct 2026 (sampled)",
+      "values": [
+        1149418,
+        426976,
+        266109,
+        154917,
+        136158,
+        132207,
+        116536
+      ],
+      "sampleFraction": 0.066
+    }
+  },
+  "quarter3": [
+    1045984,
+    381497,
+    239462,
+    138346,
+    121131,
+    117388,
+    103247
+  ],
+  "trafficUnchanged": true,
+  "nonGahDataUnchanged": true,
+  "published": false
+}
