@@ -1,6 +1,6 @@
 {
-  "source": "membership_refresh_2026-10-13.csv.csv",
-  "extractDate": "2026-10-13",
+  "source": "membership_refresh_2026-11-03.csv.csv",
+  "extractDate": "2026-11-03",
   "years": [
     2022,
     2023,
@@ -9,7 +9,7 @@
     2026
   ],
   "latestYear": 2026,
-  "latestMonth": 8,
+  "latestMonth": 9,
   "history": {
     "2022": [
       {
@@ -315,57 +315,72 @@
         "unknown": 0
       },
       {
-        "total": 8477,
-        "newGHIN": 6154,
+        "total": 8476,
+        "newGHIN": 6153,
         "existingGHIN": 2323,
         "unknown": 0
       },
       {
         "total": 15043,
-        "newGHIN": 11761,
+        "newGHIN": 11760,
         "existingGHIN": 3282,
+        "unknown": 1
+      },
+      {
+        "total": 25539,
+        "newGHIN": 19769,
+        "existingGHIN": 5770,
         "unknown": 0
       },
       {
-        "total": 25540,
-        "newGHIN": 19771,
-        "existingGHIN": 5769,
+        "total": 26074,
+        "newGHIN": 21164,
+        "existingGHIN": 4910,
         "unknown": 0
       },
       {
-        "total": 26077,
-        "newGHIN": 21169,
-        "existingGHIN": 4908,
-        "unknown": 0
-      },
-      {
-        "total": 26244,
-        "newGHIN": 21678,
+        "total": 26242,
+        "newGHIN": 21676,
         "existingGHIN": 4566,
         "unknown": 0
       },
       {
-        "total": 21810,
-        "newGHIN": 18383,
-        "existingGHIN": 3427,
+        "total": 21804,
+        "newGHIN": 18375,
+        "existingGHIN": 3429,
         "unknown": 0
       },
       {
-        "total": 18898,
-        "newGHIN": 16188,
+        "total": 18895,
+        "newGHIN": 16185,
         "existingGHIN": 2710,
         "unknown": 0
       },
       {
-        "total": 11578,
-        "newGHIN": 9814,
-        "existingGHIN": 1763,
-        "unknown": 1
+        "total": 11574,
+        "newGHIN": 9812,
+        "existingGHIN": 1762,
+        "unknown": 0
       },
-      null,
+      {
+        "total": 8329,
+        "newGHIN": 7247,
+        "existingGHIN": 1082,
+        "unknown": 0
+      },
       null,
       null
     ]
   },
-  "methodology": "Distinct GC joiners by GC membership creation calendar date, all statuses. Earliest qualifying GC membership date per golfer within year. New to GHIN: golfer creation on same date. Existing GHIN: golfer creation before membership date. Later, missing or conflicting dates are Unknown. Current October 13 extract and established GC club list; reconstructed history can differ from original monthly snapshots."
+  "methodology": "Distinct GC joiners by GC membership creation calendar date, all statuses. Earliest qualifying GC membership date per golfer within year. New to GHIN: golfer creation on same date. Existing GHIN: golfer creation before membership date. Later, missing or conflicting dates are Unknown. November 3 extract for January\u2013October 2026; October 13 extract retained for 2022\u20132025 and established GC club list; reconstructed history can differ from original monthly snapshots.",
+  "historicalSource": {
+    "extractDate": "2026-10-13",
+    "source": "membership_refresh_2026-10-13.csv.csv",
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
 }

@@ -47,5 +47,6 @@ Promise.all(["data/segmentation_status.json","data/association_history.json"].ma
 
 document.getElementById("columns").addEventListener("click",event=>{const button=event.target.closest("[data-sort]");if(!button)return;const key=button.dataset.sort;if(key==="rank"){sortKey="active";sortDir=-1}else if(sortKey===key)sortDir*=-1;else{sortKey=key;sortDir=key==="name"?1:-1}render()});
 </script>
+<script src="ghin-footer-bridge.js"></script>
 </body>
 </html>

@@ -33,4 +33,5 @@ function update(){
 fetch('data/association_acquisition.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(d=>{allRecords=d.records;monthlyControls=d.monthlyControls||[];update()}).catch(e=>document.getElementById('status').textContent=`Unable to load acquisition data: ${e.message}`);
 document.getElementById('periodSelect').addEventListener('change',()=>{try{update()}catch(e){document.getElementById('status').textContent=e.message}});
 document.getElementById('columns').addEventListener('click',event=>{const b=event.target.closest('[data-sort]');if(!b)return;const k=b.dataset.sort;if(k==='rank'){sortKey='difference';sortDir=1}else if(k===sortKey)sortDir*=-1;else{sortKey=k;sortDir=k==='name'?1:-1}render()});
-</script></body></html>
+</script><script src="ghin-footer-bridge.js"></script>
+</body></html>

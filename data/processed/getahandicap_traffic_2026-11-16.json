@@ -1,0 +1,44 @@
+{
+  "refreshed": "2026-11-16",
+  "method": "Hostname exactly matches getahandicap.usga.org; site total sessions, exact page path + query string / and /payment; weighted bounce=1-sum(engaged)/sum(sessions). Prior history preserved.",
+  "months": [
+    {
+      "month": 9,
+      "values": {
+        "sessions": 259019,
+        "bounceHomeSessions": 113200,
+        "bounceHomeEngaged": 68725,
+        "bouncePaymentSessions": 16183,
+        "bouncePaymentEngaged": 15334,
+        "paymentPageSessions": 16183,
+        "pricingSessions": 36877,
+        "profileSessions": 20934
+      },
+      "source": "data/raw/ga4/2026-11-16/getahandicap_traffic_20260901-20260930.csv",
+      "sha256": "c48f9d4d5b76a3e451023446cc2d1866151a7cffdb3972cf81ba468ee4714c97",
+      "availableDataPercent": 100,
+      "homeBounceRate": 39.28886925795053,
+      "paymentBounceRate": 5.246246060680959
+    },
+    {
+      "month": 10,
+      "values": {
+        "sessions": 225017,
+        "bounceHomeSessions": 52848,
+        "bounceHomeEngaged": 52164,
+        "bouncePaymentSessions": 11497,
+        "bouncePaymentEngaged": 11363,
+        "paymentPageSessions": 11497,
+        "pricingSessions": 31246,
+        "profileSessions": 15897
+      },
+      "source": "data/raw/ga4/2026-11-16/getahandicap_traffic_20261001-20261031.csv",
+      "sha256": "7a95de75a8865bb2d655cb9c141d94a0fe66c1d19b1f3456b97c5d3bcfcafc5f",
+      "availableDataPercent": 100,
+      "homeBounceRate": 1.2942779291553186,
+      "paymentBounceRate": 1.1655214403757497
+    }
+  ],
+  "octoberEngagementBreakFlagged": true,
+  "published": false
+}
