@@ -1,0 +1,17 @@
+{
+  "snapshot": "2026-11-03",
+  "allScopePopulationChecks": 9,
+  "westRawRecordChecks": {
+    "activeGolfers": 827154,
+    "memberships": 896716,
+    "gcMemberships": 85182,
+    "femalePct": 0.19820099117223292,
+    "averageAge": 47.70027208622771,
+    "publicMembersPct": 0.713764447160528,
+    "clubCount": 4868,
+    "publicClubsPct": 0.8214872637633525,
+    "type2ClubsPct": 0.4038619556285949
+  },
+  "result": "passed",
+  "published": false
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-16",
+  "sourceFlag": "public.scores.offseason IS TRUE",
+  "rawScores": 29320,
+  "deletedExcluded": 757,
+  "eligible": 28563,
+  "agaScores": 28380,
+  "agaUniqueGolfers": 21369,
+  "agasWithPostings": 57,
+  "unresolvedEligible": 134,
+  "nonAGAEligible": 49,
+  "postingDates": [
+    "2026-10-26",
+    "2026-11-16"
+  ],
+  "membershipSnapshot": "2026-11-03",
+  "privateIdentifiersEmbedded": false,
+  "shareOfAllScoresIncluded": false,
+  "sourceReconciliation": "passed",
+  "allAssociationAndTimeViews": "60 selections x 3 grains passed",
+  "published": false
+}

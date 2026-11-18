@@ -290,3 +290,72 @@ November 12, 2026: At Evan’s request, both Scores vs Rounds and Membership Acq
 
 
 November 12, 2026: Membership Acquisition vs Rounds now has All Regular / GC only selection. Uses existing ACQUISITION_DATA.gc.history.aga.regular for both current/prior years, preserving the same AGA/Regular scope, with no new export. Chart, YTD summaries, table and differences update together. GC denotes a retained GC membership, including other club affiliations, not original acquisition channel. NGF national benchmark unchanged. All Regular remains the default. Local only.
+
+November 12, 2026: Moved Acquisition vs Rounds from the Membership main subtab row to Trends → Overview / Acquisition / Acquisition vs Rounds. Trends remains selected for all three; saved navigation restores the comparison route. Comparison controls/data unchanged. Local only.
+
+
+## November 13, 2026 — GHIN Trials refreshed locally
+
+Source: data/raw/ghin/2026-11-13/trials_full_refresh_2026-11-13.csv, SHA-256 65dcee30feb6f3ce7902b79f15bef05d897a97bc3e4d23fce2cc5de7afb71917. 10,744 CSV rows: nine manifests and 10,735 aggregate data rows. Original CSV and SQL retained unmodified. Separate export reads at 15:15:45 and 15:30:57 America/New_York are preserved; not a frozen snapshot. Database label ghin2020pilot retained, without independently certifying the server mapping.
+
+Completed monthly history spans June 2024–October 2026 (29 months, 87 event rows). October: 12,662 trials created / 5,076 signups / 14,246 trial starts. Jan–Oct 2026: 158,474 created / 81,338 recorded signups. Same-day candidate destinations reconcile month by month: GC 65,530; non-GC AGA 12,297; non-AGA 510; unresolved 3,001. Attribution rules unchanged; candidates are not certified paid destinations.
+
+All-time source timing uses the dedicated five-group dataset and totals 200,667 conversions before November1. Cohorts created before November have 201,666 observed conversions as of November13; that includes later outcomes and must not be substituted for completed-month conversions. The top cohort summary retains its observed-outcome methodology and now labels that distinction explicitly. Current trial pools: 160,517 active / 103,991 inactive, Active precedence; two overlapping-status golfers reported separately by source.
+
+Updated the local Trials page, October selector, monthly/YTD/annual chart labels and source notes, destination chart, timing groups, and linked home trial summaries. GPS and Challenges data unchanged. Saved source: scripts/import_trials_refresh_2026_11_13.py. Validation: reports/trials_refresh_2026-11-13.json and scripts/check_trials_refresh_2026_11_13.cjs. Source partitions, unique aggregate keys, month coverage, cohort partitions and raw-to-event bridges verified; nine chart-mode checks and local browser controls passed. No publication. Old build_ghin_live.py still targets October2 inputs; do not run it to install this delivery.
+
+November 13, 2026: Renamed the Trials headline labels to Trials Converted and Conversion Rate at Evan’s request. Dates, values and definitions unchanged. Local only.
+
+November 13, 2026: Evan explicitly directed cutting headline Trials Converted and Conversion Rate off at October31. Headline values now use completed monthly event history: 462,033 created, 200,667 signups, 43.4%. Both totals use the same cutoff. Post-cutoff observed cohort outcomes remain archived but are not used in these headlines; current trial-pool snapshots retain their truthful November13 date. Local only.
+
+
+## November 13, 2026 — Advanced GPS refreshed locally
+
+Source: data/raw/ghin/2026-11-13/gps_2026-11-13.csv, SHA-256 30269dd71186263d74b6b2d48a7dd7a218903452c38be005eb33c0287f71d42f. 512 CSV rows: four manifests / 508 aggregate rows (30 active reconciliation groups, 474 activity groups, three tenure cohorts, one explicit renewal-status aggregate). Envelope extraction time 2026-11-13 16:06:40.996 -0500, America/New_York; original source, query and manifest definitions retained. Database label is ghin2020pilot; server mapping not independently established.
+
+November13 snapshot: 102,484 active-flagged unique golfers = 102,118 current-date coverage +158 outside dates +208 missing dates without a current range. Reconciliation, active tenure population and explicit renewal-status active totals agree. Active subscription rows102,502; golfers with multiple active rows15. Date-quality partitions and tenure bands reconcile for all three overlapping cohorts; on/off/unknown statuses reconcile to active golfers.
+
+Completed monthly charts end October31,2026. Jan–Oct2026 new28,763 /renewed64,910. October new1,915 /renewed4,294 /canceled179 /expired178. Partial November retained only in the raw/full-history and established lifetime totals, labeled as throughNovember13. Current subscriber/tenure state is November13, not an October31 snapshot. All existing counting methods retained: activity statuses are record counts grouped by creation month, not verified payments or certified historical active subscribers. Tenure is time since retained initial date, not verified continuous enrollment.
+
+Updated Advanced GPS cards, October highlights, Monthly/YTD/Annual controls and dates, tenure figures/notes, and home GPS cards. Trials data and October31 headline cutoff are unchanged; Challenges unchanged. Source importer scripts/import_gps_refresh_2026_11_13.py; validation reports/gps_refresh_2026-11-13.json and scripts/check_gps_refresh_2026_11_13.cjs. Twelve chart-mode checks and local browser review passed. No publication. Old build_ghin_live.py still targets the old inputs and must not be run to reinstall this refresh.
+
+
+## November 13, 2026 — GHIN Challenges refreshed locally
+
+Source: data/raw/ghin/2026-11-13/challenges_2026-11-13.csv, SHA-256 96b6aa00f9fc84cb822da75f557bc4676ecd90aa0d15cb05e57d151f5db7672f. 2,231 CSV rows: two manifests /1,159 challenge rows /1,070 name-lookup rows. Extraction2026-11-13 16:36:20.879 -0500, America/New_York. Original CSV, SQL and manifests retained. Database labelghin2020pilot does not independently certify the server mapping.
+
+Preserved national scope: active non-test verified AGAs from association_scope_lookup; deleted challenges and explicit test IDs129/933 excluded. Partition:994 eligible,145 deleted,19 outside verified AGA scope,1 explicit test. This differs intentionally from the GC consumer's scope. 56 duplicate diagnostic course_num-join lookup rows were collapsed only after confirming identical primary course identity/name. All994 eligible names/course names resolve; actual join remains crs_courses.id.
+
+November13 snapshot:994 challenges /50,648 participations /18,016 ranked participations /156,531 scores /36 participating AGAs /780 distinct courses. Statuses:920 completed /71 active /3 upcoming. January–October2026 starts789; October32. Current counters and detail tables include all eligible records, including future scheduled starts. Completed-month charts stop October31. Participations/scores grouped by challenge start month are current challenge counters, not monthly golfer or score-posting activity. Historical2025 coverage remains partial from March14; available-total changes remain marked as non-comparable full periods.
+
+Duration analysis recomputed from721 completed2026 challenges, with all in exactly one day-range band. Highest average participation remains10–12weeks (159.7); highest ranked rate8–10weeks (48.2%,138 challenges). Winners are now calculated dynamically rather than fixed editorial labels. Date labels, charts, counters, AGA/site tables and source notes refreshed; Trials and GPS payloads unchanged. Validation: reports/challenges_refresh_2026-11-13.json and scripts/check_challenges_refresh_2026_11_13.cjs;80 monthly values,12 chart modes, aggregate partitions, regional filtering and local browser review passed. Importer: scripts/import_challenges_refresh_2026_11_13.py. Old build_challenges_data.py still targetsOctober3; do not rerun it for this delivery. Local only; no publication.
+
+
+## November 13, 2026 — current GC data port to national GHIN dashboard
+
+Local only. The GC Membership Totals layout is retained and now reads the owning GC project’s November 2 snapshot / completed October activity. Active memberships 550,660; October new memberships 8,332; YTD new memberships 169,888. Copied membership, segmentation, retention and recovery JSON unchanged, with source hashes in `reports/gc-port-2026-11-13.json`. Imported current association adapters and their reconciliation controls. Original monthly headline totals and observed association counts remain distinct; November 2025 reconstructed association base is 436,675 versus original historical headline 438,198. Estimates, unclassified recovery records and authorized June expiration substitution remain identified in notes.
+
+Native GC Acquisition retains its distinct-golfer method and chart format. January–October 2026 rebuilt from existing verified November 3 national membership detail (10,279,905 scanned rows), not substituted with GC monthly membership counts. 170,410 distinct 2026 joiners (137,926 same-day new GHIN; 32,483 existing GHIN; one unknown); October 8,329. Pre-2026 history unchanged. Analytics/funnel sources retain their own source dates.
+
+The 8766 local preview previously allowed only its top-level review files, causing embedded GC pages to return 404. `scripts/serve_local_review.py` now safely serves public GC summary HTML/JSON assets, rejects traversal/raw/private routes, and externalizes identical inline dashboard code for browser tooling. Start with Python; review at http://127.0.0.1:8766/review.html. Backups: `backups/gc-before-port-2026-11-13/`. Local browser review and syntax/aggregation checks passed. No push or deployment.
+
+GC embedded pages now size to their content with ResizeObserver, including after data renders, so narrow screens do not clip the lower charts or notes.
+
+
+## November 16 local dashboard audit
+
+Checked 31 browser views/filter states, 13 embedded payloads against their processed source files, 264 monthly score partitions, source hashes for the November13 Trials/GPS/Challenges CSVs, and six GC source copies. Eight focused validation suites and final JavaScript syntax checks passed. Evidence: `reports/local-dashboard-audit-2026-11-16.json`. Membership is November3; monthly scores/acquisition and GHIN activity end October31; score Explorer posts end November6; current Trials/GPS/Challenges snapshots are November13; GC snapshot November2. Web analytics remain through August; installed NGF rounds through September. GC estimates/partial recovery and historical source gaps remain documented. Do not describe these as a fresh November16 database snapshot.
+
+Corrected web analytics header to its actual coverage month, removed the leftover GC acquisition activity-through header, routed the embedded GC acquisition shortcut to its parent view, and removed two shortcuts targeting hidden embedded sections. No data/methodology changes, push or publication. Old dated Trials test still asserts GPS was unchanged before its later intentional refresh; the audit-specific test retains Trials assertions and verifies the later GPS date instead.
+
+
+## November 16 — Get a Handicap funnel through October
+
+Funnel-only refresh at Evan’s clarified scope. Existing GA4 property331309674 / Get a Handicap - Overview_Eb / Get a Handicap segment / seven-step closed funnel retained. Original CSV exports archived under data/raw/ga4/2026-11-16 with source hashes in reports/getahandicap_funnel_refresh_2026-11-16.json. September completed-registration users7,007; October5,273. Jan–Oct cumulative108,943; Nov2025–Oct2026 cumulative116,536. Cumulative values are separate GA4 runs, never sums of monthly uniques. Q3 cumulative:103,247 completed /117,388 Payment /1,045,984 Landing. Monthly reports show100% available data; GA4 reports7.1% sampling for Jan–Oct and6.6% for Nov2025–Oct2026; Q3 also flagged sampled. Source consent-only exploration notice retained in Data notes. Earlier funnel history unchanged.
+
+Updated funnel, health, transition trends, month selectors, headline funnel KPIs and cumulative quarter/year charts. Sessions/bounce data stay through August and were not imported or changed. September/October traffic KPIs show N/A instead of zero. Separate coverage labels remain truthful. Node validation and local browser review passed. No push/publication.
+
+
+## November 16 — local Get a Handicap traffic-source widget
+
+Added below the funnel and health cards using the already archived GA4 funnel exports. October compares September/October landing-page users, completed-registration users and completion/landing conversion rates by session default channel group; other available funnel periods show their own source rows. Top6 default, expandable to all14 channels; follows the funnel period selector. The Paid Search callout uses40,612→1,551 landing-page users (-96.2%). No synthesized Paid total or stacked100% chart: channel-level unique users overlap and do not partition the GA4 unique Total row. Missing channels remain unavailable. Cumulative views keep GA4 sampled labels. Earlier funnel/traffic data and other dashboard payloads unchanged. Source and browser checks: reports/getahandicap_sources_2026-11-16.json and scripts/check_gah_sources_2026_11_16.cjs. Local review only; no publication.

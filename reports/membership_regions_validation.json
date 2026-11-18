@@ -1,0 +1,21 @@
+{
+  "snapshot": "2026-11-03",
+  "regions": [
+    "West",
+    "Central",
+    "Midwest",
+    "Northeast",
+    "Southeast",
+    "International"
+  ],
+  "scopePopulationCombinationsVerified": 9,
+  "checks": [
+    "Six region rows in each selection",
+    "Membership and GC totals reconcile",
+    "Exact regional and overall golfer deduplication",
+    "Region and size filters ignored in Regions view",
+    "Drilldown selects region and clears size filter",
+    "Regular/Junior filtering works in browser"
+  ],
+  "published": false
+}

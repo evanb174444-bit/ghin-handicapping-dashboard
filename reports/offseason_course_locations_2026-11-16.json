@@ -1,0 +1,47 @@
+{
+  "lookupRows": 4217,
+  "distinctLookupCourseIds": 3877,
+  "eligibleCoursesWithValidatedNames": 3762,
+  "eligibleScores": 28380,
+  "unknownLocationScores": 41,
+  "regions": 39,
+  "locationSourceSha256": "fb4464b9d03bd84c797fa3f3a3a21f7415f3a38a0b7c7a74ea4ed56acb56327d",
+  "topStates": [
+    {
+      "key": "US-NY",
+      "name": "New York",
+      "scores": 5966,
+      "uniqueGolfers": 3974,
+      "courseCount": 510
+    },
+    {
+      "key": "US-MI",
+      "name": "Michigan",
+      "scores": 4452,
+      "uniqueGolfers": 3149,
+      "courseCount": 441
+    },
+    {
+      "key": "US-MN",
+      "name": "Minnesota",
+      "scores": 4322,
+      "uniqueGolfers": 3089,
+      "courseCount": 268
+    },
+    {
+      "key": "US-WI",
+      "name": "Wisconsin",
+      "scores": 2375,
+      "uniqueGolfers": 1613,
+      "courseCount": 287
+    },
+    {
+      "key": "US-MA",
+      "name": "Massachusetts",
+      "scores": 1612,
+      "uniqueGolfers": 1517,
+      "courseCount": 267
+    }
+  ],
+  "published": false
+}

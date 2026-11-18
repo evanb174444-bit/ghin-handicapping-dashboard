@@ -1,0 +1,345 @@
+{
+  "source": "offseason_scores_full_2026-11-16.csv.csv",
+  "sourceSha256": "789c871ecd7d5f422b21191d025299861c8c6c4af2b3fa6c96184978576ffa96",
+  "membershipSource": "data/raw/membership_refresh_2026-11-03/membership_refresh_2026-11-03.csv.csv",
+  "membershipSourceBytes": 4183673077,
+  "membershipSnapshot": "2026-11-03",
+  "membershipRowsScanned": 10279905,
+  "rawScores": 29320,
+  "uniqueScoreIds": 29320,
+  "uniqueGolfers": 21958,
+  "scoreMappingStatus": {
+    "matched_primary_club": 29160,
+    "golfer_not_in_membership_export": 149,
+    "ambiguous_primary_club_metadata": 6,
+    "primary_club_missing": 5
+  },
+  "golferMappingStatus": {
+    "matched_primary_club": 21865,
+    "golfer_not_in_membership_export": 85,
+    "primary_club_missing": 4,
+    "ambiguous_primary_club_metadata": 4
+  },
+  "eligibleNonDeletedNonPenalty": 28563,
+  "eligibleMappingStatus": {
+    "matched_primary_club": 28429,
+    "golfer_not_in_membership_export": 123,
+    "ambiguous_primary_club_metadata": 6,
+    "primary_club_missing": 5
+  },
+  "eligibleScope": {
+    "AGA": 28380,
+    "International": 24,
+    "unmatched": 134,
+    "Trial": 25
+  },
+  "eligibleMemberPopulation": {
+    "Regular": 27339,
+    "Unclassified": 582,
+    "Junior": 642
+  },
+  "testMappingScores": 0,
+  "agaAssignedEligibleScores": 28380,
+  "agaTotals": [
+    {
+      "associationId": "45",
+      "associationName": "Minnesota Golf Association",
+      "scores": 4286
+    },
+    {
+      "associationId": "15",
+      "associationName": "Golf Association of Michigan",
+      "scores": 4157
+    },
+    {
+      "associationId": "65",
+      "associationName": "New York State Golf Association",
+      "scores": 3675
+    },
+    {
+      "associationId": "101",
+      "associationName": "Wisconsin State Golf Association",
+      "scores": 2048
+    },
+    {
+      "associationId": "8",
+      "associationName": "Mass Golf",
+      "scores": 1681
+    },
+    {
+      "associationId": "56",
+      "associationName": "GAP",
+      "scores": 1477
+    },
+    {
+      "associationId": "44",
+      "associationName": "Maine Golf",
+      "scores": 1296
+    },
+    {
+      "associationId": "52",
+      "associationName": "Rochester District Golf Association",
+      "scores": 1215
+    },
+    {
+      "associationId": "1",
+      "associationName": "Metropolitan Golf Association",
+      "scores": 1085
+    },
+    {
+      "associationId": "20",
+      "associationName": "Washington Golf",
+      "scores": 786
+    },
+    {
+      "associationId": "2",
+      "associationName": "New Jersey Golf",
+      "scores": 737
+    },
+    {
+      "associationId": "105",
+      "associationName": "Montana State Golf Association",
+      "scores": 646
+    },
+    {
+      "associationId": "51",
+      "associationName": "South Dakota Golf Association",
+      "scores": 582
+    },
+    {
+      "associationId": "6",
+      "associationName": "Florida State Golf Association",
+      "scores": 564
+    },
+    {
+      "associationId": "14",
+      "associationName": "Vermont Golf Association",
+      "scores": 486
+    },
+    {
+      "associationId": "60",
+      "associationName": "Metropolitan Amateur Golf Association",
+      "scores": 322
+    },
+    {
+      "associationId": "3",
+      "associationName": "Colorado Golf Association",
+      "scores": 288
+    },
+    {
+      "associationId": "103",
+      "associationName": "Indiana Golf Association",
+      "scores": 286
+    },
+    {
+      "associationId": "106",
+      "associationName": "Chicago District Golf Association",
+      "scores": 274
+    },
+    {
+      "associationId": "58",
+      "associationName": "Idaho Golf Association",
+      "scores": 243
+    },
+    {
+      "associationId": "11",
+      "associationName": "Greater Cincinnati Golf Association",
+      "scores": 231
+    },
+    {
+      "associationId": "17",
+      "associationName": "Wyoming State / Colorado GA",
+      "scores": 216
+    },
+    {
+      "associationId": "30",
+      "associationName": "Connecticut State Golf Association",
+      "scores": 192
+    },
+    {
+      "associationId": "36",
+      "associationName": "New Hampshire Golf",
+      "scores": 145
+    },
+    {
+      "associationId": "41",
+      "associationName": "Missouri Golf Association",
+      "scores": 142
+    },
+    {
+      "associationId": "81",
+      "associationName": "Carolinas Golf Association",
+      "scores": 129
+    },
+    {
+      "associationId": "16",
+      "associationName": "Iowa Golf Association",
+      "scores": 128
+    },
+    {
+      "associationId": "18",
+      "associationName": "Northern Ohio Golf Association",
+      "scores": 127
+    },
+    {
+      "associationId": "55",
+      "associationName": "Western Pennsylvania Golf Association",
+      "scores": 96
+    },
+    {
+      "associationId": "79",
+      "associationName": "Arizona Golf Association",
+      "scores": 94
+    },
+    {
+      "associationId": "73",
+      "associationName": "Southern California Golf Association",
+      "scores": 94
+    },
+    {
+      "associationId": "53",
+      "associationName": "Northern California Golf Association",
+      "scores": 78
+    },
+    {
+      "associationId": "4",
+      "associationName": "Nebraska Golf Association",
+      "scores": 78
+    },
+    {
+      "associationId": "62",
+      "associationName": "North Dakota Golf Association",
+      "scores": 74
+    },
+    {
+      "associationId": "57",
+      "associationName": "Texas Golf Association",
+      "scores": 69
+    },
+    {
+      "associationId": "104",
+      "associationName": "Maryland State Golf Association",
+      "scores": 59
+    },
+    {
+      "associationId": "40",
+      "associationName": "Rhode Island Golf Association",
+      "scores": 58
+    },
+    {
+      "associationId": "10",
+      "associationName": "Georgia State Golf Association",
+      "scores": 39
+    },
+    {
+      "associationId": "5",
+      "associationName": "Virginia State Golf Association",
+      "scores": 29
+    },
+    {
+      "associationId": "33",
+      "associationName": "Kentucky Golf Association",
+      "scores": 26
+    },
+    {
+      "associationId": "23",
+      "associationName": "Oregon Golf Association",
+      "scores": 22
+    },
+    {
+      "associationId": "27",
+      "associationName": "Tennessee Golf Association",
+      "scores": 18
+    },
+    {
+      "associationId": "22",
+      "associationName": "Central Links Golf",
+      "scores": 15
+    },
+    {
+      "associationId": "78",
+      "associationName": "Utah Golf Association",
+      "scores": 14
+    },
+    {
+      "associationId": "50",
+      "associationName": "Arkansas State Golf Association",
+      "scores": 14
+    },
+    {
+      "associationId": "66",
+      "associationName": "Miami Valley Golf",
+      "scores": 13
+    },
+    {
+      "associationId": "67",
+      "associationName": "Ohio Golf Association",
+      "scores": 7
+    },
+    {
+      "associationId": "32",
+      "associationName": "Nevada Golf",
+      "scores": 6
+    },
+    {
+      "associationId": "24",
+      "associationName": "Mississippi Golf Association",
+      "scores": 6
+    },
+    {
+      "associationId": "12",
+      "associationName": "Oklahoma Golf Association",
+      "scores": 5
+    },
+    {
+      "associationId": "19",
+      "associationName": "Alabama Golf Association",
+      "scores": 4
+    },
+    {
+      "associationId": "37",
+      "associationName": "West Virginia Golf Association",
+      "scores": 4
+    },
+    {
+      "associationId": "25",
+      "associationName": "Hawaii State Golf Association",
+      "scores": 4
+    },
+    {
+      "associationId": "84",
+      "associationName": "Louisiana Golf Association",
+      "scores": 4
+    },
+    {
+      "associationId": "35",
+      "associationName": "Sun Country Amateur Golf Association",
+      "scores": 3
+    },
+    {
+      "associationId": "49",
+      "associationName": "Alaska / WA Golf GA",
+      "scores": 2
+    },
+    {
+      "associationId": "59",
+      "associationName": "Golf PR",
+      "scores": 1
+    }
+  ],
+  "postedMin": "2026-10-26 09:02:46.417",
+  "postedMax": "2026-11-16 23:23:41.626",
+  "matchedFile": "data/raw/offseason/2026-11-16/offseason_scores_membership_matched_2026-11-16.csv",
+  "method": "One mapping per golfer using the November 3 primary_club_id; club/AGA metadata from the same export. No arbitrary fallback to another membership. Current affiliation, not historical affiliation at posting. Offseason uses source offseason=true; no seasonal-calendar inference. Raw score flags retained. No share-of-all denominator.",
+  "published": false,
+  "dashboardUpdated": false,
+  "eligibleMatchPercent": 99.53086160417323,
+  "eligibleUnmatchedUniqueGolfers": 83,
+  "matchedFileSha256": "4419b916b3b1db132d1d37970e86c6118123cfb40999d381d944366bab18b886",
+  "membershipSourceSha256": "dcef66695e4bf28c41ffa9125d9b45171005a3a873fccc591ddc49e693227034",
+  "scoreStatusesRetained": {
+    "UnderReview": 136,
+    "Validated": 28427
+  },
+  "deletedFlagAndTimestampConsistent": true
+}
