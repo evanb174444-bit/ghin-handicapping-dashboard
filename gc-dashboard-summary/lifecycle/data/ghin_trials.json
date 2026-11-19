@@ -1,0 +1,948 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "status": "October activity and cumulative distributions refreshed",
+    "source": "Preserved historical series; November 2 GHIN database export for October activity and cumulative timing/current-association candidate distributions.",
+    "allMonthlyActivityThrough": "2026-10-31",
+    "cumulativeActivityThrough": "2026-10-31"
+  },
+  "overview": {
+    "signups": 158480,
+    "activeTrials": 58622,
+    "conversions": 81339,
+    "conversionRate": 0.5132445734477536,
+    "campaigns": [
+      {
+        "label": "Spring Trial Push",
+        "value": 3120,
+        "sub": "34.8% conversion"
+      },
+      {
+        "label": "App Onboarding",
+        "value": 2085,
+        "sub": "27.4% conversion"
+      },
+      {
+        "label": "Partner Trial Offer",
+        "value": 1740,
+        "sub": "22.1% conversion"
+      },
+      {
+        "label": "Organic Trial Starts",
+        "value": 1305,
+        "sub": "18.6% conversion"
+      }
+    ],
+    "funnel": [
+      {
+        "label": "Trial signups",
+        "value": 8250
+      },
+      {
+        "label": "Activated trials",
+        "value": 6125
+      },
+      {
+        "label": "Engaged trials",
+        "value": 3860
+      },
+      {
+        "label": "Converted golfers",
+        "value": 2145
+      }
+    ]
+  },
+  "summary": {
+    "totalTrialsCreated": 158480,
+    "trialConversions": 81339,
+    "conversionRate": 0.5132445734477536,
+    "activeTrialGolfers": null,
+    "inactiveTrialGolfers": null,
+    "period": "January–October",
+    "sourceNote": "Preserved January–September calendar activity plus October database events. Activity ratio, not a creation-cohort conversion rate."
+  },
+  "gcSummary": {
+    "trialConversions": 65838
+  },
+  "gcHistoricalSnapshots": [
+    {
+      "snapshotDate": "2025-02-01",
+      "activityThrough": "2025-01",
+      "trialConversions": 2148,
+      "source": "USGA/AGA GC February 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-03-01",
+      "activityThrough": "2025-02",
+      "trialConversions": 4762,
+      "source": "USGA/AGA GC March 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-04-01",
+      "activityThrough": "2025-03",
+      "trialConversions": 10066,
+      "source": "USGA/AGA GC April 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-05-01",
+      "activityThrough": "2025-04",
+      "trialConversions": 17252,
+      "source": "USGA/AGA GC May 1, 2025 report value supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-07-01",
+      "activityThrough": "2025-06",
+      "trialConversions": 38420,
+      "source": "USGA/AGA GC July 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-09-01",
+      "activityThrough": "2025-08",
+      "trialConversions": 56744,
+      "source": "USGA/AGA GC September 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-10-01",
+      "activityThrough": "2025-09",
+      "trialConversions": 61790,
+      "source": "USGA/AGA GC October 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2025-12-01",
+      "activityThrough": "2025-11",
+      "trialConversions": 67401,
+      "source": "USGA/AGA GC December 1, 2025 report screenshot supplied 2026-09-10"
+    },
+    {
+      "snapshotDate": "2026-01-01",
+      "activityThrough": "2025-12",
+      "trialConversions": 68581,
+      "source": "USGA/AGA GC January 1, 2026 report value supplied 2026-09-10"
+    }
+  ],
+  "gcHistoricalMonthly": [
+    {
+      "year": 2025,
+      "label": "Jan",
+      "conversions": 2148,
+      "derivation": "2025-02-01 cumulative snapshot"
+    },
+    {
+      "year": 2025,
+      "label": "Feb",
+      "conversions": 2614,
+      "derivation": "2025-03-01 cumulative snapshot minus 2025-02-01 cumulative snapshot"
+    },
+    {
+      "year": 2025,
+      "label": "Mar",
+      "conversions": 5304,
+      "derivation": "2025-04-01 cumulative snapshot minus 2025-03-01 cumulative snapshot"
+    },
+    {
+      "year": 2025,
+      "label": "Apr",
+      "conversions": 7186,
+      "derivation": "2025-05-01 cumulative snapshot minus 2025-04-01 cumulative snapshot"
+    },
+    {
+      "year": 2025,
+      "label": "May",
+      "conversions": 10841,
+      "estimated": true,
+      "derivation": "Estimated share of the 21,168 May-June total using the 2026 May-June distribution"
+    },
+    {
+      "year": 2025,
+      "label": "Jun",
+      "conversions": 10327,
+      "estimated": true,
+      "derivation": "Estimated share of the 21,168 May-June total using the 2026 May-June distribution"
+    },
+    {
+      "year": 2025,
+      "label": "Jul",
+      "conversions": 9765,
+      "estimated": true,
+      "derivation": "Estimated share of the 18,324 July-August total using the 2026 July-August distribution"
+    },
+    {
+      "year": 2025,
+      "label": "Aug",
+      "conversions": 8559,
+      "estimated": true,
+      "derivation": "Estimated share of the 18,324 July-August total using the 2026 July-August distribution"
+    },
+    {
+      "year": 2025,
+      "label": "Sep",
+      "conversions": 5046,
+      "derivation": "2025-10-01 cumulative snapshot minus 2025-09-01 cumulative snapshot"
+    },
+    {
+      "year": 2025,
+      "label": "Oct",
+      "conversions": 3086,
+      "estimated": true,
+      "derivation": "Estimated as 55% of the 5,611 October-November total"
+    },
+    {
+      "year": 2025,
+      "label": "Nov",
+      "conversions": 2525,
+      "estimated": true,
+      "derivation": "Estimated as 45% of the 5,611 October-November total"
+    },
+    {
+      "year": 2025,
+      "label": "Dec",
+      "conversions": 1180,
+      "derivation": "2026-01-01 cumulative snapshot minus 2025-12-01 cumulative snapshot"
+    }
+  ],
+  "gcMonthly": [
+    {
+      "label": "Jan",
+      "conversions": 2445
+    },
+    {
+      "label": "Feb",
+      "conversions": 2707
+    },
+    {
+      "label": "Mar",
+      "conversions": 4791
+    },
+    {
+      "label": "Apr",
+      "conversions": 9694
+    },
+    {
+      "label": "May",
+      "conversions": 10199
+    },
+    {
+      "label": "Jun",
+      "conversions": 9716
+    },
+    {
+      "label": "Jul",
+      "conversions": 9180
+    },
+    {
+      "label": "Aug",
+      "conversions": 8046
+    },
+    {
+      "label": "Sep",
+      "conversions": 4861,
+      "source": "Evan confirmed October 6, 2026: 4,861 September trial conversions matched to GC clubs, of 5,753 total conversions."
+    },
+    {
+      "label": "Oct",
+      "conversions": 4199,
+      "source": "November 2 database export; October signup events matched to one same-day non-test, nontrial membership candidate in approved GC clubs."
+    }
+  ],
+  "gcAnnualTotals": [
+    {
+      "year": 2024,
+      "trialConversions": 34485
+    },
+    {
+      "year": 2025,
+      "trialConversions": 68581
+    }
+  ],
+  "gcYearlyTotals": [
+    {
+      "year": 2024,
+      "period": "Full year",
+      "trialConversions": 34485
+    },
+    {
+      "year": 2025,
+      "period": "Jan-October YTD",
+      "trialConversions": 64876
+    },
+    {
+      "year": 2026,
+      "period": "Jan-October YTD",
+      "trialConversions": 65838
+    }
+  ],
+  "yearlyTotals": [
+    {
+      "year": 2024,
+      "totalTrialsCreated": 112107,
+      "trialConversions": 36816,
+      "conversionRate": 0.3284,
+      "activeTrialGolfers": 34287,
+      "inactiveTrialGolfers": 24029
+    },
+    {
+      "year": 2025,
+      "totalTrialsCreated": 186318,
+      "trialConversions": 78786,
+      "conversionRate": 0.4229,
+      "activeTrialGolfers": 61113,
+      "inactiveTrialGolfers": 42946
+    },
+    {
+      "year": 2026,
+      "period": "January–October",
+      "totalTrialsCreated": 158480,
+      "trialConversions": 81339,
+      "conversionRate": 0.5132445734477536,
+      "activeTrialGolfers": null,
+      "inactiveTrialGolfers": null,
+      "sourceNote": "Preserved January–September calendar activity plus October database events. Activity ratio, not a creation-cohort conversion rate."
+    }
+  ],
+  "monthly": [
+    {
+      "label": "Jan",
+      "trials": 7028,
+      "conversions": 3361,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Feb",
+      "trials": 7341,
+      "conversions": 3540,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Mar",
+      "trials": 14101,
+      "conversions": 6602,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Apr",
+      "trials": 22013,
+      "conversions": 11948,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "May",
+      "trials": 22881,
+      "conversions": 12633,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Jun",
+      "trials": 23571,
+      "conversions": 12032,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Jul",
+      "trials": 20264,
+      "conversions": 10984,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Aug",
+      "trials": 17730,
+      "conversions": 9410,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Sep",
+      "trials": 10886,
+      "conversions": 5753,
+      "source": "October 2, 2026 trial_monthly_history export; Trial record created / Sign-up recorded events"
+    },
+    {
+      "label": "Oct",
+      "trials": 12665,
+      "conversions": 5076,
+      "source": "November 2 database export; October Trial record created / Sign-up recorded events"
+    }
+  ],
+  "conversionBuckets": [
+    {
+      "label": "First day",
+      "count": 80924,
+      "pct": 0.4032750776161501
+    },
+    {
+      "label": "Next day",
+      "count": 11127,
+      "pct": 0.05545007400319933
+    },
+    {
+      "label": "First week",
+      "count": 19774,
+      "pct": 0.09854136454922832
+    },
+    {
+      "label": "First month",
+      "count": 29948,
+      "pct": 0.14924227700618437
+    },
+    {
+      "label": "Beyond 1 month",
+      "count": 58894,
+      "pct": 0.2934912068252378
+    }
+  ],
+  "agaConversions": [
+    {
+      "name": "Texas Golf Association",
+      "count": 17453
+    },
+    {
+      "name": "Florida State Golf Association",
+      "count": 15030
+    },
+    {
+      "name": "Carolinas Golf Association",
+      "count": 13647
+    },
+    {
+      "name": "Metropolitan Golf Association",
+      "count": 9466
+    },
+    {
+      "name": "Southern California Golf Association",
+      "count": 8808
+    },
+    {
+      "name": "Mass Golf",
+      "count": 7877
+    },
+    {
+      "name": "GAP",
+      "count": 7411
+    },
+    {
+      "name": "Georgia State Golf Association",
+      "count": 7323
+    },
+    {
+      "name": "Golf Association of Michigan",
+      "count": 6790
+    },
+    {
+      "name": "Colorado Golf Association",
+      "count": 5425
+    },
+    {
+      "name": "Northern California Golf Association",
+      "count": 4697
+    },
+    {
+      "name": "Arizona Golf Association",
+      "count": 4593
+    },
+    {
+      "name": "Virginia State Golf Association",
+      "count": 4572
+    },
+    {
+      "name": "Washington Golf",
+      "count": 4270
+    },
+    {
+      "name": "Tennessee Golf Association",
+      "count": 4067
+    },
+    {
+      "name": "Minnesota Golf Association",
+      "count": 3744
+    },
+    {
+      "name": "Maryland State Golf Association",
+      "count": 3638
+    },
+    {
+      "name": "Chicago District Golf Association",
+      "count": 3576
+    },
+    {
+      "name": "New Jersey Golf",
+      "count": 3320
+    },
+    {
+      "name": "Utah Golf Association",
+      "count": 3017
+    },
+    {
+      "name": "Alabama Golf Association",
+      "count": 2932
+    },
+    {
+      "name": "Northern Ohio Golf Association",
+      "count": 2856
+    },
+    {
+      "name": "Western Pennsylvania Golf Association",
+      "count": 2848
+    },
+    {
+      "name": "New York State Golf Association",
+      "count": 2734
+    },
+    {
+      "name": "Oregon Golf Association",
+      "count": 2612
+    },
+    {
+      "name": "Wisconsin State Golf Association",
+      "count": 2466
+    },
+    {
+      "name": "Central Links Golf",
+      "count": 2463
+    },
+    {
+      "name": "Metropolitan Amateur Golf Association",
+      "count": 2364
+    },
+    {
+      "name": "Indiana Golf Association",
+      "count": 2146
+    },
+    {
+      "name": "Kentucky Golf Association",
+      "count": 2033
+    },
+    {
+      "name": "Ohio Golf Association",
+      "count": 2020
+    },
+    {
+      "name": "Iowa Golf Association",
+      "count": 1995
+    },
+    {
+      "name": "Louisiana Golf Association",
+      "count": 1945
+    },
+    {
+      "name": "Connecticut State Golf Association",
+      "count": 1884
+    },
+    {
+      "name": "Oklahoma Golf Association",
+      "count": 1872
+    },
+    {
+      "name": "Nebraska Golf Association",
+      "count": 1693
+    },
+    {
+      "name": "Greater Cincinnati Golf Association",
+      "count": 1605
+    },
+    {
+      "name": "Nevada Golf",
+      "count": 1505
+    },
+    {
+      "name": "Idaho Golf Association",
+      "count": 1482
+    },
+    {
+      "name": "New Hampshire Golf",
+      "count": 1375
+    },
+    {
+      "name": "Arkansas State Golf Association",
+      "count": 1233
+    },
+    {
+      "name": "Montana State Golf Association",
+      "count": 1229
+    },
+    {
+      "name": "Maine Golf",
+      "count": 948
+    },
+    {
+      "name": "Mississippi Golf Association",
+      "count": 913
+    },
+    {
+      "name": "Missouri Golf Association",
+      "count": 909
+    },
+    {
+      "name": "Sun Country Amateur Golf Association",
+      "count": 783
+    },
+    {
+      "name": "South Dakota Golf Association",
+      "count": 766
+    },
+    {
+      "name": "Hawaii State Golf Association",
+      "count": 739
+    },
+    {
+      "name": "Rhode Island Golf Association",
+      "count": 737
+    },
+    {
+      "name": "Rochester District Golf Association",
+      "count": 708
+    },
+    {
+      "name": "North Dakota Golf Association",
+      "count": 665
+    },
+    {
+      "name": "Wyoming State / Colorado GA",
+      "count": 516
+    },
+    {
+      "name": "Miami Valley Golf",
+      "count": 507
+    },
+    {
+      "name": "Vermont Golf Association",
+      "count": 467
+    },
+    {
+      "name": "West Virginia Golf Association",
+      "count": 447
+    },
+    {
+      "name": "Alaska / WA Golf GA",
+      "count": 186
+    }
+  ],
+  "gcSourceNotes": {
+    "activityThrough": "2026-10-31",
+    "septemberGcConversions": 4861,
+    "septemberAllConversions": 5753,
+    "gcMatchShare": 0.8272261623325453,
+    "source": "November 2 database export; October signup events matched to one same-day non-test, nontrial membership candidate in approved GC clubs.",
+    "octoberGcConversions": 4199,
+    "octoberAllConversions": 5076
+  },
+  "summaryHistory": {
+    "throughAugustYearlyStatistics": {
+      "totalTrialsCreated": 134542,
+      "trialConversions": 68581,
+      "conversionRate": 0.5097,
+      "activeTrialGolfers": 58622,
+      "inactiveTrialGolfers": 27453,
+      "period": "January–August",
+      "sourceNote": "Existing Yearly Statistics export through August. Conversion total differs from monthly activity sum; preserve until a refreshed matching summary is supplied."
+    }
+  },
+  "validation": {
+    "source": "data/raw/2026-11/trials_extended_legacy_timing_october_2026.csv.csv",
+    "sourceSha256": "c68e56d238d0e75d980f7373f22a90e1eb5bc71626d70a7f1e0d55999f82118d",
+    "sourceDatabase": "ghin2020pilot",
+    "reportingTimezone": "America/New_York",
+    "retrievedAt": "2026-11-02 20:17:39.359 -0500",
+    "activityWindow": [
+      "2026-10-01",
+      "2026-11-01"
+    ],
+    "validated": {
+      "trialsCreated": 158480,
+      "conversionEvents": 81339,
+      "gcYtd": 65838,
+      "octoberCreated": 12665,
+      "octoberConversions": 5076,
+      "octoberGcMatches": 4199,
+      "cumulativeConversions": 200667
+    },
+    "reconciliation": {
+      "timing_bucket_records": 200667,
+      "raw_conversion_records": 200667,
+      "timing_exception_records": 0,
+      "destination_group_records": 200667,
+      "timing_classified_records": 200667,
+      "unmatched_conversion_events": 5298,
+      "actual_earliest_conversion_at": "2024-06-06T11:56:34.811449",
+      "earliest_finite_conversion_at": "2024-06-06T11:56:34.811449",
+      "timing_exception_group_records": 0,
+      "conversion_events_before_matching": 200667,
+      "conversion_records_with_golfer_id": 200667,
+      "uniquely_matched_conversion_events": 194462,
+      "conversion_records_missing_golfer_id": 0,
+      "earliest_destination_conversion_date": "2024-06-06",
+      "multiple_candidate_conversion_events": 907,
+      "duplicate_golfer_day_records_collapsed": 0,
+      "matched_events_with_association_lookup_issue": 0,
+      "matched_events_with_membership_club_association_difference": 0
+    },
+    "limitations": [
+      "January–September history preserved.",
+      "GC destination attribution is a unique same-day candidate, not verified payment.",
+      "Timing is raw conversion rows; destination associations count distinct golfer/signup-day events.",
+      "Association attribution uses current destination club affiliation, not historical affiliation.",
+      "Historical 2025 October GC comparison retains its existing estimated monthly allocation."
+    ],
+    "agaExcludedGroups": [
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 29,
+        "unique_golfers": 196,
+        "association_name": "Dominican Golf Federation",
+        "conversion_records": 196,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 59,
+        "unique_golfers": 104,
+        "association_name": "Golf PR",
+        "conversion_records": 104,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 61,
+        "unique_golfers": 20,
+        "association_name": "Bermuda Golf Association",
+        "conversion_records": 20,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 69,
+        "unique_golfers": 11,
+        "association_name": "Bahamas Golf Federation",
+        "conversion_records": 11,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 76,
+        "unique_golfers": 7,
+        "association_name": "Guam National Golf Federation",
+        "conversion_records": 7,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 77,
+        "unique_golfers": 31,
+        "association_name": "Indian Golf Union",
+        "conversion_records": 31,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 85,
+        "unique_golfers": 119,
+        "association_name": "Golf Association of Hong Kong, China Ltd",
+        "conversion_records": 119,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 86,
+        "unique_golfers": 463,
+        "association_name": "Federacion Mexicana de Golf",
+        "conversion_records": 463,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 89,
+        "unique_golfers": 43,
+        "association_name": "Asociacion de Golf de Panama",
+        "conversion_records": 43,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 98,
+        "unique_golfers": 1,
+        "association_name": "GHIN Test Association",
+        "conversion_records": 1,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 116,
+        "unique_golfers": 5,
+        "association_name": "Nicaraguan Golf Federation",
+        "conversion_records": 5,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 117,
+        "unique_golfers": 3,
+        "association_name": "Oman Golf Association",
+        "conversion_records": 3,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 118,
+        "unique_golfers": 7,
+        "association_name": "Federacion Salvadoreña de Golf",
+        "conversion_records": 7,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 119,
+        "unique_golfers": 7,
+        "association_name": "Barbados Golf Association",
+        "conversion_records": 7,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 120,
+        "unique_golfers": 3,
+        "association_name": "Asociación Deportiva Nacional de Golf de Guatemala",
+        "conversion_records": 3,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 121,
+        "unique_golfers": 3,
+        "association_name": "Brunei Darussalam Golf Association",
+        "conversion_records": 3,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 162,
+        "unique_golfers": 23,
+        "association_name": "ANAGOLF",
+        "conversion_records": 23,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 163,
+        "unique_golfers": 23,
+        "association_name": "Saudi Golf Federation",
+        "conversion_records": 23,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 196,
+        "unique_golfers": 2,
+        "association_name": "Golf Saint Lucia Inc",
+        "conversion_records": 2,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 236,
+        "unique_golfers": 79,
+        "association_name": "Emirates Golf Federation",
+        "conversion_records": 79,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 274,
+        "unique_golfers": 1,
+        "association_name": "Belize Golf Federation",
+        "conversion_records": 1,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 375,
+        "unique_golfers": 2,
+        "association_name": "Saint Kitts and Nevis Golf Association",
+        "conversion_records": 2,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "One same-day candidate",
+        "association_id": 383,
+        "unique_golfers": 2,
+        "association_name": "Mauritius Golf Federation",
+        "conversion_records": 2,
+        "association_resolution": "Resolved current club association"
+      },
+      {
+        "match_status": "Multiple same-day candidates",
+        "association_id": null,
+        "unique_golfers": 907,
+        "association_name": null,
+        "conversion_records": 907,
+        "association_resolution": "Destination unresolved"
+      },
+      {
+        "match_status": "No same-day candidate",
+        "association_id": null,
+        "unique_golfers": 5298,
+        "association_name": null,
+        "conversion_records": 5298,
+        "association_resolution": "Destination unresolved"
+      }
+    ],
+    "agaUnmatchedPriorNames": []
+  },
+  "validationHistory": [
+    {
+      "source": "data/raw/2026-10/trial_monthly_history.csv",
+      "sourceSha256": "7a2f025045ee5547fb803a50434091120f4043bce391278d2fc97447582501d1",
+      "sourceDatabase": "ghin2020pilot",
+      "retrievedAt": "2026-10-02 13:42:55.669 -0400",
+      "activityWindow": [
+        "2026-01-01",
+        "2026-09-30"
+      ],
+      "changes": [
+        {
+          "month": "Jan",
+          "metric": "trials",
+          "before": 7029,
+          "after": 7028
+        },
+        {
+          "month": "Mar",
+          "metric": "trials",
+          "before": 14102,
+          "after": 14101
+        },
+        {
+          "month": "Apr",
+          "metric": "conversions",
+          "before": 11949,
+          "after": 11948
+        },
+        {
+          "month": "Jun",
+          "metric": "trials",
+          "before": 23572,
+          "after": 23571
+        },
+        {
+          "month": "Aug",
+          "metric": "trials",
+          "before": 17731,
+          "after": 17730
+        }
+      ],
+      "validated": {
+        "trialsCreated": 145815,
+        "conversionEvents": 76263,
+        "activityRatio": 0.5230120357987861,
+        "septemberCreated": 10886,
+        "septemberConversions": 5753,
+        "septemberGcMatches": 4861,
+        "gcShare": 0.844950460629237,
+        "gcYtd": 61639
+      },
+      "limitations": [
+        "Calendar conversion events, not conversion outcomes restricted to trials created in the same period.",
+        "Monthly distinct-golfer counts cannot establish YTD distinct golfers without identifiers. Counts are conversion records.",
+        "2024 and 2025 yearly figures remain their historical Tableau summaries; no YoY badges are shown.",
+        "Historical timing and AGA distributions remain through August.",
+        "The cause of the old Yearly Statistics vs monthly-series mismatch is not established by these aggregate files."
+      ]
+    }
+  ]
+}

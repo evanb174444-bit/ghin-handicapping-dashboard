@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "status": "pilot",
+    "source": "affiliate marketing pilot summary"
+  },
+  "marketing": [
+    {
+      "label": "RapidTee Golf",
+      "value": 10,
+      "sub": "18.5% of pilot registrations"
+    },
+    {
+      "label": "Flighting",
+      "value": 4,
+      "sub": "7.4% of pilot registrations"
+    },
+    {
+      "label": "Arccos",
+      "value": 40,
+      "sub": "74.1% of pilot registrations"
+    },
+    {
+      "label": "Leaderboard",
+      "value": 0,
+      "sub": "No registrations"
+    }
+  ],
+  "monthlyPerformance": [
+    {
+      "month": "Pilot",
+      "registrations": 54,
+      "conversions": 54
+    }
+  ],
+  "partnerPerformance": [
+    {
+      "partner": "RapidTee Golf",
+      "activations": "Weekly email; live banner at bottom of site",
+      "conversions": 10
+    },
+    {
+      "partner": "Flighting",
+      "activations": "Email distribution",
+      "conversions": 4
+    },
+    {
+      "partner": "Arccos",
+      "activations": "No planned activations at the moment",
+      "conversions": 40
+    },
+    {
+      "partner": "Leaderboard",
+      "activations": "In-app messaging; email send to customers",
+      "conversions": 0
+    }
+  ]
+}
